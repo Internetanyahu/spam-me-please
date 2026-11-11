@@ -1,21 +1,29 @@
 # Spam Me Please
 
-A personal, opt-in research dashboard for discovering promotions, sweepstakes, rewards programs, survey panels, and ad-supported publishers that may request a phone number.
+A public research directory for consumer promotions, sweepstakes, survey panels, quote marketplaces, subscription offers, and other signup pages that may request a phone number and disclose marketing-related data sharing.
 
-## Scope
+## What counts as a strong match
 
-This project discovers and catalogs websites. It does **not** submit your phone number, create accounts, complete surveys, send SMS messages, or bypass consent, CAPTCHA, rate limits, or anti-abuse controls. Each result is a research lead for you to inspect and decide on manually.
+The crawler keeps broad **discovery leads** but distinguishes them from stronger matches:
 
-## How it works
+- **Phone form found:** a checked public page contains a form field whose name, label, placeholder, or accessibility label refers to a phone, mobile, cell, or telephone number.
+- **Marketing disclosure found:** the linked privacy policy contains a targeted phrase indicating sale/sharing for marketing, advertising, lead generation, or telephone solicitation.
+- **Qualified:** both of the above were found.
+- **Explicit telemarketing wording:** the policy also contains a direct term such as "telemarketing", "telemarketers", "telephone solicitation", "telephone marketing", "marketing calls", or "sales calls".
 
-- GitHub Actions runs discovery daily, with a manual workflow option.
-- Search results are collected for configurable categories.
-- Candidate pages are classified and deduplicated by domain.
-- The scanner looks for public privacy-policy links and phone-related language.
-- Results are written to `data/discovered_sites.json`.
-- A static dashboard at the project Pages site lets you filter and inspect the catalog. Each result includes a direct website link and, when found, a direct privacy-policy link.
+These are automated text and form detections, not legal conclusions. A generic "sell" mention is not sufficient. A policy may describe exceptions, opt-outs, state-specific rights, or uses that do not include telemarketing. Open the source policy and the signup form to verify the current wording and consent choices.
 
-No phone number or API key is required. The workflow does not request personal information.
+## Scale and operation
+
+- The crawler runs daily and can be started manually from GitHub Actions.
+- Search coverage now spans dozens of query patterns across sweepstakes, giveaways, paid surveys, research panels, rewards, free samples, quote marketplaces, insurance, home services, subscriptions, coupons, and lead-generation offers.
+- Each search can return up to 20 candidate pages. Results accumulate across runs and are deduplicated by domain; the catalogue is not reset each day.
+- For each candidate, the crawler checks the landing page and up to three relevant signup/registration/entry pages, detects visible phone fields, follows a public privacy-policy link, and stores targeted policy evidence excerpts.
+- Search coverage is inherently incomplete. Search engines limit results and change ranking; a large catalogue takes repeated runs and additional source-specific discovery.
+
+## Dashboard
+
+The GitHub Pages dashboard filters by category, review status, phone-form detection, combined qualification, and explicit telemarketing wording. Every entry links to the site, checked signup pages, and its privacy policy when found.
 
 ## Run locally
 
@@ -26,17 +34,10 @@ python -m pip install -r requirements.txt
 python discovery/run.py --output data/discovered_sites.json
 ```
 
-## Configure searches
+Edit `config.json` to add search phrases, categories, and detection patterns. Keep request rates modest and respect website terms and access controls.
 
-Edit `config.json` to add or remove search phrases and tune the maximum number of results per phrase. Keep requests modest and respect the terms and robots policies of services you access.
+## Data handling and limits
 
-## GitHub Actions
+The project catalogs public URLs, page titles, short search excerpts, detected form-field metadata, policy-language excerpts, and timestamps. It must not store phone numbers, email addresses, passwords, cookies, or submitted form contents. It does not submit forms, create accounts, send messages, bypass CAPTCHA, or evade rate limits. The user reviews each site and makes any participation decision manually.
 
-The workflow runs once daily and can also be started from the Actions tab. It commits the updated catalog only when the file changes.
-
-## Data handling
-
-The catalog contains public URLs, page titles, short text excerpts, timestamps, and a basic classification. It must not contain phone numbers, email addresses, passwords, session cookies, or other personal data. A site's presence in the catalog is not an endorsement or a guarantee that it accepts submissions or shares data.
-
-
-<!-- Trigger a fresh discovery and Pages deployment after Pages setup. -->
+A detected disclosure does not prove that a company sells a phone number to a telemarketer. The evidence and the exact policy language must be checked manually.
