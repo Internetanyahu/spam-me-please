@@ -54,7 +54,7 @@ function render(){
  <p><b>Privacy policy:</b> ${s.privacy_url?'<a target="_blank" rel="noopener noreferrer" href="'+esc(s.privacy_url)+'">Open policy</a>':"No policy link detected"}</p>
  <p><b>Search phrases:</b> ${esc((s.search_queries||[]).join(" · "))}</p></details></article>`).join(""):'<div class="empty">No matching sites. Run the discovery workflow to populate the catalog.</div>';
 }
-async function init(){try{const r=await fetch("../data/discovered_sites.json");if(!r.ok)throw Error("catalog unavailable");const data=await r.json();sites=data.sites||[];render();}catch(e){$("stats").textContent="Could not load catalog. Open this page through the deployed GitHub Pages site.";}}
+async function init(){try{const r=await fetch("data/discovered_sites.json");if(!r.ok)throw Error("catalog unavailable");const data=await r.json();sites=data.sites||[];render();}catch(e){$("stats").textContent="Could not load catalog. Open this page through the deployed GitHub Pages site.";}}
 ["search","category","status"].forEach(id=>$(id).addEventListener(id==="search"?"input":"change",render));
 init();
 </script>
