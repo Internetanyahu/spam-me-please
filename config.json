@@ -1,8 +1,8 @@
 {
-  "max_results_per_query": 20,
-  "max_signup_pages_per_site": 4,
-  "request_timeout_seconds": 18,
-  "request_delay_seconds": 0.25,
+  "max_results_per_query": 18,
+  "max_signup_pages_per_site": 3,
+  "request_timeout_seconds": 12,
+  "request_delay_seconds": 0.2,
   "user_agent": "SpamMePleaseResearchBot/2.0 (+https://github.com/Internetanyahu/spam-me-please)",
   "search_queries": [
     "sweepstakes entry form phone number sponsors marketing partners privacy policy",
@@ -160,5 +160,6 @@
     "telephone marketing",
     "marketing calls",
     "sales calls"
-  ]
+  ],
+  "max_domains_per_run": 250
 }
