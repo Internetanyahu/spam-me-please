@@ -63,6 +63,30 @@ def search_duckduckgo(query: str, session: requests.Session, limit: int) -> list
     return found
 
 
+def search_bing(query: str, session: requests.Session, limit: int) -> list[dict]:
+    endpoint = "https://www.bing.com/search?q=" + quote_plus(query)
+    response = session.get(endpoint, timeout=15)
+    response.raise_for_status()
+    soup = BeautifulSoup(response.text, "html.parser")
+    found = []
+    for item in soup.select("li.b_algo"):
+        link = item.select_one("h2 a")
+        snippet = item.select_one(".b_caption p")
+        if not link or not link.get("href"):
+            continue
+        url = normalize_url(link["href"])
+        if not url:
+            continue
+        found.append({
+            "url": url,
+            "title": link.get_text(" ", strip=True),
+            "search_snippet": snippet.get_text(" ", strip=True) if snippet else ""
+        })
+        if len(found) >= limit:
+            break
+    return found
+
+
 def fetch_page(url: str, session: requests.Session, timeout: int) -> dict:
     try:
         response = session.get(url, timeout=timeout, allow_redirects=True)
@@ -133,10 +157,18 @@ def main() -> None:
     for query in config.get("search_queries", []):
         try:
             results = search_duckduckgo(query, session, limit)
+            if not results:
+                print(f"DuckDuckGo returned no parseable results for {query!r}; trying Bing.")
+                results = search_bing(query, session, limit)
         except requests.RequestException as exc:
-            print(f"Search failed for query {query!r}: {type(exc).__name__}")
-            continue
+            print(f"Primary search failed for query {query!r}: {type(exc).__name__}; trying Bing.")
+            try:
+                results = search_bing(query, session, limit)
+            except requests.RequestException as fallback_exc:
+                print(f"Fallback search failed for query {query!r}: {type(fallback_exc).__name__}")
+                continue
 
+        print(f"Query {query!r}: {len(results)} search results")
         for result in results:
             domain = domain_of(result["url"])
             if not domain:
