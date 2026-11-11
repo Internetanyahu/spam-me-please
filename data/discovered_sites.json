@@ -1,5 +1,37 @@
 {
-  "updated_at": null,
-  "site_count": 0,
-  "sites": []
+  "updated_at": "2026-11-11T20:04:56+00:00",
+  "site_count": 1,
+  "sites": [
+    {
+      "domain": "bing.com",
+      "url": "https://www.bing.com:443/ck/a?toWww=1&redig=84F582A1197D4135BABD8EB9EBAC1B38",
+      "title": "Sweepstakes and Contests 2026 - Sweepstakes Fanatics",
+      "search_snippet": "Sweepstakes Fanatics is the #1 site for online sweepstakes and contests. Find and enter high quality, legitimate sweepstakes!",
+      "categories": [
+        "ad_supported_media",
+        "rewards",
+        "surveys",
+        "sweepstakes"
+      ],
+      "phone_language": [],
+      "privacy_language": [],
+      "privacy_url": "",
+      "privacy_policy_checked": false,
+      "http_status": 204,
+      "search_queries": [
+        "ad supported news website newsletter signup",
+        "consumer product testing panel apply",
+        "free samples sweepstakes signup",
+        "get paid to take surveys panel",
+        "reader rewards program publisher",
+        "rewards program sign up points official",
+        "survey panel join online surveys official",
+        "sweepstakes enter to win official rules"
+      ],
+      "first_seen": "2026-11-11T20:04:50+00:00",
+      "last_seen": "2026-11-11T20:04:56+00:00",
+      "review_status": "unreviewed",
+      "notes": ""
+    }
+  ]
 }
