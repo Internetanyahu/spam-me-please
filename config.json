@@ -1,0 +1,23 @@
+{
+  "max_results_per_query": 12,
+  "request_timeout_seconds": 15,
+  "user_agent": "SpamMePleaseResearchBot/1.0 (+https://github.com/Internetanyahu/spam-me-please)",
+  "search_queries": [
+    "sweepstakes enter to win official rules",
+    "rewards program sign up points official",
+    "survey panel join online surveys official",
+    "get paid to take surveys panel",
+    "free samples sweepstakes signup",
+    "ad supported news website newsletter signup",
+    "reader rewards program publisher",
+    "consumer product testing panel apply"
+  ],
+  "categories": {
+    "sweepstakes": ["sweepstakes", "giveaway", "enter to win", "official rules", "prize draw"],
+    "rewards": ["rewards", "points", "loyalty", "redeem", "member benefits"],
+    "surveys": ["survey", "panel", "research participant", "questionnaire"],
+    "ad_supported_media": ["advertising", "sponsored", "newsletter", "publisher", "free news"]
+  },
+  "phone_terms": ["phone number", "mobile number", "text message", "sms", "verify your phone", "cell number"],
+  "privacy_terms": ["privacy policy", "personal information", "share", "sell", "third parties", "marketing partners"]
+}
