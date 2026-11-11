@@ -37,3 +37,6 @@ The workflow runs once daily and can also be started from the Actions tab. It co
 ## Data handling
 
 The catalog contains public URLs, page titles, short text excerpts, timestamps, and a basic classification. It must not contain phone numbers, email addresses, passwords, session cookies, or other personal data. A site's presence in the catalog is not an endorsement or a guarantee that it accepts submissions or shares data.
+
+
+<!-- Trigger a fresh discovery and Pages deployment after Pages setup. -->
