@@ -198,6 +198,8 @@ def main() -> None:
     output_path.parent.mkdir(parents=True, exist_ok=True)
     existing = load_existing(output_path)
     records = {site["domain"]: site for site in existing.get("sites", []) if site.get("domain")}
+    seen_domains: set[str] = set()
+    max_domains = max(25, min(int(CONFIG.get("max_domains_per_run", 250)), 500))
     session = requests.Session()
     session.headers.update({"User-Agent": CONFIG.get("user_agent", "ResearchBot/2.0"), "Accept": "text/html,application/xhtml+xml"})
     limit = max(1, min(int(CONFIG.get("max_results_per_query", 20)), 30))
@@ -211,8 +213,12 @@ def main() -> None:
             if not page.get("text") or not page.get("final_url"):
                 continue
             domain = domain_of(page["final_url"])
-            if not domain or is_search_host(domain):
+            if not domain or is_search_host(domain) or domain in seen_domains:
                 continue
+            if len(seen_domains) >= max_domains:
+                print(f"Reached per-run domain cap ({max_domains}).")
+                break
+            seen_domains.add(domain)
 
             signup_pages = [{"url": page["final_url"], "data": page}]
             for link in page.get("signup_links", [])[:max(0, int(CONFIG.get("max_signup_pages_per_site", 4))-1)]:
