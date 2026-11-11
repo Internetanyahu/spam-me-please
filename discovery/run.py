@@ -268,6 +268,9 @@ def main() -> None:
             }
             records[domain] = site
             time.sleep(delay)
+        if len(seen_domains) >= max_domains:
+            print(f"Reached per-run domain cap ({max_domains}); ending search pass.")
+            break
 
     sites = sorted(records.values(), key=lambda item: (
         not item.get("qualified_phone_and_marketing_disclosure", False),
