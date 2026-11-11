@@ -3,6 +3,7 @@ name: Discover websites
 on:
   push:
     paths:
+      - "README.md"
       - "config.json"
       - "discovery/**"
       - "dashboard/**"
