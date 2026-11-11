@@ -1,62 +1,65 @@
 <!doctype html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Spam Me Please — Discovery Dashboard</title>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Spam Me Please — Research Directory</title>
 <style>
-:root{color-scheme:dark;--bg:#101318;--panel:#191f28;--line:#303a48;--text:#edf2f7;--muted:#a5b0bf;--accent:#8bb8ff}
+:root{color-scheme:dark;--bg:#101318;--panel:#191f28;--line:#303a48;--text:#edf2f7;--muted:#a5b0bf;--accent:#8bb8ff;--good:#a8dfb2;--warn:#f0d28b}
 *{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--text);font:15px/1.5 system-ui,sans-serif}
-header{padding:28px max(20px,calc((100% - 1100px)/2));border-bottom:1px solid var(--line);background:#151b23}
-h1{margin:0 0 6px;font-size:25px}p{margin:6px 0;color:var(--muted)}main{max-width:1100px;margin:24px auto;padding:0 18px}
-.notice{padding:13px 16px;border:1px solid #66522b;background:#2a2419;border-radius:9px;color:#f0dfbd;margin-bottom:18px}
-.controls{display:grid;grid-template-columns:2fr 1fr 1fr;gap:10px;margin-bottom:16px}
+header{padding:25px max(20px,calc((100% - 1180px)/2));border-bottom:1px solid var(--line);background:#151b23}
+h1{margin:0 0 5px;font-size:25px}p{margin:6px 0;color:var(--muted)}main{max-width:1180px;margin:22px auto;padding:0 18px}
+.notice{padding:13px 16px;border:1px solid #66522b;background:#2a2419;border-radius:9px;color:#f0dfbd;margin-bottom:16px}
+.stats{display:flex;gap:10px;flex-wrap:wrap;margin:16px 0}.stat{background:var(--panel);border:1px solid var(--line);border-radius:8px;padding:10px 14px}.stat b{display:block;font-size:22px}
+.controls{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:10px;margin-bottom:14px}
 input,select{width:100%;padding:11px;background:var(--panel);border:1px solid var(--line);border-radius:7px;color:var(--text)}
-.stats{color:var(--muted);margin:10px 0}.site{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:16px;margin:10px 0}
+.site{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:16px;margin:10px 0}
 .site h2{font-size:17px;margin:0 0 3px}.site a{color:var(--accent);overflow-wrap:anywhere}
 .meta{font-size:13px;color:var(--muted)}.tags{display:flex;flex-wrap:wrap;gap:6px;margin:9px 0}
 .tag{font-size:12px;padding:3px 8px;border-radius:20px;background:#293747;color:#d7e7fa}
-details{margin-top:9px}summary{cursor:pointer;color:var(--accent)}.empty{padding:28px;text-align:center;color:var(--muted)}
-@media(max-width:650px){.controls{grid-template-columns:1fr}}
-</style>
-</head>
+.status{font-size:12px;font-weight:650;padding:3px 8px;border-radius:5px;display:inline-block;margin-bottom:8px}
+.qualified{background:#203b2b;color:var(--good)}.candidate{background:#40351e;color:var(--warn)}
+details{margin-top:9px}summary{cursor:pointer;color:var(--accent)}.evidence{border-left:2px solid var(--line);padding:7px 10px;margin:8px 0;color:#d1dae5;font-size:13px;overflow-wrap:anywhere}
+.empty{padding:28px;text-align:center;color:var(--muted)}
+@media(max-width:760px){.controls{grid-template-columns:1fr 1fr}}@media(max-width:500px){.controls{grid-template-columns:1fr}}
+</style></head>
 <body>
-<header><h1>Spam Me Please</h1><p>Public website discovery and manual review catalog</p></header>
+<header><h1>Spam Me Please</h1><p>Public signup-form and privacy-disclosure research directory</p></header>
 <main>
-<div class="notice">Research catalog only. No phone numbers are submitted and no accounts or forms are completed automatically. Verify each site's terms and privacy policy yourself.</div>
+<div class="notice">Research leads only. The directory does not submit phone numbers or complete forms. A site is marked qualified only when a phone field was found on a checked page and its linked privacy policy contains a marketing/sharing signal. Explicit telemarketing language is shown separately. Read the current policy and consent language before deciding whether to participate.</div>
+<div class="stats"><div class="stat"><b id="total">—</b><span>Discovered domains</span></div><div class="stat"><b id="qualified">—</b><span>Phone form + disclosure</span></div><div class="stat"><b id="explicit">—</b><span>Explicit telemarketing wording</span></div></div>
 <div class="controls">
-<input id="search" type="search" placeholder="Search domains, titles, or terms…">
-<select id="category"><option value="">All categories</option><option value="sweepstakes">Sweepstakes</option><option value="rewards">Rewards</option><option value="surveys">Surveys</option><option value="ad_supported_media">Ad-supported media</option></select>
+<input id="search" type="search" placeholder="Search sites and evidence…">
+<select id="category"><option value="">All categories</option><option value="sweepstakes">Sweepstakes</option><option value="rewards">Rewards</option><option value="surveys">Surveys</option><option value="lead_generation">Lead generation</option><option value="subscriptions">Subscriptions</option><option value="offers_and_samples">Offers and samples</option><option value="ad_supported_media">Ad-supported media</option></select>
+<select id="qualification"><option value="">All results</option><option value="qualified">Phone + disclosure found</option><option value="telemarketing">Explicit telemarketing wording</option><option value="phone">Phone form found</option></select>
 <select id="status"><option value="">All review statuses</option><option value="unreviewed">Unreviewed</option><option value="approved">Reviewed</option><option value="skip">Skip</option></select>
 </div>
-<div class="stats" id="stats">Loading catalog…</div>
-<section id="results"></section>
+<div class="meta" id="stats">Loading catalog…</div><section id="results"></section>
 </main>
 <script>
-const $=id=>document.getElementById(id);
-let sites=[];
-function esc(value){return String(value??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));}
+const $=id=>document.getElementById(id);let sites=[];
+function esc(v){return String(v??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));}
 function render(){
- const q=$("search").value.toLowerCase(),cat=$("category").value,status=$("status").value;
+ const q=$("search").value.toLowerCase(),cat=$("category").value,qual=$("qualification").value,status=$("status").value;
  const filtered=sites.filter(s=>{
-  const hay=[s.domain,s.title,s.search_snippet,(s.phone_language||[]).join(" "),(s.privacy_language||[]).join(" ")].join(" ").toLowerCase();
-  return (!q||hay.includes(q))&&(!cat||(s.categories||[]).includes(cat))&&(!status||s.review_status===status);
+  const hay=[s.domain,s.title,s.search_snippet,(s.categories||[]).join(" "),(s.marketing_disclosure_patterns||[]).join(" "),(s.explicit_telemarketing_terms||[]).join(" "),(s.privacy_evidence_excerpts||[]).join(" ")].join(" ").toLowerCase();
+  return (!q||hay.includes(q))&&(!cat||(s.categories||[]).includes(cat))&&(!status||s.review_status===status)&&(!qual||(qual==="qualified"?s.qualified_phone_and_marketing_disclosure:qual==="telemarketing"?(s.explicit_telemarketing_terms||[]).length>0: s.phone_form_detected));
  });
- $("stats").textContent=filtered.length+" of "+sites.length+" sites · Catalog is refreshed by GitHub Actions";
- $("results").innerHTML=filtered.length?filtered.map(s=>`
- <article class="site"><h2>${esc(s.title||s.domain)}</h2><a href="${esc(s.url)}" target="_blank" rel="noopener noreferrer">${esc(s.domain)}</a>
- <div class="meta">First seen: ${esc((s.first_seen||"").slice(0,10))} · Status: ${esc(s.review_status||"unreviewed")}</div>
- <div class="tags">${(s.categories||[]).map(x=>'<span class="tag">'+esc(x)+'</span>').join("")}</div>
- <p>${esc(s.search_snippet||"No search excerpt available.")}</p>
- <details><summary>Research signals</summary>
- <p><b>Phone-related wording:</b> ${esc((s.phone_language||[]).join(", ")||"Not detected")}</p>
- <p><b>Privacy-related wording:</b> ${esc((s.privacy_language||[]).join(", ")||"Not detected")}</p>
- <p><b>Privacy policy:</b> ${s.privacy_url?'<a target="_blank" rel="noopener noreferrer" href="'+esc(s.privacy_url)+'">Open policy</a>':"No policy link detected"}</p>
- <p><b>Search phrases:</b> ${esc((s.search_queries||[]).join(" · "))}</p></details></article>`).join(""):'<div class="empty">No matching sites. Run the discovery workflow to populate the catalog.</div>';
+ $("stats").textContent=filtered.length+" of "+sites.length+" domains shown · updated "+($("stats").dataset.updated||"unknown");
+ $("results").innerHTML=filtered.length?filtered.map(s=>{
+  const explicit=(s.explicit_telemarketing_terms||[]).length>0,qualified=!!s.qualified_phone_and_marketing_disclosure;
+  const forms=(s.phone_forms||[]).map(f=>'<div class="evidence"><b>Phone field:</b> '+esc((f.phone_fields||[]).map(x=>[x.name,x.type,x.label].filter(Boolean).join(" / ")).join(", "))+'<br><b>Form page:</b> <a href="'+esc(f.page_url)+'" target="_blank" rel="noopener noreferrer">'+esc(f.page_url)+'</a></div>').join("");
+  const excerpts=(s.privacy_evidence_excerpts||[]).map(x=>'<div class="evidence">'+esc(x)+'</div>').join("");
+  return '<article class="site"><span class="status '+(qualified?'qualified':'candidate')+'">'+(qualified?'PHONE FORM + POLICY SIGNAL':s.phone_form_detected?'PHONE FORM FOUND — POLICY SIGNAL NOT CONFIRMED':'UNVERIFIED LEAD')+'</span>'+(explicit?' <span class="status qualified">EXPLICIT TELEMARKETING TERM</span>':'')+
+  '<h2>'+esc(s.title||s.domain)+'</h2><a href="'+esc(s.url)+'" target="_blank" rel="noopener noreferrer">'+esc(s.domain)+'</a><div class="meta">First seen: '+esc((s.first_seen||"").slice(0,10))+' · Last checked: '+esc((s.last_seen||"").slice(0,10))+' · Review: '+esc(s.review_status||"unreviewed")+'</div>'+
+  '<div class="tags">'+(s.categories||[]).map(x=>'<span class="tag">'+esc(x)+'</span>').join("")+'</div><p>'+esc(s.search_snippet||"No search excerpt.")+'</p><details><summary>Open signup, phone-field, and privacy evidence</summary>'+
+  '<p><b>Signup pages checked:</b></p>'+(s.signup_pages_checked||[]).map(x=>'<div><a href="'+esc(x)+'" target="_blank" rel="noopener noreferrer">'+esc(x)+'</a></div>').join("")+
+  '<p><b>Detected phone forms:</b></p>'+(forms||'<p>No phone form detected in checked pages.</p>')+
+  '<p><b>Privacy policy:</b> '+(s.privacy_url?'<a href="'+esc(s.privacy_url)+'" target="_blank" rel="noopener noreferrer">Open policy</a>':'Not found')+'</p>'+
+  '<p><b>Marketing disclosure patterns:</b> '+esc((s.marketing_disclosure_patterns||[]).join(", ")||"None detected")+'</p>'+
+  '<p><b>Explicit telemarketing terms:</b> '+esc((s.explicit_telemarketing_terms||[]).join(", ")||"None detected")+'</p>'+excerpts+
+  '<p><b>Search phrases:</b> '+esc((s.search_queries||[]).join(" · "))+'</p></details></article>';
+ }).join(""):'<div class="empty">No results match these filters.</div>';
 }
-async function init(){try{const r=await fetch("data/discovered_sites.json");if(!r.ok)throw Error("catalog unavailable");const data=await r.json();sites=data.sites||[];render();}catch(e){$("stats").textContent="Could not load catalog. Open this page through the deployed GitHub Pages site.";}}
-["search","category","status"].forEach(id=>$(id).addEventListener(id==="search"?"input":"change",render));
-init();
-</script>
-</body>
-</html>
+async function init(){try{const r=await fetch("data/discovered_sites.json");if(!r.ok)throw Error();const d=await r.json();sites=d.sites||[];$("total").textContent=d.site_count??sites.length;$("qualified").textContent=d.qualified_count??sites.filter(s=>s.qualified_phone_and_marketing_disclosure).length;$("explicit").textContent=d.explicit_telemarketing_count??sites.filter(s=>(s.explicit_telemarketing_terms||[]).length).length;$("stats").dataset.updated=(d.updated_at||"").slice(0,10);render();}catch(e){$("stats").textContent="Could not load catalog. Open the deployed GitHub Pages site.";}}
+["search","category","qualification","status"].forEach(id=>$(id).addEventListener(id==="search"?"input":"change",render));init();
+</script></body></html>
