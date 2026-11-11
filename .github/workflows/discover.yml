@@ -1,6 +1,12 @@
 name: Discover websites
 
 on:
+  push:
+    paths:
+      - "config.json"
+      - "discovery/**"
+      - "dashboard/**"
+      - ".github/workflows/discover.yml"
   workflow_dispatch:
   schedule:
     - cron: "23 9 * * *"
