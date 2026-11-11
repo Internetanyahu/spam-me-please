@@ -14,6 +14,8 @@ from bs4 import BeautifulSoup
 
 ROOT = Path(__file__).resolve().parents[1]
 CONFIG_PATH = ROOT / "config.json"
+SEARCH_HOSTS = {"bing.com", "duckduckgo.com", "google.com", "yahoo.com", "search.brave.com", "ecosia.org", "yandex.com"}
+SKIP_SUFFIXES = (".pdf", ".jpg", ".jpeg", ".png", ".gif", ".zip", ".mp4", ".mp3")
 
 
 def utc_now() -> str:
@@ -24,22 +26,17 @@ def normalize_url(url: str) -> str:
     parsed = urlparse(url)
     if parsed.scheme not in {"http", "https"} or not parsed.netloc:
         return ""
-    host = parsed.netloc.lower()
+    if parsed.path.lower().endswith(SKIP_SUFFIXES):
+        return ""
+    host = parsed.netloc.lower().split("@")[-1]
     if host.startswith("www."):
         host = host[4:]
-    path = parsed.path.rstrip("/")
-    return urlunparse(("https", host, path, "", "", ""))
+    return urlunparse(("https", host, parsed.path.rstrip("/"), "", "", ""))
 
 
 def domain_of(url: str) -> str:
     host = urlparse(url).hostname
     return host.lower().removeprefix("www.") if host else ""
-
-
-SEARCH_HOSTS = {
-    "bing.com", "duckduckgo.com", "google.com", "yahoo.com",
-    "search.brave.com", "ecosia.org", "yandex.com"
-}
 
 
 def is_search_host(domain: str) -> bool:
@@ -64,58 +61,70 @@ def unwrap_bing_url(href: str) -> str:
     return ""
 
 
-def search_duckduckgo(query: str, session: requests.Session, limit: int) -> list[dict]:
-    endpoint = "https://html.duckduckgo.com/html/?q=" + quote_plus(query)
-    response = session.get(endpoint, timeout=15)
-    response.raise_for_status()
-    soup = BeautifulSoup(response.text, "html.parser")
-    found = []
-    for item in soup.select(".result"):
-        link = item.select_one(".result__a")
-        snippet = item.select_one(".result__snippet")
-        if not link or not link.get("href"):
-            continue
-        href = link["href"]
-        parsed_href = urlparse(href)
-        redirect_target = parse_qs(parsed_href.query).get("uddg", [""])[0]
-        if redirect_target:
-            href = unquote(redirect_target)
-        url = normalize_url(href)
-        if not url:
-            continue
-        found.append({
-            "url": url,
-            "title": link.get_text(" ", strip=True),
-            "search_snippet": snippet.get_text(" ", strip=True) if snippet else ""
-        })
-        if len(found) >= limit:
-            break
+def parse_search_html(html: str, engine: str, limit: int) -> list[dict]:
+    soup = BeautifulSoup(html, "html.parser")
+    found, seen = [], set()
+    selectors = [(".result", ".result__a", ".result__snippet")] if engine == "ddg" else [("li.b_algo", "h2 a", ".b_caption p")]
+    for item_selector, link_selector, snippet_selector in selectors:
+        for item in soup.select(item_selector):
+            link = item.select_one(link_selector)
+            snippet = item.select_one(snippet_selector)
+            if not link or not link.get("href"):
+                continue
+            href = link["href"]
+            if engine == "ddg":
+                target = parse_qs(urlparse(href).query).get("uddg", [""])[0]
+                href = unquote(target) if target else href
+            else:
+                href = unwrap_bing_url(href)
+            url = normalize_url(href)
+            domain = domain_of(url)
+            if not url or not domain or is_search_host(domain) or url in seen:
+                continue
+            seen.add(url)
+            found.append({"url": url, "title": link.get_text(" ", strip=True),
+                          "search_snippet": snippet.get_text(" ", strip=True) if snippet else ""})
+            if len(found) >= limit:
+                return found
     return found
 
 
-def search_bing(query: str, session: requests.Session, limit: int) -> list[dict]:
-    endpoint = "https://www.bing.com/search?q=" + quote_plus(query)
-    response = session.get(endpoint, timeout=15)
-    response.raise_for_status()
-    soup = BeautifulSoup(response.text, "html.parser")
-    found = []
-    for item in soup.select("li.b_algo"):
-        link = item.select_one("h2 a")
-        snippet = item.select_one(".b_caption p")
-        if not link or not link.get("href"):
-            continue
-        target = unwrap_bing_url(link["href"])
-        url = normalize_url(target)
-        if not url or is_search_host(domain_of(url)):
-            continue
-        found.append({
-            "url": url,
-            "title": link.get_text(" ", strip=True),
-            "search_snippet": snippet.get_text(" ", strip=True) if snippet else ""
-        })
-        if len(found) >= limit:
-            break
-    return found
+def search(query: str, session: requests.Session, limit: int) -> list[dict]:
+    for engine, endpoint in (
+        ("bing", "https://www.bing.com/search?q=" + quote_plus(query)),
+        ("ddg", "https://html.duckduckgo.com/html/?q=" + quote_plus(query))
+    ):
+        try:
+            response = session.get(endpoint, timeout=18)
+            response.raise_for_status()
+            results = parse_search_html(response.text, engine, limit)
+            if results:
+                print(f"{engine}: {len(results)} results")
+                return results
+        except requests.RequestException as exc:
+            print(f"{engine} search failed: {type(exc).__name__}")
+    return []
+
+
+def extract_forms(soup: BeautifulSoup) -> list[dict]:
+    forms = []
+    for form in soup.find_all("form"):
+        fields = []
+        for field in form.find_all(["input", "select", "textarea"]):
+            name = (field.get("name") or field.get("id") or "").strip()
+            field_type = (field.get("type") or field.name).lower()
+            label = ""
+            if field.get("id"):
+                label_node = soup.find("label", attrs={"for": field.get("id")})
+                if label_node:
+                    label = label_node.get_text(" ", strip=True)
+            context = " ".join([name, field_type, field.get("placeholder", ""), field.get("aria-label", ""), label]).lower()
+            if any(term in context for term in ("phone", "telephone", "mobile", "cell")):
+                fields.append({"name": name[:100], "type": field_type, "label": label[:120]})
+        if fields:
+            forms.append({"action": urljoin(form.get("action") or "", form.get("action") or ""),
+                          "method": (form.get("method") or "get").upper(), "phone_fields": fields})
+    return forms
 
 
 def fetch_page(url: str, session: requests.Session, timeout: int) -> dict:
@@ -125,34 +134,26 @@ def fetch_page(url: str, session: requests.Session, timeout: int) -> dict:
         if response.status_code >= 400 or "text/html" not in content_type:
             return {"status": response.status_code, "final_url": response.url}
         soup = BeautifulSoup(response.text[:1_500_000], "html.parser")
+        forms = extract_forms(soup)
         for node in soup(["script", "style", "noscript", "svg"]):
             node.decompose()
-        text = re.sub(r"\s+", " ", soup.get_text(" ", strip=True))[:12000]
+        text = re.sub(r"\s+", " ", soup.get_text(" ", strip=True))[:30000]
         title = soup.title.get_text(" ", strip=True) if soup.title else ""
         privacy_url = ""
+        signup_links = []
         for anchor in soup.find_all("a", href=True):
             label = anchor.get_text(" ", strip=True).lower()
-            href = anchor["href"]
-            if "privacy" in label or "privacy" in href.lower():
-                privacy_url = urljoin(response.url, href)
-                break
-        return {
-            "status": response.status_code,
-            "final_url": response.url,
-            "title": title,
-            "text": text,
-            "privacy_url": privacy_url
-        }
+            href = urljoin(response.url, anchor["href"])
+            if not privacy_url and ("privacy" in label or "privacy" in href.lower()):
+                privacy_url = href
+            if len(signup_links) < 12 and any(term in (label + " " + href.lower()) for term in CONFIG.get("signup_link_terms", [])):
+                if domain_of(href) == domain_of(response.url):
+                    signup_links.append(href)
+        return {"status": response.status_code, "final_url": response.url, "title": title,
+                "text": text, "privacy_url": privacy_url, "signup_links": list(dict.fromkeys(signup_links)),
+                "phone_forms": forms}
     except requests.RequestException as exc:
         return {"error": type(exc).__name__}
-
-
-def classify(text: str, config: dict) -> list[str]:
-    lowered = text.lower()
-    return [
-        category for category, terms in config.get("categories", {}).items()
-        if any(term.lower() in lowered for term in terms)
-    ]
 
 
 def matching_terms(text: str, terms: list[str]) -> list[str]:
@@ -160,110 +161,117 @@ def matching_terms(text: str, terms: list[str]) -> list[str]:
     return [term for term in terms if term.lower() in lowered]
 
 
+def policy_evidence(text: str, config: dict) -> tuple[list[str], list[str], list[str]]:
+    lowered = re.sub(r"\s+", " ", text.lower())
+    hits, explicit, excerpts = [], [], []
+    for pattern in config.get("marketing_patterns", []):
+        match = re.search(pattern, lowered, re.I)
+        if match:
+            hits.append(pattern)
+            excerpts.append(lowered[max(0, match.start()-180):min(len(lowered), match.end()+220)])
+    for pattern in config.get("explicit_telemarketing_patterns", []):
+        if pattern in lowered:
+            explicit.append(pattern)
+    return sorted(set(hits)), sorted(set(explicit)), list(dict.fromkeys(excerpts))[:8]
+
+
+def classify(text: str, config: dict) -> list[str]:
+    lowered = text.lower()
+    return [category for category, terms in config.get("categories", {}).items()
+            if any(term.lower() in lowered for term in terms)]
+
+
 def load_existing(path: Path) -> dict:
-    if not path.exists():
-        return {"updated_at": None, "sites": []}
     try:
-        return json.loads(path.read_text(encoding="utf-8"))
+        return json.loads(path.read_text(encoding="utf-8")) if path.exists() else {"sites": []}
     except (json.JSONDecodeError, OSError):
-        return {"updated_at": None, "sites": []}
+        return {"sites": []}
 
 
 def main() -> None:
-    parser = argparse.ArgumentParser(description="Discover public websites for a manual research catalog.")
+    parser = argparse.ArgumentParser(description="Discover public signup sites and review their public privacy disclosures.")
     parser.add_argument("--output", default=str(ROOT / "data" / "discovered_sites.json"))
     args = parser.parse_args()
-
-    config = json.loads(CONFIG_PATH.read_text(encoding="utf-8"))
+    global CONFIG
+    CONFIG = json.loads(CONFIG_PATH.read_text(encoding="utf-8"))
     output_path = Path(args.output)
     output_path.parent.mkdir(parents=True, exist_ok=True)
     existing = load_existing(output_path)
     records = {site["domain"]: site for site in existing.get("sites", []) if site.get("domain")}
-
     session = requests.Session()
-    session.headers.update({"User-Agent": config.get("user_agent", "ResearchBot/1.0")})
-    limit = max(1, min(int(config.get("max_results_per_query", 10)), 25))
-    timeout = max(5, min(int(config.get("request_timeout_seconds", 15)), 30))
+    session.headers.update({"User-Agent": CONFIG.get("user_agent", "ResearchBot/2.0"), "Accept": "text/html,application/xhtml+xml"})
+    limit = max(1, min(int(CONFIG.get("max_results_per_query", 20)), 30))
+    timeout = max(5, min(int(CONFIG.get("request_timeout_seconds", 18)), 30))
+    delay = max(0.0, min(float(CONFIG.get("request_delay_seconds", 0.25)), 2.0))
 
-    for query in config.get("search_queries", []):
-        try:
-            results = search_duckduckgo(query, session, limit)
-            if not results:
-                print(f"DuckDuckGo returned no parseable results for {query!r}; trying Bing.")
-                results = search_bing(query, session, limit)
-        except requests.RequestException as exc:
-            print(f"Primary search failed for query {query!r}: {type(exc).__name__}; trying Bing.")
-            try:
-                results = search_bing(query, session, limit)
-            except requests.RequestException as fallback_exc:
-                print(f"Fallback search failed for query {query!r}: {type(fallback_exc).__name__}")
+    for index, query in enumerate(CONFIG.get("search_queries", []), 1):
+        print(f"[{index}/{len(CONFIG['search_queries'])}] {query}")
+        for result in search(query, session, limit):
+            page = fetch_page(result["url"], session, timeout)
+            if not page.get("text") or not page.get("final_url"):
                 continue
-
-        print(f"Query {query!r}: {len(results)} search results")
-        for result in results:
-            domain = domain_of(result["url"])
+            domain = domain_of(page["final_url"])
             if not domain or is_search_host(domain):
                 continue
-            page = fetch_page(result["url"], session, timeout)
-            # Reject tracking redirects, error pages, and non-HTML responses.
-            if not page.get("text") or not page.get("final_url"):
-                print(f"Skipping non-HTML or inaccessible result: {result['url']}")
-                continue
-            final_domain = domain_of(page["final_url"])
-            if not final_domain or is_search_host(final_domain):
-                print(f"Skipping search-engine redirect: {result['url']}")
-                continue
-            domain = final_domain
-            page_text = page.get("text", "")
-            privacy_page = {}
-            if page.get("privacy_url"):
-                privacy_page = fetch_page(page["privacy_url"], session, timeout)
-            privacy_text = privacy_page.get("text", "")
-            combined = " ".join([result["title"], result["search_snippet"], page_text])
-            categories = classify(combined, config)
-            phone_hits = matching_terms(combined, config.get("phone_terms", []))
-            privacy_hits = matching_terms(privacy_text, config.get("privacy_terms", []))
-            if domain in records:
-                site = records[domain]
-                site["categories"] = sorted(set(site.get("categories", []) + categories))
-                site["phone_language"] = sorted(set(site.get("phone_language", []) + phone_hits))
-                site["privacy_language"] = sorted(set(site.get("privacy_language", []) + privacy_hits))
-                site["search_queries"] = sorted(set(site.get("search_queries", []) + [query]))
-                site["last_seen"] = utc_now()
-                if page.get("privacy_url"):
-                    site["privacy_url"] = page["privacy_url"]
-                    site["privacy_policy_checked"] = bool(privacy_text)
-                site["privacy_language"] = sorted(set(site.get("privacy_language", []) + privacy_hits))
-                continue
 
-            records[domain] = {
+            signup_pages = [{"url": page["final_url"], "data": page}]
+            for link in page.get("signup_links", [])[:max(0, int(CONFIG.get("max_signup_pages_per_site", 4))-1)]:
+                if any(p["url"] == link for p in signup_pages):
+                    continue
+                subpage = fetch_page(link, session, timeout)
+                if subpage.get("text"):
+                    signup_pages.append({"url": subpage["final_url"], "data": subpage})
+                time.sleep(delay)
+
+            phone_forms = []
+            for item in signup_pages:
+                for form in item["data"].get("phone_forms", []):
+                    phone_forms.append({"page_url": item["url"], **form})
+            privacy_url = next((p["data"].get("privacy_url") for p in signup_pages if p["data"].get("privacy_url")), "")
+            policy = fetch_page(privacy_url, session, timeout) if privacy_url else {}
+            policy_text = policy.get("text", "")
+            policy_hits, explicit_hits, excerpts = policy_evidence(policy_text, CONFIG)
+            category_text = " ".join([result["title"], result["search_snippet"]] + [p["data"].get("text", "")[:5000] for p in signup_pages])
+            categories = classify(category_text, CONFIG)
+            has_phone_form = bool(phone_forms)
+            has_marketing_disclosure = bool(policy_hits)
+            qualifies = has_phone_form and has_marketing_disclosure
+            existing_site = records.get(domain, {})
+            site = {
+                **existing_site,
                 "domain": domain,
-                "url": page.get("final_url", result["url"]),
+                "url": page["final_url"],
                 "title": page.get("title") or result["title"],
                 "search_snippet": result["search_snippet"][:500],
-                "categories": categories,
-                "phone_language": phone_hits,
-                "privacy_language": privacy_hits,
-                "privacy_url": page.get("privacy_url", ""),
-                "privacy_policy_checked": bool(privacy_text),
+                "categories": sorted(set(existing_site.get("categories", []) + categories)),
+                "signup_pages_checked": sorted(set(existing_site.get("signup_pages_checked", []) + [p["url"] for p in signup_pages])),
+                "phone_form_detected": has_phone_form or existing_site.get("phone_form_detected", False),
+                "phone_forms": (existing_site.get("phone_forms", []) + phone_forms)[-20:],
+                "privacy_url": privacy_url or existing_site.get("privacy_url", ""),
+                "privacy_policy_checked": bool(policy_text) or existing_site.get("privacy_policy_checked", False),
+                "marketing_disclosure_patterns": sorted(set(existing_site.get("marketing_disclosure_patterns", []) + policy_hits)),
+                "explicit_telemarketing_terms": sorted(set(existing_site.get("explicit_telemarketing_terms", []) + explicit_hits)),
+                "privacy_evidence_excerpts": list(dict.fromkeys(existing_site.get("privacy_evidence_excerpts", []) + excerpts))[:12],
+                "qualified_phone_and_marketing_disclosure": qualifies or existing_site.get("qualified_phone_and_marketing_disclosure", False),
+                "search_queries": sorted(set(existing_site.get("search_queries", []) + [query])),
                 "http_status": page.get("status"),
-                "search_queries": [query],
-                "first_seen": utc_now(),
+                "first_seen": existing_site.get("first_seen", utc_now()),
                 "last_seen": utc_now(),
-                "review_status": "unreviewed",
-                "notes": ""
+                "review_status": existing_site.get("review_status", "unreviewed"),
+                "notes": existing_site.get("notes", "")
             }
-            time.sleep(1.0)
+            records[domain] = site
+            time.sleep(delay)
 
-    sites = sorted(records.values(), key=lambda item: (item.get("review_status") != "unreviewed", item["domain"]))
-    payload = {
-        "updated_at": utc_now(),
-        "site_count": len(sites),
-        "sites": sites
-    }
+    sites = sorted(records.values(), key=lambda item: (
+        not item.get("qualified_phone_and_marketing_disclosure", False),
+        not bool(item.get("explicit_telemarketing_terms")),
+        item["domain"]))
+    qualified = sum(1 for s in sites if s.get("qualified_phone_and_marketing_disclosure"))
+    explicit = sum(1 for s in sites if s.get("explicit_telemarketing_terms"))
+    payload = {"updated_at": utc_now(), "site_count": len(sites), "qualified_count": qualified,
+               "explicit_telemarketing_count": explicit, "sites": sites}
     output_path.write_text(json.dumps(payload, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
-    print(f"Saved {len(sites)} domains to {output_path}")
-
-
+    print(f"Saved {len(sites)} total domains; {qualified} with phone form + marketing disclosure; {explicit} with explicit telemarketing wording.")
 if __name__ == "__main__":
     main()
