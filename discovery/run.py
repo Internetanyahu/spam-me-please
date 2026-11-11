@@ -143,10 +143,14 @@ def main() -> None:
                 continue
             page = fetch_page(result["url"], session, timeout)
             page_text = page.get("text", "")
+            privacy_page = {}
+            if page.get("privacy_url"):
+                privacy_page = fetch_page(page["privacy_url"], session, timeout)
+            privacy_text = privacy_page.get("text", "")
             combined = " ".join([result["title"], result["search_snippet"], page_text])
             categories = classify(combined, config)
             phone_hits = matching_terms(combined, config.get("phone_terms", []))
-            privacy_hits = matching_terms(combined, config.get("privacy_terms", []))
+            privacy_hits = matching_terms(privacy_text, config.get("privacy_terms", []))
             if domain in records:
                 site = records[domain]
                 site["categories"] = sorted(set(site.get("categories", []) + categories))
@@ -156,6 +160,8 @@ def main() -> None:
                 site["last_seen"] = utc_now()
                 if page.get("privacy_url"):
                     site["privacy_url"] = page["privacy_url"]
+                    site["privacy_policy_checked"] = bool(privacy_text)
+                site["privacy_language"] = sorted(set(site.get("privacy_language", []) + privacy_hits))
                 continue
 
             records[domain] = {
@@ -167,6 +173,7 @@ def main() -> None:
                 "phone_language": phone_hits,
                 "privacy_language": privacy_hits,
                 "privacy_url": page.get("privacy_url", ""),
+                "privacy_policy_checked": bool(privacy_text),
                 "http_status": page.get("status"),
                 "search_queries": [query],
                 "first_seen": utc_now(),
