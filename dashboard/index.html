@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Spam Me Please — Discovery Dashboard</title>
+<style>
+:root{color-scheme:dark;--bg:#101318;--panel:#191f28;--line:#303a48;--text:#edf2f7;--muted:#a5b0bf;--accent:#8bb8ff}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--text);font:15px/1.5 system-ui,sans-serif}
+header{padding:28px max(20px,calc((100% - 1100px)/2));border-bottom:1px solid var(--line);background:#151b23}
+h1{margin:0 0 6px;font-size:25px}p{margin:6px 0;color:var(--muted)}main{max-width:1100px;margin:24px auto;padding:0 18px}
+.notice{padding:13px 16px;border:1px solid #66522b;background:#2a2419;border-radius:9px;color:#f0dfbd;margin-bottom:18px}
+.controls{display:grid;grid-template-columns:2fr 1fr 1fr;gap:10px;margin-bottom:16px}
+input,select{width:100%;padding:11px;background:var(--panel);border:1px solid var(--line);border-radius:7px;color:var(--text)}
+.stats{color:var(--muted);margin:10px 0}.site{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:16px;margin:10px 0}
+.site h2{font-size:17px;margin:0 0 3px}.site a{color:var(--accent);overflow-wrap:anywhere}
+.meta{font-size:13px;color:var(--muted)}.tags{display:flex;flex-wrap:wrap;gap:6px;margin:9px 0}
+.tag{font-size:12px;padding:3px 8px;border-radius:20px;background:#293747;color:#d7e7fa}
+details{margin-top:9px}summary{cursor:pointer;color:var(--accent)}.empty{padding:28px;text-align:center;color:var(--muted)}
+@media(max-width:650px){.controls{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<header><h1>Spam Me Please</h1><p>Public website discovery and manual review catalog</p></header>
+<main>
+<div class="notice">Research catalog only. No phone numbers are submitted and no accounts or forms are completed automatically. Verify each site's terms and privacy policy yourself.</div>
+<div class="controls">
+<input id="search" type="search" placeholder="Search domains, titles, or terms…">
+<select id="category"><option value="">All categories</option><option value="sweepstakes">Sweepstakes</option><option value="rewards">Rewards</option><option value="surveys">Surveys</option><option value="ad_supported_media">Ad-supported media</option></select>
+<select id="status"><option value="">All review statuses</option><option value="unreviewed">Unreviewed</option><option value="approved">Reviewed</option><option value="skip">Skip</option></select>
+</div>
+<div class="stats" id="stats">Loading catalog…</div>
+<section id="results"></section>
+</main>
+<script>
+const $=id=>document.getElementById(id);
+let sites=[];
+function esc(value){return String(value??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));}
+function render(){
+ const q=$("search").value.toLowerCase(),cat=$("category").value,status=$("status").value;
+ const filtered=sites.filter(s=>{
+  const hay=[s.domain,s.title,s.search_snippet,(s.phone_language||[]).join(" "),(s.privacy_language||[]).join(" ")].join(" ").toLowerCase();
+  return (!q||hay.includes(q))&&(!cat||(s.categories||[]).includes(cat))&&(!status||s.review_status===status);
+ });
+ $("stats").textContent=filtered.length+" of "+sites.length+" sites · Catalog is refreshed by GitHub Actions";
+ $("results").innerHTML=filtered.length?filtered.map(s=>`
+ <article class="site"><h2>${esc(s.title||s.domain)}</h2><a href="${esc(s.url)}" target="_blank" rel="noopener noreferrer">${esc(s.domain)}</a>
+ <div class="meta">First seen: ${esc((s.first_seen||"").slice(0,10))} · Status: ${esc(s.review_status||"unreviewed")}</div>
+ <div class="tags">${(s.categories||[]).map(x=>'<span class="tag">'+esc(x)+'</span>').join("")}</div>
+ <p>${esc(s.search_snippet||"No search excerpt available.")}</p>
+ <details><summary>Research signals</summary>
+ <p><b>Phone-related wording:</b> ${esc((s.phone_language||[]).join(", ")||"Not detected")}</p>
+ <p><b>Privacy-related wording:</b> ${esc((s.privacy_language||[]).join(", ")||"Not detected")}</p>
+ <p><b>Privacy policy:</b> ${s.privacy_url?'<a target="_blank" rel="noopener noreferrer" href="'+esc(s.privacy_url)+'">Open policy</a>':"No policy link detected"}</p>
+ <p><b>Search phrases:</b> ${esc((s.search_queries||[]).join(" · "))}</p></details></article>`).join(""):'<div class="empty">No matching sites. Run the discovery workflow to populate the catalog.</div>';
+}
+async function init(){try{const r=await fetch("../data/discovered_sites.json");if(!r.ok)throw Error("catalog unavailable");const data=await r.json();sites=data.sites||[];render();}catch(e){$("stats").textContent="Could not load catalog. Open this page through the deployed GitHub Pages site.";}}
+["search","category","status"].forEach(id=>$(id).addEventListener(id==="search"?"input":"change",render));
+init();
+</script>
+</body>
+</html>
