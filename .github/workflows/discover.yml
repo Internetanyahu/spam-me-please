@@ -7,6 +7,8 @@ on:
 
 permissions:
   contents: write
+  pages: write
+  id-token: write
 
 concurrency:
   group: website-discovery
@@ -32,6 +34,17 @@ jobs:
       - name: Discover and classify public websites
         run: python discovery/run.py
 
+      - name: Prepare dashboard site
+        run: |
+          mkdir -p _site/data
+          cp dashboard/index.html _site/index.html
+          cp data/discovered_sites.json _site/data/discovered_sites.json
+
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+
       - name: Commit catalog updates
         run: |
           if git diff --quiet -- data/discovered_sites.json; then
@@ -43,3 +56,14 @@ jobs:
           git add data/discovered_sites.json
           git commit -m "Refresh discovered website catalog"
           git push
+
+  deploy:
+    needs: discover
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy dashboard
+        id: deployment
+        uses: actions/deploy-pages@v4
