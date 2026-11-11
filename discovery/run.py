@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import argparse
+import base64
 import json
 import re
 import time
@@ -31,7 +32,36 @@ def normalize_url(url: str) -> str:
 
 
 def domain_of(url: str) -> str:
-    return urlparse(url).netloc.lower().removeprefix("www.")
+    host = urlparse(url).hostname
+    return host.lower().removeprefix("www.") if host else ""
+
+
+SEARCH_HOSTS = {
+    "bing.com", "duckduckgo.com", "google.com", "yahoo.com",
+    "search.brave.com", "ecosia.org", "yandex.com"
+}
+
+
+def is_search_host(domain: str) -> bool:
+    return any(domain == host or domain.endswith("." + host) for host in SEARCH_HOSTS)
+
+
+def unwrap_bing_url(href: str) -> str:
+    parsed = urlparse(href)
+    host = (parsed.hostname or "").lower().removeprefix("www.")
+    if not is_search_host(host):
+        return href
+    encoded = parse_qs(parsed.query).get("u", [""])[0]
+    if encoded.startswith("a1"):
+        encoded = encoded[2:]
+    if encoded:
+        try:
+            decoded = base64.urlsafe_b64decode(encoded + "=" * (-len(encoded) % 4)).decode("utf-8")
+            if urlparse(decoded).scheme in {"http", "https"}:
+                return decoded
+        except (ValueError, UnicodeDecodeError):
+            pass
+    return ""
 
 
 def search_duckduckgo(query: str, session: requests.Session, limit: int) -> list[dict]:
@@ -74,8 +104,9 @@ def search_bing(query: str, session: requests.Session, limit: int) -> list[dict]
         snippet = item.select_one(".b_caption p")
         if not link or not link.get("href"):
             continue
-        url = normalize_url(link["href"])
-        if not url:
+        target = unwrap_bing_url(link["href"])
+        url = normalize_url(target)
+        if not url or is_search_host(domain_of(url)):
             continue
         found.append({
             "url": url,
@@ -171,9 +202,18 @@ def main() -> None:
         print(f"Query {query!r}: {len(results)} search results")
         for result in results:
             domain = domain_of(result["url"])
-            if not domain:
+            if not domain or is_search_host(domain):
                 continue
             page = fetch_page(result["url"], session, timeout)
+            # Reject tracking redirects, error pages, and non-HTML responses.
+            if not page.get("text") or not page.get("final_url"):
+                print(f"Skipping non-HTML or inaccessible result: {result['url']}")
+                continue
+            final_domain = domain_of(page["final_url"])
+            if not final_domain or is_search_host(final_domain):
+                print(f"Skipping search-engine redirect: {result['url']}")
+                continue
+            domain = final_domain
             page_text = page.get("text", "")
             privacy_page = {}
             if page.get("privacy_url"):
