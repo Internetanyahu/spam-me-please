@@ -1,7 +1,125 @@
 {
-  "updated_at": "2026-11-11T20:04:56+00:00",
-  "site_count": 1,
+  "updated_at": "2026-11-11T20:11:17+00:00",
+  "site_count": 46,
   "sites": [
+    {
+      "domain": "ad.com",
+      "url": "https://ad.com/",
+      "title": "Search & AI-Powered Digital Advertising | Ad.com",
+      "search_snippet": "Explore new opportunities with Ad.com. Eligible new advertisers can receive $5,000 in advertising credit to help expand their media …",
+      "categories": [
+        "rewards",
+        "ad_supported_media"
+      ],
+      "phone_language": [],
+      "privacy_language": [
+        "privacy policy",
+        "personal information",
+        "share",
+        "marketing partners"
+      ],
+      "privacy_url": "https://policies.google.com/privacy",
+      "privacy_policy_checked": true,
+      "http_status": 200,
+      "search_queries": [
+        "ad supported news website newsletter signup"
+      ],
+      "first_seen": "2026-11-11T20:10:43+00:00",
+      "last_seen": "2026-11-11T20:10:43+00:00",
+      "review_status": "unreviewed",
+      "notes": ""
+    },
+    {
+      "domain": "adhq.com",
+      "url": "https://www.adhq.com/",
+      "title": "AD - Together, we win.",
+      "search_snippet": "AD is a member owned group. We are passionate about bringing growth-oriented independent distributors and best-in-class …",
+      "categories": [],
+      "phone_language": [],
+      "privacy_language": [
+        "privacy policy",
+        "share",
+        "third parties"
+      ],
+      "privacy_url": "https://www.adhq.com/cookie-privacy-notice",
+      "privacy_policy_checked": true,
+      "http_status": 200,
+      "search_queries": [
+        "ad supported news website newsletter signup"
+      ],
+      "first_seen": "2026-11-11T20:10:47+00:00",
+      "last_seen": "2026-11-11T20:10:47+00:00",
+      "review_status": "unreviewed",
+      "notes": ""
+    },
+    {
+      "domain": "adobe.com",
+      "url": "https://www.adobe.com/acrobat/pdf-reader.html",
+      "title": "PDF reader: The original PDF solution | Adobe Acrobat Reader",
+      "search_snippet": "Get Adobe Acrobat Reader, the free PDF reader for desktop and mobile. View, share, sign, leave comments, and collaborate on …",
+      "categories": [],
+      "phone_language": [],
+      "privacy_language": [],
+      "privacy_url": "",
+      "privacy_policy_checked": false,
+      "http_status": 200,
+      "search_queries": [
+        "reader rewards program publisher"
+      ],
+      "first_seen": "2026-11-11T20:11:01+00:00",
+      "last_seen": "2026-11-11T20:11:01+00:00",
+      "review_status": "unreviewed",
+      "notes": ""
+    },
+    {
+      "domain": "apps.microsoft.com",
+      "url": "https://apps.microsoft.com/detail/9mw3cmw8jksd?hl=en-US&gl=US",
+      "title": "Microsoft Rewards - Free download and install on Windows | Microsoft Store",
+      "search_snippet": "Keep Rewards within easy reach. The Microsoft Rewards app for Windows puts your rewards experience right on your desktop, …",
+      "categories": [
+        "rewards"
+      ],
+      "phone_language": [],
+      "privacy_language": [],
+      "privacy_url": "",
+      "privacy_policy_checked": false,
+      "http_status": 200,
+      "search_queries": [
+        "reader rewards program publisher",
+        "rewards program sign up points official"
+      ],
+      "first_seen": "2026-11-11T20:10:07+00:00",
+      "last_seen": "2026-11-11T20:11:04+00:00",
+      "review_status": "unreviewed",
+      "notes": ""
+    },
+    {
+      "domain": "architecturaldigest.com",
+      "url": "https://www.architecturaldigest.com/",
+      "title": "Architectural Digest Homepage | Architectural Digest",
+      "search_snippet": "Founders of Eneby Home combined one-of-a-kind pieces with a natural palette to create their memorable family home. From …",
+      "categories": [
+        "ad_supported_media"
+      ],
+      "phone_language": [],
+      "privacy_language": [
+        "privacy policy",
+        "personal information",
+        "share",
+        "sell",
+        "third parties"
+      ],
+      "privacy_url": "http://www.condenast.com/privacy-policy#privacypolicy",
+      "privacy_policy_checked": true,
+      "http_status": 200,
+      "search_queries": [
+        "ad supported news website newsletter signup"
+      ],
+      "first_seen": "2026-11-11T20:10:45+00:00",
+      "last_seen": "2026-11-11T20:10:45+00:00",
+      "review_status": "unreviewed",
+      "notes": ""
+    },
     {
       "domain": "bing.com",
       "url": "https://www.bing.com:443/ck/a?toWww=1&redig=84F582A1197D4135BABD8EB9EBAC1B38",
@@ -30,6 +148,985 @@
       ],
       "first_seen": "2026-11-11T20:04:50+00:00",
       "last_seen": "2026-11-11T20:04:56+00:00",
+      "review_status": "unreviewed",
+      "notes": ""
+    },
+    {
+      "domain": "blog.solidsignal.com",
+      "url": "https://blog.solidsignal.com/tutorials/ad-logo-mean/",
+      "title": "What does the AD))) logo mean? - The Solid Signal Blog",
+      "search_snippet": "Mar 19, 2018 · Have you noticed this logo popping up on TV shows? It’s the logo for “Audio Description,” a separate audio source …",
+      "categories": [],
+      "phone_language": [],
+      "privacy_language": [
+        "privacy policy",
+        "personal information",
+        "share",
+        "sell",
+        "third parties"
+      ],
+      "privacy_url": "https://blog.solidsignal.com/privacy-policy/",
+      "privacy_policy_checked": true,
+      "http_status": 200,
+      "search_queries": [
+        "ad supported news website newsletter signup"
+      ],
+      "first_seen": "2026-11-11T20:10:49+00:00",
+      "last_seen": "2026-11-11T20:10:49+00:00",
+      "review_status": "unreviewed",
+      "notes": ""
+    },
+    {
+      "domain": "calendarr.com",
+      "url": "https://www.calendarr.com/united-states/bc-and-ad-their-meaning-and-differences/",
+      "title": "BC, AD, CE, and BCE: Meanings and Differences Explained - Calendarr",
+      "search_snippet": "As the name suggests, BC or Before Christ refers to the number of years before Christ was born. AD or Anno Domini is the period …",
+      "categories": [],
+      "phone_language": [],
+      "privacy_language": [
+        "privacy policy",
+        "share",
+        "third parties"
+      ],
+      "privacy_url": "https://www.calendarr.com/united-states/privacy/",
+      "privacy_policy_checked": true,
+      "http_status": 200,
+      "search_queries": [
+        "ad supported news website newsletter signup"
+      ],
+      "first_seen": "2026-11-11T20:10:52+00:00",
+      "last_seen": "2026-11-11T20:10:52+00:00",
+      "review_status": "unreviewed",
+      "notes": ""
+    },
+    {
+      "domain": "consumercellular.com",
+      "url": "https://consumercellular.com/",
+      "title": "Consumer Cellular Cell Phones & Plans | Consumer Cellular",
+      "search_snippet": "Aug 4, 2026 · There are many reasons why customers just like you consistently choose Consumer Cellular. When Freedom Calls, …",
+      "categories": [
+        "rewards"
+      ],
+      "phone_language": [
+        "phone number"
+      ],
+      "privacy_language": [],
+      "privacy_url": "https://www.consumercellular.com/legal/privacyandsecurity",
+      "privacy_policy_checked": true,
+      "http_status": 200,
+      "search_queries": [
+        "consumer product testing panel apply"
+      ],
+      "first_seen": "2026-11-11T20:11:10+00:00",
+      "last_seen": "2026-11-11T20:11:14+00:00",
+      "review_status": "unreviewed",
+      "notes": ""
+    },
+    {
+      "domain": "consumerreports.org",
+      "url": "https://www.consumerreports.org/",
+      "title": "Product Reviews and Ratings, Buying Advice and Consumer Advocacy - Consumer Reports",
+      "search_snippet": "Get unbiased ratings and reviews for 10,000+ products and services from Consumer Reports, plus trusted advice and in-depth …",
+      "categories": [
+        "rewards",
+        "surveys",
+        "ad_supported_media"
+      ],
+      "phone_language": [],
+      "privacy_language": [
+        "personal information",
+        "share",
+        "sell"
+      ],
+      "privacy_url": "https://www.consumerreports.org/digital-security-privacy/",
+      "privacy_policy_checked": true,
+      "http_status": 200,
+      "search_queries": [
+        "consumer product testing panel apply"
+      ],
+      "first_seen": "2026-11-11T20:11:12+00:00",
+      "last_seen": "2026-11-11T20:11:12+00:00",
+      "review_status": "unreviewed",
+      "notes": ""
+    },
+    {
+      "domain": "consumersenergy.com",
+      "url": "https://www.consumersenergy.com/login",
+      "title": "Login | Consumers Energy",
+      "search_snippet": "Log in to view and pay bills, get outage alerts and payment reminders and manage your account.",
+      "categories": [
+        "rewards"
+      ],
+      "phone_language": [],
+      "privacy_language": [
+        "personal information",
+        "privacy policy",
+        "sell",
+        "share",
+        "third parties"
+      ],
+      "privacy_url": "https://www.consumersenergy.com/privacy",
+      "privacy_policy_checked": true,
+      "http_status": 200,
+      "search_queries": [
+        "consumer product testing panel apply"
+      ],
+      "first_seen": "2026-11-11T20:11:09+00:00",
+      "last_seen": "2026-11-11T20:11:17+00:00",
+      "review_status": "unreviewed",
+      "notes": ""
+    },
+    {
+      "domain": "crazygames.com",
+      "url": "https://www.crazygames.com/",
+      "title": "Free Online Games on CrazyGames | Play Now!",
+      "search_snippet": "Play free online games at CrazyGames, the best place to play high-quality browser games. We add new games every day. Have fun!",
+      "categories": [
+        "rewards"
+      ],
+      "phone_language": [],
+      "privacy_language": [
+        "privacy policy",
+        "personal information",
+        "share",
+        "sell"
+      ],
+      "privacy_url": "https://www.crazygames.com/privacy-policy",
+      "privacy_policy_checked": true,
+      "http_status": 200,
+      "search_queries": [
+        "free samples sweepstakes signup"
+      ],
+      "first_seen": "2026-11-11T20:10:30+00:00",
+      "last_seen": "2026-11-11T20:10:30+00:00",
+      "review_status": "unreviewed",
+      "notes": ""
+    },
+    {
+      "domain": "dictionary.com",
+      "url": "https://www.dictionary.com/browse/get",
+      "title": "GET Definition & Meaning | Dictionary.com",
+      "search_snippet": "GET definition: to receive or come to have possession, use, or enjoyment of. See examples of get used in a sentence.",
+      "categories": [],
+      "phone_language": [],
+      "privacy_language": [
+        "privacy policy",
+        "personal information",
+        "share",
+        "sell"
+      ],
+      "privacy_url": "https://www.dictionary.com/terms-and-privacy",
+      "privacy_policy_checked": true,
+      "http_status": 200,
+      "search_queries": [
+        "get paid to take surveys panel"
+      ],
+      "first_seen": "2026-11-11T20:10:20+00:00",
+      "last_seen": "2026-11-11T20:10:20+00:00",
+      "review_status": "unreviewed",
+      "notes": ""
+    },
+    {
+      "domain": "elevenreader.io",
+      "url": "https://elevenreader.io/",
+      "title": "Free Text Read Aloud App | ElevenReader",
+      "search_snippet": "Turn any reading into natural-sounding audio. PDFs, articles, docs, web novels. Simply upload and press play. 200,000+ bestsellers, …",
+      "categories": [],
+      "phone_language": [],
+      "privacy_language": [],
+      "privacy_url": "",
+      "privacy_policy_checked": false,
+      "http_status": 200,
+      "search_queries": [
+        "reader rewards program publisher"
+      ],
+      "first_seen": "2026-11-11T20:11:03+00:00",
+      "last_seen": "2026-11-11T20:11:03+00:00",
+      "review_status": "unreviewed",
+      "notes": ""
+    },
+    {
+      "domain": "en.wikipedia.org",
+      "url": "https://en.wikipedia.org/wiki/Get",
+      "title": "Get - Wikipedia",
+      "search_snippet": "This disambiguation page lists articles associated with the title Get. If an internal link incorrectly led you here, you may wish to …",
+      "categories": [
+        "ad_supported_media"
+      ],
+      "phone_language": [],
+      "privacy_language": [
+        "personal information",
+        "privacy policy",
+        "sell",
+        "share",
+        "third parties"
+      ],
+      "privacy_url": "https://en.wikipedia.org/wiki/Consumer_privacy",
+      "privacy_policy_checked": true,
+      "http_status": 200,
+      "search_queries": [
+        "ad supported news website newsletter signup",
+        "consumer product testing panel apply",
+        "free samples sweepstakes signup",
+        "get paid to take surveys panel"
+      ],
+      "first_seen": "2026-11-11T20:10:25+00:00",
+      "last_seen": "2026-11-11T20:11:10+00:00",
+      "review_status": "unreviewed",
+      "notes": ""
+    },
+    {
+      "domain": "en.wiktionary.org",
+      "url": "https://en.wiktionary.org/wiki/get",
+      "title": "get - Wiktionary, the free dictionary",
+      "search_snippet": "Oct 23, 2026 · \"get\" is one of the most common verbs in English, and the many meanings may be confusing for language learners. …",
+      "categories": [],
+      "phone_language": [],
+      "privacy_language": [
+        "privacy policy",
+        "personal information",
+        "share",
+        "sell",
+        "third parties"
+      ],
+      "privacy_url": "https://foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Privacy_policy",
+      "privacy_policy_checked": true,
+      "http_status": 200,
+      "search_queries": [
+        "get paid to take surveys panel"
+      ],
+      "first_seen": "2026-11-11T20:10:22+00:00",
+      "last_seen": "2026-11-11T20:10:22+00:00",
+      "review_status": "unreviewed",
+      "notes": ""
+    },
+    {
+      "domain": "explore.microsoft.com",
+      "url": "https://explore.microsoft.com/en-us/bing/features/rewards?form=MA13FV",
+      "title": "Bing Rewards | Microsoft Bing",
+      "search_snippet": "There are several ways to earn points, like searching with Bing, reading articles on MSN, downloading the Bing mobile app, using …",
+      "categories": [
+        "sweepstakes",
+        "rewards"
+      ],
+      "phone_language": [],
+      "privacy_language": [],
+      "privacy_url": "",
+      "privacy_policy_checked": false,
+      "http_status": 200,
+      "search_queries": [
+        "rewards program sign up points official"
+      ],
+      "first_seen": "2026-11-11T20:09:47+00:00",
+      "last_seen": "2026-11-11T20:09:47+00:00",
+      "review_status": "unreviewed",
+      "notes": ""
+    },
+    {
+      "domain": "forms.cloud.microsoft",
+      "url": "https://forms.cloud.microsoft/",
+      "title": "Microsoft Forms - Free tool to create online surveys, forms, polls, and quizzes",
+      "search_snippet": "Use Microsoft Forms to easily create online surveys, forms, quizzes and questionnaires. AI powered, free survey tool from Microsoft.",
+      "categories": [
+        "surveys"
+      ],
+      "phone_language": [],
+      "privacy_language": [],
+      "privacy_url": "",
+      "privacy_policy_checked": false,
+      "http_status": 200,
+      "search_queries": [
+        "survey panel join online surveys official"
+      ],
+      "first_seen": "2026-11-11T20:10:10+00:00",
+      "last_seen": "2026-11-11T20:10:10+00:00",
+      "review_status": "unreviewed",
+      "notes": ""
+    },
+    {
+      "domain": "foxit.com",
+      "url": "https://www.foxit.com/pdf-reader/",
+      "title": "Free PDF Reader: Download and View PDFs | Foxit",
+      "search_snippet": "Foxit PDF Reader stands out as a fast, user-friendly, and free PDF reader packed with advanced tools for personal and business …",
+      "categories": [],
+      "phone_language": [],
+      "privacy_language": [
+        "privacy policy",
+        "personal information",
+        "share",
+        "sell"
+      ],
+      "privacy_url": "https://www.foxit.com/company/privacy-policy/",
+      "privacy_policy_checked": true,
+      "http_status": 200,
+      "search_queries": [
+        "reader rewards program publisher"
+      ],
+      "first_seen": "2026-11-11T20:11:00+00:00",
+      "last_seen": "2026-11-11T20:11:00+00:00",
+      "review_status": "unreviewed",
+      "notes": ""
+    },
+    {
+      "domain": "freebieshark.com",
+      "url": "https://www.freebieshark.com/sweepstakes",
+      "title": "Sweepstakes & Instant Win Games – Updated Daily | FreebieShark",
+      "search_snippet": "Browse today's best sweepstakes and instant win games updated daily. Enter to win cash, gift cards, trips & more. Free to enter, no …",
+      "categories": [
+        "sweepstakes",
+        "rewards"
+      ],
+      "phone_language": [],
+      "privacy_language": [
+        "privacy policy",
+        "personal information",
+        "share",
+        "sell",
+        "third parties"
+      ],
+      "privacy_url": "https://www.freebieshark.com/privacy-policy",
+      "privacy_policy_checked": true,
+      "http_status": 200,
+      "search_queries": [
+        "sweepstakes enter to win official rules"
+      ],
+      "first_seen": "2026-11-11T20:09:40+00:00",
+      "last_seen": "2026-11-11T20:09:40+00:00",
+      "review_status": "unreviewed",
+      "notes": ""
+    },
+    {
+      "domain": "freegames.org",
+      "url": "https://freegames.org/",
+      "title": "Free Games â 100% Free Online Games | FreeGames.org",
+      "search_snippet": "Play free games with no downloads, sign-up or disruptive video ads. Mahjong, Solitaire, Bubble Shooter, puzzles and more, from a …",
+      "categories": [
+        "surveys"
+      ],
+      "phone_language": [],
+      "privacy_language": [
+        "privacy policy",
+        "personal information"
+      ],
+      "privacy_url": "https://freegames.org/privacy/",
+      "privacy_policy_checked": true,
+      "http_status": 200,
+      "search_queries": [
+        "free samples sweepstakes signup"
+      ],
+      "first_seen": "2026-11-11T20:10:32+00:00",
+      "last_seen": "2026-11-11T20:10:32+00:00",
+      "review_status": "unreviewed",
+      "notes": ""
+    },
+    {
+      "domain": "friv.com",
+      "url": "https://www.friv.com/",
+      "title": "FrivÂ® | FRIV.COM : The Best Free Games [Jogos | Juegos]",
+      "search_snippet": "A safe place to play free online games on your computer, phone or tablet! No downloads. No in-app purchases. No nagging. Just …",
+      "categories": [],
+      "phone_language": [],
+      "privacy_language": [
+        "privacy policy",
+        "personal information",
+        "share",
+        "sell"
+      ],
+      "privacy_url": "https://www.friv.com/privacy.html",
+      "privacy_policy_checked": true,
+      "http_status": 200,
+      "search_queries": [
+        "free samples sweepstakes signup"
+      ],
+      "first_seen": "2026-11-11T20:10:31+00:00",
+      "last_seen": "2026-11-11T20:10:31+00:00",
+      "review_status": "unreviewed",
+      "notes": ""
+    },
+    {
+      "domain": "get.adobe.com",
+      "url": "https://get.adobe.com/reader/",
+      "title": "Adobe - Download Adobe Acrobat Reader",
+      "search_snippet": "Download free Adobe Acrobat Reader software for your Windows, Mac OS and Android devices to view, print, and comment on PDF …",
+      "categories": [],
+      "phone_language": [],
+      "privacy_language": [],
+      "privacy_url": "",
+      "privacy_policy_checked": false,
+      "http_status": 200,
+      "search_queries": [
+        "reader rewards program publisher"
+      ],
+      "first_seen": "2026-11-11T20:10:54+00:00",
+      "last_seen": "2026-11-11T20:10:56+00:00",
+      "review_status": "unreviewed",
+      "notes": ""
+    },
+    {
+      "domain": "microsoft.com",
+      "url": "https://www.microsoft.com/en-us/microsoft-365/online-surveys-polls-quizzes",
+      "title": "Surveys, Polls, and Quizzes | Microsoft Forms",
+      "search_snippet": "Get feedback effortlessly with simplified surveys, polls, and quizzes.",
+      "categories": [
+        "surveys"
+      ],
+      "phone_language": [],
+      "privacy_language": [
+        "privacy policy"
+      ],
+      "privacy_url": "https://www.microsoft.com/en-us/privacy?icid=DSM_Footer_Company_Privacy",
+      "privacy_policy_checked": true,
+      "http_status": 200,
+      "search_queries": [
+        "survey panel join online surveys official"
+      ],
+      "first_seen": "2026-11-11T20:10:12+00:00",
+      "last_seen": "2026-11-11T20:10:12+00:00",
+      "review_status": "unreviewed",
+      "notes": ""
+    },
+    {
+      "domain": "msn.com",
+      "url": "https://www.msn.com/en-us/play",
+      "title": "MSN",
+      "search_snippet": "Play free online games in MSN, including Solitaire, Crosswords, Word Games and more. Play arcade, puzzle, strategy, sports and …",
+      "categories": [],
+      "phone_language": [],
+      "privacy_language": [],
+      "privacy_url": "",
+      "privacy_policy_checked": false,
+      "http_status": 200,
+      "search_queries": [
+        "free samples sweepstakes signup"
+      ],
+      "first_seen": "2026-11-11T20:10:35+00:00",
+      "last_seen": "2026-11-11T20:10:35+00:00",
+      "review_status": "unreviewed",
+      "notes": ""
+    },
+    {
+      "domain": "naturalreaders.com",
+      "url": "https://www.naturalreaders.com/online",
+      "title": "Free Text to Speech with Gemini and ChatGPT AI Voices",
+      "search_snippet": "Text-to-speech (TTS) reads aloud text from documents, PDFs, websites, and books using natural-sounding AI voices. NaturalReader …",
+      "categories": [],
+      "phone_language": [],
+      "privacy_language": [],
+      "privacy_url": "",
+      "privacy_policy_checked": false,
+      "http_status": 200,
+      "search_queries": [
+        "reader rewards program publisher"
+      ],
+      "first_seen": "2026-11-11T20:10:55+00:00",
+      "last_seen": "2026-11-11T20:10:55+00:00",
+      "review_status": "unreviewed",
+      "notes": ""
+    },
+    {
+      "domain": "nycforfree.co",
+      "url": "https://www.nycforfree.co/",
+      "title": "Free Things to Do in NYC — Events & Freebies | NYC for FREE",
+      "search_snippet": "Discover free events, freebies, free museum days and paid studies across New York City. Updated daily and filtered by date, …",
+      "categories": [
+        "sweepstakes",
+        "ad_supported_media"
+      ],
+      "phone_language": [],
+      "privacy_language": [
+        "privacy policy",
+        "personal information",
+        "share",
+        "sell",
+        "third parties"
+      ],
+      "privacy_url": "https://www.nycforfree.co/privacy-policy",
+      "privacy_policy_checked": true,
+      "http_status": 200,
+      "search_queries": [
+        "free samples sweepstakes signup"
+      ],
+      "first_seen": "2026-11-11T20:10:39+00:00",
+      "last_seen": "2026-11-11T20:10:39+00:00",
+      "review_status": "unreviewed",
+      "notes": ""
+    },
+    {
+      "domain": "onlinegames.io",
+      "url": "https://www.onlinegames.io/t/free/",
+      "title": "Free Games",
+      "search_snippet": "Browse our full collection of completely free online games — no download, no sign-up, no payment required. Play hundreds of free …",
+      "categories": [],
+      "phone_language": [],
+      "privacy_language": [
+        "privacy policy",
+        "personal information",
+        "share",
+        "third parties"
+      ],
+      "privacy_url": "https://www.onlinegames.io/privacy-policy/",
+      "privacy_policy_checked": true,
+      "http_status": 200,
+      "search_queries": [
+        "free samples sweepstakes signup"
+      ],
+      "first_seen": "2026-11-11T20:10:34+00:00",
+      "last_seen": "2026-11-11T20:10:34+00:00",
+      "review_status": "unreviewed",
+      "notes": ""
+    },
+    {
+      "domain": "poki.com",
+      "url": "https://poki.com/",
+      "title": "Free Online Games at Poki - Play Now!",
+      "search_snippet": "Play free online games at Poki, the #1 website for instant web games. Explore exclusive titles, popular favorites, and new game …",
+      "categories": [],
+      "phone_language": [],
+      "privacy_language": [
+        "sell"
+      ],
+      "privacy_url": "https://poki.com/en/privacy",
+      "privacy_policy_checked": true,
+      "http_status": 200,
+      "search_queries": [
+        "free samples sweepstakes signup"
+      ],
+      "first_seen": "2026-11-11T20:10:28+00:00",
+      "last_seen": "2026-11-11T20:10:28+00:00",
+      "review_status": "unreviewed",
+      "notes": ""
+    },
+    {
+      "domain": "support.microsoft.com",
+      "url": "https://support.microsoft.com/en-us/accounts-billing/rewards/learn-about-microsoft-rewards",
+      "title": "Learn about Microsoft Rewards | Microsoft Support",
+      "search_snippet": "Microsoft Rewards doesn’t ask for a commitment or fees - it's included in your Microsoft account - head to the Rewards page, sign in …",
+      "categories": [
+        "rewards",
+        "sweepstakes"
+      ],
+      "phone_language": [
+        "phone number",
+        "sms"
+      ],
+      "privacy_language": [
+        "privacy policy",
+        "share",
+        "third parties"
+      ],
+      "privacy_url": "https://privacy.microsoft.com/en-US/privacystatement",
+      "privacy_policy_checked": true,
+      "http_status": 200,
+      "search_queries": [
+        "rewards program sign up points official"
+      ],
+      "first_seen": "2026-11-11T20:10:06+00:00",
+      "last_seen": "2026-11-11T20:10:07+00:00",
+      "review_status": "unreviewed",
+      "notes": ""
+    },
+    {
+      "domain": "survey.com",
+      "url": "https://survey.com/",
+      "title": "Survey Home - Survey",
+      "search_snippet": "Curious if Survey is right for you? Chat with Suzie, our AI sales rep, to get quick answers and a personalized recommendation based …",
+      "categories": [
+        "rewards",
+        "surveys"
+      ],
+      "phone_language": [],
+      "privacy_language": [
+        "privacy policy",
+        "personal information",
+        "share",
+        "sell",
+        "third parties"
+      ],
+      "privacy_url": "https://survey.com/privacy-policy/",
+      "privacy_policy_checked": true,
+      "http_status": 200,
+      "search_queries": [
+        "survey panel join online surveys official"
+      ],
+      "first_seen": "2026-11-11T20:10:16+00:00",
+      "last_seen": "2026-11-11T20:10:16+00:00",
+      "review_status": "unreviewed",
+      "notes": ""
+    },
+    {
+      "domain": "survey123.arcgis.com",
+      "url": "https://survey123.arcgis.com/",
+      "title": "Account Login - ArcGIS Survey123",
+      "search_snippet": "ArcGIS Survey123 is a complete, form-centric solution for creating smart surveys & forms, collecting data via web or mobile devices …",
+      "categories": [
+        "surveys"
+      ],
+      "phone_language": [],
+      "privacy_language": [],
+      "privacy_url": "",
+      "privacy_policy_checked": false,
+      "http_status": 200,
+      "search_queries": [
+        "survey panel join online surveys official"
+      ],
+      "first_seen": "2026-11-11T20:10:13+00:00",
+      "last_seen": "2026-11-11T20:10:13+00:00",
+      "review_status": "unreviewed",
+      "notes": ""
+    },
+    {
+      "domain": "surveymonkey.com",
+      "url": "https://www.surveymonkey.com/",
+      "title": "SurveyMonkey: The World’s Most Popular Survey Platform",
+      "search_snippet": "SurveyMonkey is the world’s most popular survey software, built for business and loved by users. Easily create surveys and forms …",
+      "categories": [
+        "rewards",
+        "surveys"
+      ],
+      "phone_language": [],
+      "privacy_language": [
+        "personal information",
+        "third parties"
+      ],
+      "privacy_url": "https://www.surveymonkey.com/mp/legal/privacy/",
+      "privacy_policy_checked": true,
+      "http_status": 200,
+      "search_queries": [
+        "survey panel join online surveys official"
+      ],
+      "first_seen": "2026-11-11T20:10:09+00:00",
+      "last_seen": "2026-11-11T20:10:17+00:00",
+      "review_status": "unreviewed",
+      "notes": ""
+    },
+    {
+      "domain": "surveyplanet.com",
+      "url": "https://surveyplanet.com/",
+      "title": "Free Online Survey Maker | Unlimited Surveys | Surveyplanet",
+      "search_snippet": "Surveyplanet offers a tremendous set of free tools for designing your survey, sharing your survey online, and reviewing your survey …",
+      "categories": [
+        "rewards",
+        "surveys"
+      ],
+      "phone_language": [],
+      "privacy_language": [
+        "personal information",
+        "sell",
+        "third parties"
+      ],
+      "privacy_url": "https://surveyplanet.com/privacy-notice",
+      "privacy_policy_checked": true,
+      "http_status": 200,
+      "search_queries": [
+        "survey panel join online surveys official"
+      ],
+      "first_seen": "2026-11-11T20:10:14+00:00",
+      "last_seen": "2026-11-11T20:10:14+00:00",
+      "review_status": "unreviewed",
+      "notes": ""
+    },
+    {
+      "domain": "sweepstakesradar.com",
+      "url": "https://www.sweepstakesradar.com/",
+      "title": "Free Sweepstakes & Giveaways to Enter Right Now | Sweepstakes Radar",
+      "search_snippet": "Browse hundreds of free sweepstakes and giveaways — verified, updated daily, no purchase necessary. Win cash, cars, vacations, …",
+      "categories": [
+        "sweepstakes",
+        "rewards"
+      ],
+      "phone_language": [],
+      "privacy_language": [
+        "privacy policy",
+        "personal information",
+        "sell",
+        "third parties"
+      ],
+      "privacy_url": "https://www.sweepstakesradar.com/privacy-policy",
+      "privacy_policy_checked": true,
+      "http_status": 200,
+      "search_queries": [
+        "sweepstakes enter to win official rules"
+      ],
+      "first_seen": "2026-11-11T20:09:36+00:00",
+      "last_seen": "2026-11-11T20:09:36+00:00",
+      "review_status": "unreviewed",
+      "notes": ""
+    },
+    {
+      "domain": "sweepstakestoday.com",
+      "url": "https://www.sweepstakestoday.com/",
+      "title": "Sweepstakes and contests from SweepstakesToday.com",
+      "search_snippet": "Welcome to SweepstakesToday.com the free online sweepstakes website that offers great prizes to win. All brand name sponsors …",
+      "categories": [
+        "sweepstakes",
+        "rewards"
+      ],
+      "phone_language": [],
+      "privacy_language": [],
+      "privacy_url": "",
+      "privacy_policy_checked": false,
+      "http_status": 200,
+      "search_queries": [
+        "sweepstakes enter to win official rules"
+      ],
+      "first_seen": "2026-11-11T20:09:42+00:00",
+      "last_seen": "2026-11-11T20:09:42+00:00",
+      "review_status": "unreviewed",
+      "notes": ""
+    },
+    {
+      "domain": "textreader.cc",
+      "url": "https://textreader.cc/en",
+      "title": "TextReader - Free Online Text Reader",
+      "search_snippet": "TextReader is a free online text reader that supports multiple voice engines, speed adjustment, delay control, and file import. …",
+      "categories": [],
+      "phone_language": [],
+      "privacy_language": [
+        "privacy policy",
+        "personal information",
+        "share",
+        "third parties"
+      ],
+      "privacy_url": "https://textreader.cc/en/privacy.html",
+      "privacy_policy_checked": true,
+      "http_status": 200,
+      "search_queries": [
+        "reader rewards program publisher"
+      ],
+      "first_seen": "2026-11-11T20:10:56+00:00",
+      "last_seen": "2026-11-11T20:10:56+00:00",
+      "review_status": "unreviewed",
+      "notes": ""
+    },
+    {
+      "domain": "thefreebieguy.com",
+      "url": "https://thefreebieguy.com/current-sweepstakes-and-giveaways/",
+      "title": "The Best Current Sweepstakes, Contests & Giveaways - The Freebie Guy®",
+      "search_snippet": "Looking for legit sweepstakes and giveaways? The Freebie Guy finds the best free contests, instant win games, gift card giveaways, …",
+      "categories": [
+        "sweepstakes",
+        "rewards",
+        "ad_supported_media"
+      ],
+      "phone_language": [],
+      "privacy_language": [
+        "privacy policy",
+        "personal information",
+        "share",
+        "sell",
+        "third parties"
+      ],
+      "privacy_url": "https://thefreebieguy.com/privacy-policy/",
+      "privacy_policy_checked": true,
+      "http_status": 200,
+      "search_queries": [
+        "sweepstakes enter to win official rules"
+      ],
+      "first_seen": "2026-11-11T20:09:41+00:00",
+      "last_seen": "2026-11-11T20:09:41+00:00",
+      "review_status": "unreviewed",
+      "notes": ""
+    },
+    {
+      "domain": "ttsreader.com",
+      "url": "https://ttsreader.com/",
+      "title": "TTSReader | Text To Speech Reader Online. Accurate & Free",
+      "search_snippet": "Free online Text To Speech Reader. Accurate with natural voices, multilingual. Listen online, download speech & publish. Unlimited …",
+      "categories": [
+        "rewards"
+      ],
+      "phone_language": [],
+      "privacy_language": [
+        "privacy policy",
+        "personal information",
+        "share",
+        "sell",
+        "third parties"
+      ],
+      "privacy_url": "https://ttsreader.com/docs/legal/privacy/",
+      "privacy_policy_checked": true,
+      "http_status": 200,
+      "search_queries": [
+        "reader rewards program publisher"
+      ],
+      "first_seen": "2026-11-11T20:10:57+00:00",
+      "last_seen": "2026-11-11T20:10:57+00:00",
+      "review_status": "unreviewed",
+      "notes": ""
+    },
+    {
+      "domain": "tubitv.com",
+      "url": "https://tubitv.com/",
+      "title": "Watch Free Movies and TV Shows Online | Tubi",
+      "search_snippet": "Watch free movies and TV shows online in HD on any device. Tubi offers streaming movies in genres like Action, Horror, Sci-Fi, …",
+      "categories": [],
+      "phone_language": [],
+      "privacy_language": [
+        "privacy policy",
+        "personal information",
+        "share"
+      ],
+      "privacy_url": "https://tubitv.com/static/privacy",
+      "privacy_policy_checked": true,
+      "http_status": 200,
+      "search_queries": [
+        "free samples sweepstakes signup"
+      ],
+      "first_seen": "2026-11-11T20:10:42+00:00",
+      "last_seen": "2026-11-11T20:10:42+00:00",
+      "review_status": "unreviewed",
+      "notes": ""
+    },
+    {
+      "domain": "vocabulary.com",
+      "url": "https://www.vocabulary.com/dictionary/get",
+      "title": "Get - Definition, Meaning & Synonyms | Vocabulary.com",
+      "search_snippet": "Get is one of those little words with a hundred applications. A common meaning is fetch, as in, go get a dictionary off the shelf.",
+      "categories": [
+        "rewards"
+      ],
+      "phone_language": [],
+      "privacy_language": [
+        "privacy policy",
+        "personal information",
+        "share",
+        "sell",
+        "third parties"
+      ],
+      "privacy_url": "https://www.vocabulary.com/privacy/",
+      "privacy_policy_checked": true,
+      "http_status": 200,
+      "search_queries": [
+        "get paid to take surveys panel"
+      ],
+      "first_seen": "2026-11-11T20:10:23+00:00",
+      "last_seen": "2026-11-11T20:10:23+00:00",
+      "review_status": "unreviewed",
+      "notes": ""
+    },
+    {
+      "domain": "wherecanistreamit.com",
+      "url": "https://wherecanistreamit.com/free",
+      "title": "Free Movies & TV Shows to Stream | Where Can I Stream It?",
+      "search_snippet": "Browse 176,203+ free movies and TV shows to stream with ads. Find free content on Tubi, Pluto TV, Peacock, The Roku Channel, …",
+      "categories": [],
+      "phone_language": [],
+      "privacy_language": [
+        "privacy policy",
+        "personal information",
+        "share",
+        "sell",
+        "third parties"
+      ],
+      "privacy_url": "https://wherecanistreamit.com/privacy",
+      "privacy_policy_checked": true,
+      "http_status": 200,
+      "search_queries": [
+        "free samples sweepstakes signup"
+      ],
+      "first_seen": "2026-11-11T20:10:37+00:00",
+      "last_seen": "2026-11-11T20:10:37+00:00",
+      "review_status": "unreviewed",
+      "notes": ""
+    },
+    {
+      "domain": "winprizesonline.com",
+      "url": "https://www.winprizesonline.com/",
+      "title": "Sweepstakes 2026 - Free to Enter, Win Cash, Cars & Vacations | WinPrizesOnline",
+      "search_snippet": "Browse hundreds of free sweepstakes updated daily. Enter sweepstakes to win cash, cars, vacations and more - no purchase …",
+      "categories": [
+        "sweepstakes",
+        "ad_supported_media"
+      ],
+      "phone_language": [],
+      "privacy_language": [
+        "privacy policy",
+        "personal information",
+        "share",
+        "sell",
+        "third parties"
+      ],
+      "privacy_url": "https://www.winprizesonline.com/privacy.php",
+      "privacy_policy_checked": true,
+      "http_status": 200,
+      "search_queries": [
+        "sweepstakes enter to win official rules"
+      ],
+      "first_seen": "2026-11-11T20:09:44+00:00",
+      "last_seen": "2026-11-11T20:09:44+00:00",
+      "review_status": "unreviewed",
+      "notes": ""
+    },
+    {
+      "domain": "wowsweepstakes.com",
+      "url": "https://www.wowsweepstakes.com/",
+      "title": "Sweepstakes, Contests, Giveaways & More! WowSweepstakes.com",
+      "search_snippet": "Oct 22, 2026 · Browse and enter new online sweepstakes, contests, giveaways, games, and competitions today!",
+      "categories": [
+        "sweepstakes",
+        "ad_supported_media"
+      ],
+      "phone_language": [],
+      "privacy_language": [
+        "privacy policy",
+        "personal information",
+        "third parties"
+      ],
+      "privacy_url": "https://www.wowsweepstakes.com/privacy-policy",
+      "privacy_policy_checked": true,
+      "http_status": 200,
+      "search_queries": [
+        "sweepstakes enter to win official rules"
+      ],
+      "first_seen": "2026-11-11T20:09:35+00:00",
+      "last_seen": "2026-11-11T20:09:35+00:00",
+      "review_status": "unreviewed",
+      "notes": ""
+    },
+    {
+      "domain": "xbox.com",
+      "url": "https://www.xbox.com/en-US/rewards",
+      "title": "Earn Rewards with XBOX | XBOX",
+      "search_snippet": "READY TO START EARNING REWARDS WITH XBOX? Visit the Rewards hub across your devices to track your progress, claim …",
+      "categories": [
+        "sweepstakes",
+        "rewards"
+      ],
+      "phone_language": [],
+      "privacy_language": [],
+      "privacy_url": "https://aka.ms/yourcaliforniaprivacychoices",
+      "privacy_policy_checked": false,
+      "http_status": 200,
+      "search_queries": [
+        "rewards program sign up points official"
+      ],
+      "first_seen": "2026-11-11T20:10:04+00:00",
+      "last_seen": "2026-11-11T20:10:04+00:00",
+      "review_status": "unreviewed",
+      "notes": ""
+    },
+    {
+      "domain": "youtube.com",
+      "url": "https://www.youtube.com",
+      "title": "YouTube",
+      "search_snippet": "Feb 25, 2024 · 📚 In this lesson, you will learn 15 common ways that native speakers use the verb 'GET' in English at all levels -- from …",
+      "categories": [],
+      "phone_language": [],
+      "privacy_language": [
+        "marketing partners",
+        "personal information",
+        "privacy policy",
+        "share"
+      ],
+      "privacy_url": "https://www.youtube.com/t/privacy",
+      "privacy_policy_checked": true,
+      "http_status": 200,
+      "search_queries": [
+        "ad supported news website newsletter signup",
+        "get paid to take surveys panel"
+      ],
+      "first_seen": "2026-11-11T20:10:19+00:00",
+      "last_seen": "2026-11-11T20:10:51+00:00",
       "review_status": "unreviewed",
       "notes": ""
     }
