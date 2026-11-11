@@ -6,7 +6,7 @@ import re
 import time
 from datetime import datetime, timezone
 from pathlib import Path
-from urllib.parse import quote_plus, urljoin, urlparse, urlunparse
+from urllib.parse import parse_qs, quote_plus, unquote, urljoin, urlparse, urlunparse
 
 import requests
 from bs4 import BeautifulSoup
@@ -45,7 +45,12 @@ def search_duckduckgo(query: str, session: requests.Session, limit: int) -> list
         snippet = item.select_one(".result__snippet")
         if not link or not link.get("href"):
             continue
-        url = normalize_url(link["href"])
+        href = link["href"]
+        parsed_href = urlparse(href)
+        redirect_target = parse_qs(parsed_href.query).get("uddg", [""])[0]
+        if redirect_target:
+            href = unquote(redirect_target)
+        url = normalize_url(href)
         if not url:
             continue
         found.append({
