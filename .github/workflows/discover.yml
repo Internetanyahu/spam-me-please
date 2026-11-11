@@ -25,6 +25,8 @@ jobs:
   discover:
     runs-on: ubuntu-latest
     timeout-minutes: 45
+    outputs:
+      pages_artifact: ${{ steps.pages_upload.outcome }}
     steps:
       - name: Check out repository
         uses: actions/checkout@v4
@@ -41,22 +43,7 @@ jobs:
       - name: Discover and classify public websites
         run: python discovery/run.py
 
-      - name: Configure GitHub Pages
-        uses: actions/configure-pages@v5
-        with:
-          enablement: true
-
-      - name: Prepare dashboard site
-        run: |
-          mkdir -p _site/data
-          cp dashboard/index.html _site/index.html
-          cp data/discovered_sites.json _site/data/discovered_sites.json
-
-      - name: Upload Pages artifact
-        uses: actions/upload-pages-artifact@v3
-        with:
-          path: _site
-
+      # Persist discovery results before attempting the optional Pages upload.
       - name: Commit catalog updates
         run: |
           if git diff --quiet -- data/discovered_sites.json; then
@@ -69,8 +56,27 @@ jobs:
           git commit -m "Refresh discovered website catalog"
           git push
 
+      - name: Configure GitHub Pages
+        uses: actions/configure-pages@v5
+        with:
+          enablement: true
+
+      - name: Prepare dashboard site
+        run: |
+          mkdir -p _site/data
+          cp dashboard/index.html _site/index.html
+          cp data/discovered_sites.json _site/data/discovered_sites.json
+
+      - name: Upload Pages artifact
+        id: pages_upload
+        uses: actions/upload-pages-artifact@v3
+        continue-on-error: true
+        with:
+          path: _site
+
   deploy:
     needs: discover
+    if: needs.discover.outputs.pages_artifact == 'success'
     runs-on: ubuntu-latest
     environment:
       name: github-pages
