@@ -13,7 +13,7 @@ This project discovers and catalogs websites. It does **not** submit your phone 
 - Candidate pages are classified and deduplicated by domain.
 - The scanner looks for public privacy-policy links and phone-related language.
 - Results are written to `data/discovered_sites.json`.
-- A static dashboard lets you filter and inspect the catalog.
+- A static dashboard at the project Pages site lets you filter and inspect the catalog. Each result includes a direct website link and, when found, a direct privacy-policy link.
 
 No phone number or API key is required. The workflow does not request personal information.
 
