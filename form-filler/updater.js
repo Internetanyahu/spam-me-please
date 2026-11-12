@@ -122,7 +122,7 @@
     return root.name;
   }
   async function getUpdaterState() {
-    return (await chrome.storage.local.get("formFillerUpdaterState")).updaterState || {};
+    return (await chrome.storage.local.get("formFillerUpdaterState")).formFillerUpdaterState || {};
   }
   async function check(token) {
     const prior = await getUpdaterState();
@@ -130,7 +130,7 @@
     let appliedSha = prior.appliedSha;
     if (!appliedSha) {
       appliedSha = remoteSha;
-      await chrome.storage.local.set({ updaterState: { ...prior, appliedSha } });
+      await chrome.storage.local.set({ formFillerUpdaterState: { ...prior, appliedSha } });
     }
     const handle = await getHandle().catch(() => null);
     let permission = "none";
@@ -193,7 +193,7 @@
 
     const prior = await getUpdaterState();
     await chrome.storage.local.set({
-      updaterState: {
+      formFillerUpdaterState: {
         ...prior,
         appliedSha: remoteSha,
         lastApplied: new Date().toISOString(),
