@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Form Review Helper</title>
+<style>
+:root{color-scheme:dark}*{box-sizing:border-box}body{margin:0;width:360px;padding:15px;background:#111820;color:#edf2f7;font:13px/1.45 system-ui,sans-serif}
+h1{font-size:18px;margin:0 0 4px}p{color:#aeb9c7;margin:5px 0 12px}.note{padding:9px;border:1px solid #69572f;background:#292319;border-radius:7px;color:#f0dfbd}
+label{display:block;margin:9px 0 3px;color:#cbd5e1}input,select{width:100%;padding:8px;border:1px solid #394657;border-radius:6px;background:#1b2531;color:#fff}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:8px}.actions{display:flex;gap:8px;margin-top:12px}
+button{border:0;border-radius:6px;padding:9px 11px;background:#315e96;color:white;font-weight:650;cursor:pointer;flex:1}button.secondary{background:#34404d}button:disabled{opacity:.45;cursor:not-allowed}
+#status{min-height:35px;margin-top:10px;color:#b9c7d8;white-space:pre-wrap}.footer{border-top:1px solid #35404d;margin-top:12px;padding-top:9px;display:flex;justify-content:space-between;align-items:center}.footer button{flex:0;padding:7px 9px;font-size:12px}
+</style>
+</head>
+<body>
+<h1>Form Review Helper</h1>
+<p>Scan one page, select one form, and fill only its visible fields.</p>
+<div class="note">No form is submitted. Consent boxes, passwords, payment fields, and hidden fields are never filled. Your profile entries are not saved or sent to a server.</div>
+<div class="grid">
+<div><label for="firstName">First name</label><input id="firstName" autocomplete="off"></div>
+<div><label for="lastName">Last name</label><input id="lastName" autocomplete="off"></div>
+</div>
+<label for="email">Email</label><input id="email" type="email" autocomplete="off">
+<label for="phone">Phone</label><input id="phone" type="tel" autocomplete="off">
+<label for="street">Street address</label><input id="street" autocomplete="off">
+<div class="grid">
+<div><label for="city">City</label><input id="city" autocomplete="off"></div>
+<div><label for="state">State / province</label><input id="state" autocomplete="off"></div>
+</div>
+<label for="zip">ZIP / postal code</label><input id="zip" autocomplete="off">
+<div class="actions"><button id="scan">Scan this page</button></div>
+<label for="formSelect">Choose one form</label><select id="formSelect" disabled><option value="">Scan a page first</option></select>
+<div class="actions"><button id="fill" disabled>Fill selected form</button></div>
+<div id="status" role="status">Ready. Nothing has been filled.</div>
+<div class="footer"><span>v1.0.0 · no auto-submit</span><button class="secondary" id="updates">Updates</button></div>
+<script src="popup.js"></script>
+</body></html>
