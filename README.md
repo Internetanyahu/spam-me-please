@@ -41,3 +41,20 @@ Edit `config.json` to add search phrases, categories, and detection patterns. Ke
 The project catalogs public URLs, page titles, short search excerpts, detected form-field metadata, policy-language excerpts, and timestamps. It must not store phone numbers, email addresses, passwords, cookies, or submitted form contents. It does not submit forms, create accounts, send messages, bypass CAPTCHA, or evade rate limits. The user reviews each site and makes any participation decision manually.
 
 A detected disclosure does not prove that a company sells a phone number to a telemarketer. The evidence and the exact policy language must be checked manually.
+
+## Review checklist
+
+The dashboard displays every catalogued domain as a checklist. Checking an item marks it complete and moves it below unfinished items. Checklist state is stored in the browser's local storage; it is not written to the repository and does not sync between browsers.
+
+## Form Review Helper extension
+
+A separate Manifest V3 extension lives in `form-filler/`.
+
+- It scans the current page and lets the user select exactly one visible form.
+- It fills only visible, enabled text/email/telephone/address fields that can be identified from their labels or autocomplete metadata.
+- It does not fill consent checkboxes, passwords, payment fields, or hidden fields.
+- It never submits a form, creates an account, or operates across multiple sites.
+- Profile values are held only in the popup while it is open; they are not persisted or transmitted to a server.
+- To install, open `chrome://extensions`, enable Developer mode, choose **Load unpacked**, and select the repository's `form-filler/` folder.
+- Open **Updates** in the extension, save a fine-grained GitHub token restricted to this repository with Contents: Read-only, and link the same `form-filler/` folder once. The updater follows the PPUSA updater design: compare the remote Git tree, download only changed blobs, verify Git blob SHA-1 values, write changed files, and write `manifest.json` last. It does not use ZIP downloads.
+
