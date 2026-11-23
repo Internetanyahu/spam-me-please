@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-11-22T17:25:03+00:00",
-  "site_count": 642,
-  "qualified_count": 58,
+  "updated_at": "2026-11-23T21:41:41+00:00",
+  "site_count": 671,
+  "qualified_count": 61,
   "explicit_telemarketing_count": 8,
   "sites": [
     {
@@ -714,6 +714,18 @@
               "label": "Phone Number"
             }
           ]
+        },
+        {
+          "page_url": "https://www.career.com/contact-us",
+          "action": "",
+          "method": "GET",
+          "phone_fields": [
+            {
+              "name": "crr_contact_phone_number",
+              "type": "text",
+              "label": "Phone Number"
+            }
+          ]
         }
       ],
       "privacy_url": "https://www.career.com/legal/privacy-policy/california-privacy-rights",
@@ -735,7 +747,7 @@
       ],
       "http_status": 200,
       "first_seen": "2026-11-11T22:48:14+00:00",
-      "last_seen": "2026-11-22T17:21:03+00:00",
+      "last_seen": "2026-11-23T21:38:34+00:00",
       "review_status": "unreviewed",
       "notes": ""
     },
@@ -743,7 +755,7 @@
       "domain": "clubwyndham.wyndhamdestinations.com",
       "url": "https://clubwyndham.wyndhamdestinations.com/",
       "title": "Club Wyndham Timeshare – Adventure Is Calling",
-      "search_snippet": "More Vacations To Plan. More Room To Play. More Adventures To Book. As a Timeshare Owner, You Can Take Advantage of 240+ …",
+      "search_snippet": "Discover the renowned national parks, remarkable culture, and scenic views of the Mountain West in the summer issue of …",
       "categories": [
         "ad_supported_media",
         "rewards",
@@ -756,6 +768,23 @@
       ],
       "phone_form_detected": true,
       "phone_forms": [
+        {
+          "page_url": "https://clubwyndham.wyndhamdestinations.com/us/en/help",
+          "action": "",
+          "method": "GET",
+          "phone_fields": [
+            {
+              "name": "phoneNumber",
+              "type": "number  ",
+              "label": "Phone Number *"
+            },
+            {
+              "name": "legal1",
+              "type": "checkbox",
+              "label": "I agree that Wyndham Vacation Resorts may contact me at the above phone number and/or email address (regardless of do-no"
+            }
+          ]
+        },
         {
           "page_url": "https://clubwyndham.wyndhamdestinations.com/us/en/help",
           "action": "",
@@ -963,7 +992,7 @@
       ],
       "http_status": 200,
       "first_seen": "2026-11-11T22:51:09+00:00",
-      "last_seen": "2026-11-22T17:22:08+00:00",
+      "last_seen": "2026-11-23T21:39:35+00:00",
       "review_status": "unreviewed",
       "notes": ""
     },
@@ -1015,6 +1044,77 @@
       "http_status": 200,
       "first_seen": "2026-11-17T18:42:07+00:00",
       "last_seen": "2026-11-17T18:42:07+00:00",
+      "review_status": "unreviewed",
+      "notes": ""
+    },
+    {
+      "domain": "countryfinancial.com",
+      "url": "https://www.countryfinancial.com/en/about-us/who-we-are/where-we-do-business/alaska.html",
+      "title": "Alaska - COUNTRY Financial",
+      "search_snippet": "Start a quote and we'll help you find insurance that works for you. Whether you’re in Anchorage or Fairbanks…Wasilla or Eagle …",
+      "categories": [],
+      "signup_pages_checked": [
+        "https://www.countryfinancial.com/en/about-us/who-we-are/where-we-do-business/alaska.html",
+        "https://www.countryfinancial.com/en/client-support/contact-us.html",
+        "https://www.countryfinancial.com/en/insurance/property/renters.html"
+      ],
+      "phone_form_detected": true,
+      "phone_forms": [
+        {
+          "page_url": "https://www.countryfinancial.com/en/about-us/who-we-are/where-we-do-business/alaska.html",
+          "action": "/services/forms",
+          "method": "POST",
+          "phone_fields": [
+            {
+              "name": "telephoneNumber",
+              "type": "tel",
+              "label": "Your phone"
+            }
+          ]
+        },
+        {
+          "page_url": "https://www.countryfinancial.com/en/insurance/property/renters.html",
+          "action": "/services/forms",
+          "method": "POST",
+          "phone_fields": [
+            {
+              "name": "telephoneNumber",
+              "type": "tel",
+              "label": "Your phone"
+            }
+          ]
+        },
+        {
+          "page_url": "https://www.countryfinancial.com/en/client-support/contact-us.html",
+          "action": "/services/forms",
+          "method": "POST",
+          "phone_fields": [
+            {
+              "name": "telephoneNumber",
+              "type": "tel",
+              "label": "Your phone"
+            }
+          ]
+        }
+      ],
+      "privacy_url": "https://www.countryfinancial.com/en/privacy-and-security.html",
+      "privacy_policy_checked": true,
+      "marketing_disclosure_patterns": [
+        "(personal information|personal data|information|data).{0,100}sell",
+        "sell.{0,100}(personal information|personal data|information|data)"
+      ],
+      "explicit_telemarketing_terms": [],
+      "privacy_evidence_excerpts": [
+        "t our employees' access to your information to only those who need to know information to provide products or services to you and for other reasons permitted by law. we will never sell your personal information. reasonable and appropriate safeguards are employed to protect your confidential information. we will share your information (name, address, and email address) with non-affiliated third parties to market their products ",
+        "n is a fundamental part of doing business. that’s why at country we take steps to ensure: we will restrict our employees' access to your information to only those who need to know information to provide products or services to you and for other reasons permitted by law. we will never sell your personal information. reasonable and appropriate safeguards are employed to protect your confidential information. we will share your information (name, address, and email address) with non-affiliated third parties"
+      ],
+      "qualified_phone_and_marketing_disclosure": true,
+      "search_queries": [
+        "financial services lead form phone number third party marketing"
+      ],
+      "http_status": 200,
+      "first_seen": "2026-11-23T21:39:05+00:00",
+      "last_seen": "2026-11-23T21:39:05+00:00",
       "review_status": "unreviewed",
       "notes": ""
     },
@@ -1280,6 +1380,30 @@
               "label": "Text sign-up"
             }
           ]
+        },
+        {
+          "page_url": "https://www.dillards.com/",
+          "action": "none",
+          "method": "POST",
+          "phone_fields": [
+            {
+              "name": "recipientText",
+              "type": "tel",
+              "label": "Text sign-up"
+            }
+          ]
+        },
+        {
+          "page_url": "https://www.dillards.com/internationalhelp",
+          "action": "none",
+          "method": "POST",
+          "phone_fields": [
+            {
+              "name": "recipientText",
+              "type": "tel",
+              "label": "Text sign-up"
+            }
+          ]
         }
       ],
       "privacy_url": "https://www.dillards.com/privacy",
@@ -1301,7 +1425,7 @@
       ],
       "http_status": 200,
       "first_seen": "2026-11-11T22:46:26+00:00",
-      "last_seen": "2026-11-22T17:19:00+00:00",
+      "last_seen": "2026-11-23T21:36:54+00:00",
       "review_status": "unreviewed",
       "notes": ""
     },
@@ -1834,7 +1958,7 @@
       "domain": "grammarly.com",
       "url": "https://www.grammarly.com/blog/commonly-confused-words/paid-payed/",
       "title": "“Payed” vs. “Paid”: What’s the Correct Spelling? | Grammarly Blog",
-      "search_snippet": "Jun 28, 2023 · Payed vs. paid: What’s the difference? The difference between payed and paid lies in which meaning of pay you’re …",
+      "search_snippet": "Jun 28, 2023 · The correct past tense of the verb pay is paid, as long as the word is used in the financial or transactional sense. If the …",
       "categories": [],
       "signup_pages_checked": [
         "https://www.grammarly.com/blog/commonly-confused-words/paid-payed/",
@@ -1843,6 +1967,18 @@
       ],
       "phone_form_detected": true,
       "phone_forms": [
+        {
+          "page_url": "https://www.grammarly.com/contact/sales",
+          "action": "",
+          "method": "POST",
+          "phone_fields": [
+            {
+              "name": "phone",
+              "type": "input",
+              "label": "Phone*"
+            }
+          ]
+        },
         {
           "page_url": "https://www.grammarly.com/contact/sales",
           "action": "",
@@ -1993,7 +2129,7 @@
       ],
       "http_status": 200,
       "first_seen": "2026-11-11T22:44:25+00:00",
-      "last_seen": "2026-11-22T17:16:26+00:00",
+      "last_seen": "2026-11-23T21:35:01+00:00",
       "review_status": "unreviewed",
       "notes": ""
     },
@@ -2675,7 +2811,7 @@
       "domain": "linkedin.com",
       "url": "https://www.linkedin.com/jobs",
       "title": "LinkedIn Job Search: Find US Jobs, Internships, Jobs Near Me",
-      "search_snippet": "Use LinkedIn Jobs to boost your chances of getting hired through people you know.",
+      "search_snippet": "64% of job seekers get hired through a referral. Use LinkedIn Jobs to boost your chances of getting hired through people you know.",
       "categories": [
         "subscriptions"
       ],
@@ -2736,6 +2872,18 @@
               "label": "Email or phone"
             }
           ]
+        },
+        {
+          "page_url": "https://www.linkedin.com/jobs",
+          "action": "https://www.linkedin.com/uas/login-submit",
+          "method": "POST",
+          "phone_fields": [
+            {
+              "name": "session_key",
+              "type": "text",
+              "label": "Email or phone"
+            }
+          ]
         }
       ],
       "privacy_url": "https://www.linkedin.com/legal/privacy-policy?trk=linkedin-tc_auth-button_privacy-policy",
@@ -2758,7 +2906,7 @@
       ],
       "http_status": 200,
       "first_seen": "2026-11-17T18:42:05+00:00",
-      "last_seen": "2026-11-22T17:21:08+00:00",
+      "last_seen": "2026-11-23T21:38:39+00:00",
       "review_status": "unreviewed",
       "notes": ""
     },
@@ -2830,6 +2978,54 @@
       "http_status": 200,
       "first_seen": "2026-11-12T03:11:37+00:00",
       "last_seen": "2026-11-22T17:20:36+00:00",
+      "review_status": "unreviewed",
+      "notes": ""
+    },
+    {
+      "domain": "localmotionhawaii.com",
+      "url": "https://www.localmotionhawaii.com/",
+      "title": "Local Motion Hawaii | Premium Surf Wear Since 1977",
+      "search_snippet": "Shop Hawaii's premier selection of surf and lifestyle tees, tops, hats, accessories and more! Enjoy FREE* shipping on orders $99 …",
+      "categories": [
+        "subscriptions"
+      ],
+      "signup_pages_checked": [
+        "https://www.localmotionhawaii.com/",
+        "https://www.localmotionhawaii.com/pages/contact"
+      ],
+      "phone_form_detected": true,
+      "phone_forms": [
+        {
+          "page_url": "https://www.localmotionhawaii.com/pages/contact",
+          "action": "/contact#ContactForm",
+          "method": "POST",
+          "phone_fields": [
+            {
+              "name": "contact[Phone number]",
+              "type": "tel",
+              "label": "Phone number"
+            }
+          ]
+        }
+      ],
+      "privacy_url": "https://www.localmotionhawaii.com/policies/privacy-policy",
+      "privacy_policy_checked": true,
+      "marketing_disclosure_patterns": [
+        "(personal information|personal data|information|data).{0,100}sell",
+        "sell.{0,100}(personal information|personal data|information|data)"
+      ],
+      "explicit_telemarketing_terms": [],
+      "privacy_evidence_excerpts": [
+        "search wishlist log in cart privacy policy privacy statement section 1 - what do we do with your information? when you purchase something from our store, as part of the buying and selling process, we collect the personal information you give us such as your name, address and email address. when you browse our store, we also automatically receive your computer’s internet protocol (ip) address in order to provide us with information that helps us lea",
+        " results wsl qs event 2024 contest (freesurf magazine) locations gift card contact search wishlist log in cart privacy policy privacy statement section 1 - what do we do with your information? when you purchase something from our store, as part of the buying and selling process, we collect the personal information you give us such as your name, address and email address. when you browse our store, we also automatically receive your computer’s internet protocol (ip) address in order "
+      ],
+      "qualified_phone_and_marketing_disclosure": true,
+      "search_queries": [
+        "local news contest phone number promotional partners"
+      ],
+      "http_status": 200,
+      "first_seen": "2026-11-23T21:40:24+00:00",
+      "last_seen": "2026-11-23T21:40:24+00:00",
       "review_status": "unreviewed",
       "notes": ""
     },
@@ -3178,6 +3374,91 @@
       "http_status": 200,
       "first_seen": "2026-11-22T17:20:31+00:00",
       "last_seen": "2026-11-22T17:20:31+00:00",
+      "review_status": "unreviewed",
+      "notes": ""
+    },
+    {
+      "domain": "neilpatel.com",
+      "url": "https://neilpatel.com/br/blog/o-que-e-marketing/",
+      "title": "O que é marketing? Conceito, tipos e estratégias (Guia Completo)",
+      "search_snippet": "Feb 28, 2025 · Marketing é um conjunto de estratégias que têm como objetivo criar valor de um produto ou uma marca para o seu …",
+      "categories": [
+        "ad_supported_media"
+      ],
+      "signup_pages_checked": [
+        "https://neilpatel.com/br/blog/o-que-e-marketing/",
+        "https://neilpatel.com/br/blog/plataformas-de-e-commerce/",
+        "https://neilpatel.com/contact/"
+      ],
+      "phone_form_detected": true,
+      "phone_forms": [
+        {
+          "page_url": "https://neilpatel.com/br/blog/o-que-e-marketing/",
+          "action": "/br/blog/o-que-e-marketing/#wpcf7-f333961-o1",
+          "method": "POST",
+          "phone_fields": [
+            {
+              "name": "cf-phone",
+              "type": "tel",
+              "label": ""
+            }
+          ]
+        },
+        {
+          "page_url": "https://neilpatel.com/br/blog/plataformas-de-e-commerce/",
+          "action": "/br/blog/plataformas-de-e-commerce/#wpcf7-f333961-o1",
+          "method": "POST",
+          "phone_fields": [
+            {
+              "name": "cf-phone",
+              "type": "tel",
+              "label": ""
+            }
+          ]
+        },
+        {
+          "page_url": "https://neilpatel.com/contact/",
+          "action": "/contact/#wpcf7-f50871-p10778-o2",
+          "method": "POST",
+          "phone_fields": [
+            {
+              "name": "cf-phone",
+              "type": "tel",
+              "label": ""
+            }
+          ]
+        },
+        {
+          "page_url": "https://neilpatel.com/contact/",
+          "action": "/contact/#wpcf7-f76387-o1",
+          "method": "POST",
+          "phone_fields": [
+            {
+              "name": "cf-phone",
+              "type": "tel",
+              "label": ""
+            }
+          ]
+        }
+      ],
+      "privacy_url": "https://neilpatel.com/privacy/",
+      "privacy_policy_checked": true,
+      "marketing_disclosure_patterns": [
+        "marketing purposes",
+        "sell.{0,100}(personal information|personal data|information|data)"
+      ],
+      "explicit_telemarketing_terms": [],
+      "privacy_evidence_excerpts": [
+        "ng and purposes of your personal data. disclosure of personal data information about our users or customers is an important part of our business, and we are not in the business of selling such information to others. we share personal data only as described within, and with processing partners, affiliated business partners, and third parties. you agree that we have the right to disclose your personal data as needed to conduct our business activities accor",
+        " implement appropriate safeguards. you also have the right to object to certain processing activities, including processing based on legitimate interests and processing for direct marketing purposes. where required under applicable law, including the uk gdpr, we conduct data protection impact assessments (dpias) for processing activities that are likely to result in a high risk to individuals’ rights and freedoms. "
+      ],
+      "qualified_phone_and_marketing_disclosure": true,
+      "search_queries": [
+        "marketing partners may contact you by telephone privacy policy"
+      ],
+      "http_status": 200,
+      "first_seen": "2026-11-23T21:41:37+00:00",
+      "last_seen": "2026-11-23T21:41:37+00:00",
       "review_status": "unreviewed",
       "notes": ""
     },
@@ -5629,7 +5910,7 @@
       ],
       "http_status": 200,
       "first_seen": "2026-11-11T22:43:39+00:00",
-      "last_seen": "2026-11-22T17:15:27+00:00",
+      "last_seen": "2026-11-23T21:34:07+00:00",
       "review_status": "unreviewed",
       "notes": ""
     },
@@ -5797,7 +6078,7 @@
       "domain": "surveymonkey.com",
       "url": "https://www.surveymonkey.com/",
       "title": "SurveyMonkey: The World’s Most Popular Survey Platform",
-      "search_snippet": "SurveyMonkey is the world’s most popular survey software, built for business and loved by users. Easily create surveys and forms …",
+      "search_snippet": "Easily create surveys and forms with AI and templates for employee and customer feedback, market research, event registrations …",
       "categories": [
         "rewards",
         "surveys"
@@ -5815,7 +6096,7 @@
         "survey participant registration telephone number lead generation"
       ],
       "first_seen": "2026-11-11T20:10:09+00:00",
-      "last_seen": "2026-11-22T17:16:38+00:00",
+      "last_seen": "2026-11-23T21:35:16+00:00",
       "review_status": "unreviewed",
       "notes": "",
       "signup_pages_checked": [
@@ -5894,10 +6175,36 @@
       "notes": ""
     },
     {
+      "domain": "24timezones.com",
+      "url": "https://24timezones.com/usa_time/hi_honolulu/honolulu.php",
+      "title": "Current local time in Honolulu, Hawaii",
+      "search_snippet": "21 hours ago · This analog html clock is adjusted for Daylight Saving Time changes and always displays correct current local time for …",
+      "categories": [],
+      "signup_pages_checked": [
+        "https://24timezones.com/usa_time/hi_honolulu/honolulu.php"
+      ],
+      "phone_form_detected": false,
+      "phone_forms": [],
+      "privacy_url": "",
+      "privacy_policy_checked": false,
+      "marketing_disclosure_patterns": [],
+      "explicit_telemarketing_terms": [],
+      "privacy_evidence_excerpts": [],
+      "qualified_phone_and_marketing_disclosure": false,
+      "search_queries": [
+        "local news contest phone number promotional partners"
+      ],
+      "http_status": 200,
+      "first_seen": "2026-11-23T21:40:22+00:00",
+      "last_seen": "2026-11-23T21:40:22+00:00",
+      "review_status": "unreviewed",
+      "notes": ""
+    },
+    {
       "domain": "529.wa.gov",
       "url": "https://529.wa.gov/",
       "title": "WA529 Home | WA GET / WA529",
-      "search_snippet": "Washington nonprofits and government entities have a unique opportunity to offer scholarships and Children’s Savings Accounts … Read more",
+      "search_snippet": "Washington nonprofits and government entities have a unique opportunity to offer scholarships and Children’s Savings Accounts …",
       "categories": [
         "ad_supported_media"
       ],
@@ -5907,6 +6214,30 @@
       ],
       "phone_form_detected": true,
       "phone_forms": [
+        {
+          "page_url": "https://529.wa.gov/",
+          "action": "/",
+          "method": "POST",
+          "phone_fields": [
+            {
+              "name": "subject",
+              "type": "text",
+              "label": "Your phone"
+            }
+          ]
+        },
+        {
+          "page_url": "https://529.wa.gov/contact-us",
+          "action": "/contact-us",
+          "method": "POST",
+          "phone_fields": [
+            {
+              "name": "field_your_phone[0][value]",
+              "type": "text",
+              "label": "Your Phone"
+            }
+          ]
+        },
         {
           "page_url": "https://529.wa.gov/",
           "action": "/",
@@ -6015,7 +6346,7 @@
       ],
       "http_status": 200,
       "first_seen": "2026-11-11T22:45:15+00:00",
-      "last_seen": "2026-11-20T17:56:21+00:00",
+      "last_seen": "2026-11-23T21:35:45+00:00",
       "review_status": "unreviewed",
       "notes": ""
     },
@@ -6125,7 +6456,7 @@
       "domain": "about.instagram.com",
       "url": "https://about.instagram.com/blog/announcements/introducing-instants-for-sharing-in-the-moment",
       "title": "Introducing Instants: Share in the Moment on Instagram | About Instagram",
-      "search_snippet": "Instants are ephemeral to viewers, but are saved in your archive for up to a year and can be reshared as a recap to Stories. Friends …",
+      "search_snippet": "Instants makes it easy to share every day photos in the moment. No edits, no pressure. Now available on Instagram and as an app.",
       "categories": [],
       "signup_pages_checked": [
         "https://about.instagram.com/blog/announcements/introducing-instants-for-sharing-in-the-moment"
@@ -6143,7 +6474,7 @@
       ],
       "http_status": 200,
       "first_seen": "2026-11-11T22:44:08+00:00",
-      "last_seen": "2026-11-22T17:16:03+00:00",
+      "last_seen": "2026-11-23T21:34:41+00:00",
       "review_status": "unreviewed",
       "notes": ""
     },
@@ -6372,7 +6703,7 @@
       ],
       "http_status": 200,
       "first_seen": "2026-11-11T22:51:18+00:00",
-      "last_seen": "2026-11-22T17:22:38+00:00",
+      "last_seen": "2026-11-23T21:39:57+00:00",
       "review_status": "unreviewed",
       "notes": ""
     },
@@ -6989,7 +7320,7 @@
       "domain": "allstate.com",
       "url": "https://www.allstate.com/",
       "title": "Allstate Insurance Company | You're In Good Hands.",
-      "search_snippet": "Protect your stuff inside and outside your apartment with renters insurance as low as $5/month.⁵. Stay confident in a connected … Read more",
+      "search_snippet": "Protect your stuff inside and outside your apartment with renters insurance as low as $5/month.⁵. Stay confident in a connected …",
       "categories": [],
       "signup_pages_checked": [
         "https://www.allstate.com/",
@@ -7015,7 +7346,7 @@
       ],
       "http_status": 200,
       "first_seen": "2026-11-11T22:46:58+00:00",
-      "last_seen": "2026-11-21T16:55:38+00:00",
+      "last_seen": "2026-11-23T21:37:47+00:00",
       "review_status": "unreviewed",
       "notes": ""
     },
@@ -7061,9 +7392,9 @@
     },
     {
       "domain": "ama.org",
-      "url": "https://www.ama.org/the-definition-of-marketing-what-is-marketing/",
-      "title": "What is Marketing? — The Definition of Marketing — AMA",
-      "search_snippet": "Marketing is the activity, set of institutions, and processes for creating, communicating, delivering, and exchanging offerings that …",
+      "url": "https://www.ama.org/topics/brand-and-branding/",
+      "title": "Branding | American Marketing Association",
+      "search_snippet": "Oct 22, 2026 · Brand identity refers to the visual and symbolic elements that represent a brand. These elements include a brand’s …",
       "categories": [
         "ad_supported_media",
         "rewards",
@@ -7090,7 +7421,7 @@
       ],
       "http_status": 200,
       "first_seen": "2026-11-12T03:14:00+00:00",
-      "last_seen": "2026-11-22T17:24:50+00:00",
+      "last_seen": "2026-11-23T21:40:48+00:00",
       "review_status": "unreviewed",
       "notes": ""
     },
@@ -7228,7 +7559,7 @@
       ],
       "http_status": 200,
       "first_seen": "2026-11-11T22:44:05+00:00",
-      "last_seen": "2026-11-22T17:15:59+00:00",
+      "last_seen": "2026-11-23T21:34:38+00:00",
       "review_status": "unreviewed",
       "notes": ""
     },
@@ -7890,6 +8221,36 @@
       "notes": ""
     },
     {
+      "domain": "autotrader.co.za",
+      "url": "https://www.autotrader.co.za/",
+      "title": "Cars for sale in South Africa - AutoTrader",
+      "search_snippet": "Search the largest selection of new and used cars for sale on South Africa's leading car marketplace.",
+      "categories": [
+        "ad_supported_media",
+        "subscriptions",
+        "surveys"
+      ],
+      "signup_pages_checked": [
+        "https://www.autotrader.co.za/"
+      ],
+      "phone_form_detected": false,
+      "phone_forms": [],
+      "privacy_url": "https://www.autotrader.co.za/privacy-policy",
+      "privacy_policy_checked": false,
+      "marketing_disclosure_patterns": [],
+      "explicit_telemarketing_terms": [],
+      "privacy_evidence_excerpts": [],
+      "qualified_phone_and_marketing_disclosure": false,
+      "search_queries": [
+        "auto insurance quote phone number marketing partners privacy policy"
+      ],
+      "http_status": 200,
+      "first_seen": "2026-11-23T21:37:57+00:00",
+      "last_seen": "2026-11-23T21:37:57+00:00",
+      "review_status": "unreviewed",
+      "notes": ""
+    },
+    {
       "domain": "avalonparkorlando.com",
       "url": "https://avalonparkorlando.com/play/event-calendar/",
       "title": "Event Calendar | Avalon Park Orlando",
@@ -8057,9 +8418,9 @@
     },
     {
       "domain": "bbc.com",
-      "url": "https://www.bbc.com/business",
-      "title": "BBC Business | Economy, Tech, AI, Work, Personal Finance, Market news",
-      "search_snippet": "BBC Business brings you the latest in Business news and coverage from around the world, including tech, personal finance, …",
+      "url": "https://www.bbc.com/health",
+      "title": "BBC Health | Nutrition, Exercise, Relationships, Sleep, Longevity",
+      "search_snippet": "Explore BBC Health's collection of knowledge on wellbeing and healthy living. BBC Health explores health claims and myths, and …",
       "categories": [
         "ad_supported_media",
         "subscriptions"
@@ -8084,7 +8445,7 @@
       ],
       "http_status": 200,
       "first_seen": "2026-11-12T03:12:19+00:00",
-      "last_seen": "2026-11-14T15:59:44+00:00",
+      "last_seen": "2026-11-23T21:39:18+00:00",
       "review_status": "unreviewed",
       "notes": ""
     },
@@ -8338,6 +8699,35 @@
       "notes": ""
     },
     {
+      "domain": "blackandwhiteroofing.com",
+      "url": "https://blackandwhiteroofing.com/",
+      "title": "Black & White Roofing – Commercial flat-roof specialists since 2014. On time. On budget. On spec.",
+      "search_snippet": "Our experience with Black and White Roofing includes full roof replacement and prompt attention to ongoing maintenance concerns. …",
+      "categories": [
+        "lead_generation"
+      ],
+      "signup_pages_checked": [
+        "https://blackandwhiteroofing.com/",
+        "https://blackandwhiteroofing.com/contact-us/"
+      ],
+      "phone_form_detected": false,
+      "phone_forms": [],
+      "privacy_url": "",
+      "privacy_policy_checked": false,
+      "marketing_disclosure_patterns": [],
+      "explicit_telemarketing_terms": [],
+      "privacy_evidence_excerpts": [],
+      "qualified_phone_and_marketing_disclosure": false,
+      "search_queries": [
+        "quote comparison form phone number marketing partners"
+      ],
+      "http_status": 200,
+      "first_seen": "2026-11-23T21:37:11+00:00",
+      "last_seen": "2026-11-23T21:37:11+00:00",
+      "review_status": "unreviewed",
+      "notes": ""
+    },
+    {
       "domain": "blog.hubspot.com",
       "url": "https://blog.hubspot.com/marketing/what-is-marketing",
       "title": "What is Marketing, and What's Its Purpose?",
@@ -8369,7 +8759,7 @@
       ],
       "http_status": 200,
       "first_seen": "2026-11-12T03:14:07+00:00",
-      "last_seen": "2026-11-22T17:24:57+00:00",
+      "last_seen": "2026-11-23T21:41:16+00:00",
       "review_status": "unreviewed",
       "notes": ""
     },
@@ -8529,7 +8919,7 @@
       "domain": "brand.de",
       "url": "https://www.brand.de/en",
       "title": "Laboratory supplies & laboratory equipment from BRAND",
-      "search_snippet": "Laboratory equipment from BRAND - information about applications, our company, career opportunities at the laboratory equipment … Read more",
+      "search_snippet": "Laboratory equipment from BRAND - information about applications, our company, career opportunities at the laboratory equipment …",
       "categories": [],
       "signup_pages_checked": [
         "https://www.brand.de/en",
@@ -8555,7 +8945,7 @@
       ],
       "http_status": 200,
       "first_seen": "2026-11-14T15:59:34+00:00",
-      "last_seen": "2026-11-19T18:32:06+00:00",
+      "last_seen": "2026-11-23T21:40:38+00:00",
       "review_status": "unreviewed",
       "notes": ""
     },
@@ -8563,7 +8953,7 @@
       "domain": "brandguide.me",
       "url": "https://brandguide.me/articles/what-is-a-brand/",
       "title": "What is a Brand? Unpacking Its Role and Importance in Marketing Success – Brandguide",
-      "search_snippet": "Oct 4, 2025 · In this article, we’re unpacking the multifaceted concept of a brand. We’ll explore its definition, the art and science of … Read more",
+      "search_snippet": "Oct 4, 2025 · In this article, we’re unpacking the multifaceted concept of a brand. We’ll explore its definition, the art and science of …",
       "categories": [
         "rewards",
         "subscriptions"
@@ -8589,7 +8979,7 @@
       ],
       "http_status": 200,
       "first_seen": "2026-11-14T15:59:39+00:00",
-      "last_seen": "2026-11-19T18:32:08+00:00",
+      "last_seen": "2026-11-23T21:40:43+00:00",
       "review_status": "unreviewed",
       "notes": ""
     },
@@ -8814,6 +9204,40 @@
       "notes": ""
     },
     {
+      "domain": "calcareers.ca.gov",
+      "url": "https://calcareers.ca.gov/",
+      "title": "CalCareers",
+      "search_snippet": "We want to help you build a career from the ground up. The state provides on-the-job training and professional development, and …",
+      "categories": [
+        "surveys"
+      ],
+      "signup_pages_checked": [
+        "https://calcareers.ca.gov/",
+        "https://calcareers.ca.gov/CalHRPublic/Landing/Jobs/Steps.aspx?step=3",
+        "https://calcareers.ca.gov/CalHrPublic/GeneralInfo/Help.aspx"
+      ],
+      "phone_form_detected": false,
+      "phone_forms": [],
+      "privacy_url": "https://www.calhr.ca.gov/privacy-policy",
+      "privacy_policy_checked": true,
+      "marketing_disclosure_patterns": [
+        "sell.{0,100}(personal information|personal data|information|data)"
+      ],
+      "explicit_telemarketing_terms": [],
+      "privacy_evidence_excerpts": [
+        "able, or otherwise use your personal information for purposes other than those specified, except with your consent or as authorized by law or regulation. we will not distribute or sell any of your electronically or non-electronically collected personal information to any third party, unless required by law. safeguarding your personal information we collect and maintain our electronic and paper files in a manner that protects against loss or unauthorized access, use, modification,"
+      ],
+      "qualified_phone_and_marketing_disclosure": false,
+      "search_queries": [
+        "career training inquiry phone number third party marketing"
+      ],
+      "http_status": 200,
+      "first_seen": "2026-11-23T21:38:36+00:00",
+      "last_seen": "2026-11-23T21:38:36+00:00",
+      "review_status": "unreviewed",
+      "notes": ""
+    },
+    {
       "domain": "calculator.net",
       "url": "https://www.calculator.net/discount-calculator.html",
       "title": "Discount Calculator",
@@ -8835,7 +9259,7 @@
       ],
       "http_status": 200,
       "first_seen": "2026-11-11T22:45:49+00:00",
-      "last_seen": "2026-11-22T17:18:06+00:00",
+      "last_seen": "2026-11-23T21:36:26+00:00",
       "review_status": "unreviewed",
       "notes": ""
     },
@@ -8888,7 +9312,7 @@
       ],
       "http_status": 200,
       "first_seen": "2026-11-12T03:12:00+00:00",
-      "last_seen": "2026-11-21T16:56:53+00:00",
+      "last_seen": "2026-11-23T21:38:43+00:00",
       "review_status": "unreviewed",
       "notes": ""
     },
@@ -8958,7 +9382,7 @@
       ],
       "http_status": 200,
       "first_seen": "2026-11-11T22:43:43+00:00",
-      "last_seen": "2026-11-22T17:15:28+00:00",
+      "last_seen": "2026-11-23T21:34:11+00:00",
       "review_status": "unreviewed",
       "notes": ""
     },
@@ -9051,7 +9475,7 @@
       ],
       "http_status": 200,
       "first_seen": "2026-11-11T22:48:16+00:00",
-      "last_seen": "2026-11-22T17:21:05+00:00",
+      "last_seen": "2026-11-23T21:38:31+00:00",
       "review_status": "unreviewed",
       "notes": ""
     },
@@ -9078,6 +9502,32 @@
       "http_status": 200,
       "first_seen": "2026-11-12T17:45:51+00:00",
       "last_seen": "2026-11-12T17:45:51+00:00",
+      "review_status": "unreviewed",
+      "notes": ""
+    },
+    {
+      "domain": "careers.microsoft.com",
+      "url": "https://careers.microsoft.com/v2/global/en/home.html",
+      "title": "Home | Microsoft Careers",
+      "search_snippet": "Do what you love. Create the future you want. Explore the career options that Microsoft has to offer Stage.",
+      "categories": [],
+      "signup_pages_checked": [
+        "https://careers.microsoft.com/v2/global/en/home.html"
+      ],
+      "phone_form_detected": false,
+      "phone_forms": [],
+      "privacy_url": "",
+      "privacy_policy_checked": false,
+      "marketing_disclosure_patterns": [],
+      "explicit_telemarketing_terms": [],
+      "privacy_evidence_excerpts": [],
+      "qualified_phone_and_marketing_disclosure": false,
+      "search_queries": [
+        "career training inquiry phone number third party marketing"
+      ],
+      "http_status": 200,
+      "first_seen": "2026-11-23T21:38:38+00:00",
+      "last_seen": "2026-11-23T21:38:38+00:00",
       "review_status": "unreviewed",
       "notes": ""
     },
@@ -9182,15 +9632,16 @@
     },
     {
       "domain": "carmax.com",
-      "url": "https://www.carmax.com/",
-      "title": "CarMax - Shop for used cars, then buy online or at a store",
-      "search_snippet": "Applicable transfer fees are due in advance of vehicle delivery and are separate from sales transactions. Limited warranty is 30 days. …",
+      "url": "https://www.carmax.com/stores/6040",
+      "title": "CarMax Spokane - Used Cars in Spokane, WA 99212",
+      "search_snippet": "At CarMax Spokane one of our Auto Superstores, you can shop for a used car, take a test drive, get an appraisal, and learn more …",
       "categories": [],
       "signup_pages_checked": [
         "https://www.carmax.com/",
         "https://www.carmax.com/cars",
         "https://www.carmax.com/help-center",
         "https://www.carmax.com/help-center#contact-us",
+        "https://www.carmax.com/stores/6040",
         "https://www.carmax.com/stores/7241"
       ],
       "phone_form_detected": false,
@@ -9206,7 +9657,7 @@
       ],
       "http_status": 200,
       "first_seen": "2026-11-11T22:43:38+00:00",
-      "last_seen": "2026-11-22T17:15:29+00:00",
+      "last_seen": "2026-11-23T21:34:10+00:00",
       "review_status": "unreviewed",
       "notes": ""
     },
@@ -9392,7 +9843,7 @@
       ],
       "http_status": 200,
       "first_seen": "2026-11-11T22:43:28+00:00",
-      "last_seen": "2026-11-22T17:15:19+00:00",
+      "last_seen": "2026-11-23T21:33:56+00:00",
       "review_status": "unreviewed",
       "notes": ""
     },
@@ -9400,7 +9851,7 @@
       "domain": "cash.ch",
       "url": "https://www.cash.ch/",
       "title": "Alles über Finanzen: News, Banking & Trading | cash",
-      "search_snippet": "17 hours ago · Eine Aktie kaufen: Wie geht das? Wer zum ersten Mal eine Aktie kaufen will, fühlt sich schnell überfordert. Doch … Read more",
+      "search_snippet": "1 day ago · Eine Aktie kaufen: Wie geht das? Wer zum ersten Mal eine Aktie kaufen will, fühlt sich schnell überfordert. Doch Online …",
       "categories": [
         "subscriptions"
       ],
@@ -9421,7 +9872,7 @@
       ],
       "http_status": 200,
       "first_seen": "2026-11-11T22:43:36+00:00",
-      "last_seen": "2026-11-20T17:54:49+00:00",
+      "last_seen": "2026-11-23T21:34:01+00:00",
       "review_status": "unreviewed",
       "notes": ""
     },
@@ -9775,7 +10226,7 @@
       ],
       "http_status": 200,
       "first_seen": "2026-11-11T22:46:31+00:00",
-      "last_seen": "2026-11-22T17:19:05+00:00",
+      "last_seen": "2026-11-23T21:37:00+00:00",
       "review_status": "unreviewed",
       "notes": ""
     },
@@ -9903,7 +10354,7 @@
       "domain": "cms.gov",
       "url": "https://www.cms.gov/",
       "title": "Home - Centers for Medicare & Medicaid Services | CMS",
-      "search_snippet": "Medicare is negotiating prices directly with participating drug companies to improve access to some of the costliest and most …",
+      "search_snippet": "Medicare-Medicaid coordination Back to menu section title h3 Program Integrity Pillars for Medicaid and the Children’s Health …",
       "categories": [],
       "signup_pages_checked": [
         "https://www.cms.gov/",
@@ -9923,7 +10374,7 @@
       ],
       "http_status": 200,
       "first_seen": "2026-11-11T22:50:49+00:00",
-      "last_seen": "2026-11-22T17:21:41+00:00",
+      "last_seen": "2026-11-23T21:39:23+00:00",
       "review_status": "unreviewed",
       "notes": ""
     },
@@ -9960,7 +10411,7 @@
       ],
       "http_status": 200,
       "first_seen": "2026-11-11T22:44:35+00:00",
-      "last_seen": "2026-11-22T17:16:35+00:00",
+      "last_seen": "2026-11-23T21:35:12+00:00",
       "review_status": "unreviewed",
       "notes": ""
     },
@@ -9988,7 +10439,7 @@
       ],
       "http_status": 200,
       "first_seen": "2026-11-11T22:44:34+00:00",
-      "last_seen": "2026-11-22T17:16:33+00:00",
+      "last_seen": "2026-11-23T21:35:12+00:00",
       "review_status": "unreviewed",
       "notes": ""
     },
@@ -10081,7 +10532,7 @@
         "consumer survey panel sign up phone number marketing partners"
       ],
       "first_seen": "2026-11-11T20:11:10+00:00",
-      "last_seen": "2026-11-22T17:16:08+00:00",
+      "last_seen": "2026-11-23T21:34:46+00:00",
       "review_status": "unreviewed",
       "notes": "",
       "signup_pages_checked": [
@@ -10164,7 +10615,7 @@
         "consumer survey panel sign up phone number marketing partners"
       ],
       "first_seen": "2026-11-11T20:11:12+00:00",
-      "last_seen": "2026-11-22T17:16:11+00:00",
+      "last_seen": "2026-11-23T21:34:49+00:00",
       "review_status": "unreviewed",
       "notes": "",
       "signup_pages_checked": [
@@ -10209,7 +10660,7 @@
         "consumer survey panel sign up phone number marketing partners"
       ],
       "first_seen": "2026-11-11T20:11:09+00:00",
-      "last_seen": "2026-11-22T17:16:14+00:00",
+      "last_seen": "2026-11-23T21:34:56+00:00",
       "review_status": "unreviewed",
       "notes": "",
       "signup_pages_checked": [
@@ -10294,7 +10745,7 @@
       "domain": "correctwording.com",
       "url": "https://correctwording.com/personal-or-personnel/",
       "title": "Personal vs. Personnel - Which is Correct?",
-      "search_snippet": "Nov 19, 2025 · Both personal and personnel are correct words, but they are used in different contexts. Personal relates to an … Read more",
+      "search_snippet": "Nov 19, 2025 · Both personal and personnel are correct words, but they are used in different contexts. Personal relates to an …",
       "categories": [],
       "signup_pages_checked": [
         "https://correctwording.com/contact/",
@@ -10317,7 +10768,7 @@
       ],
       "http_status": 200,
       "first_seen": "2026-11-11T22:52:03+00:00",
-      "last_seen": "2026-11-21T16:58:52+00:00",
+      "last_seen": "2026-11-23T21:41:00+00:00",
       "review_status": "unreviewed",
       "notes": ""
     },
@@ -10353,7 +10804,7 @@
       ],
       "http_status": 200,
       "first_seen": "2026-11-12T03:09:59+00:00",
-      "last_seen": "2026-11-22T17:18:05+00:00",
+      "last_seen": "2026-11-23T21:36:24+00:00",
       "review_status": "unreviewed",
       "notes": ""
     },
@@ -10430,7 +10881,7 @@
       "domain": "coupons.com",
       "url": "https://www.coupons.com/",
       "title": "Coupons, Promo Codes and Cashback for November 2026",
-      "search_snippet": "Use Coupons.com for the best coupons and promo codes online and in-store. Save on every order with our verified coupon codes, …",
+      "search_snippet": "You can expect to find sitewide coupon codes, free shipping offers, seasonal sales, and cashback offers from thousands of retailers. …",
       "categories": [
         "offers_and_samples",
         "rewards"
@@ -10459,7 +10910,7 @@
       ],
       "http_status": 200,
       "first_seen": "2026-11-11T22:45:43+00:00",
-      "last_seen": "2026-11-22T17:17:58+00:00",
+      "last_seen": "2026-11-23T21:36:18+00:00",
       "review_status": "unreviewed",
       "notes": ""
     },
@@ -10530,9 +10981,9 @@
     },
     {
       "domain": "crazygames.com",
-      "url": "https://www.crazygames.com/t/car",
-      "title": "Car Games 🚗 Play on CrazyGames",
-      "search_snippet": "Race cars at high speeds and drift around tight corners in our complete collection of free online car games. Play now in your web …",
+      "url": "https://www.crazygames.com/",
+      "title": "Free Online Games on CrazyGames | Play Now!",
+      "search_snippet": "Play free online games at CrazyGames, the best place to play high-quality browser games. We add new games every day. Have fun!",
       "categories": [
         "rewards"
       ],
@@ -10552,7 +11003,7 @@
         "free samples sweepstakes signup"
       ],
       "first_seen": "2026-11-11T20:10:30+00:00",
-      "last_seen": "2026-11-22T17:15:30+00:00",
+      "last_seen": "2026-11-23T21:34:16+00:00",
       "review_status": "unreviewed",
       "notes": "",
       "signup_pages_checked": [
@@ -10642,7 +11093,7 @@
       ],
       "http_status": 200,
       "first_seen": "2026-11-12T03:12:11+00:00",
-      "last_seen": "2026-11-22T17:21:21+00:00",
+      "last_seen": "2026-11-23T21:39:00+00:00",
       "review_status": "unreviewed",
       "notes": ""
     },
@@ -10706,7 +11157,7 @@
       ],
       "http_status": 200,
       "first_seen": "2026-11-11T22:50:12+00:00",
-      "last_seen": "2026-11-22T17:21:14+00:00",
+      "last_seen": "2026-11-23T21:38:52+00:00",
       "review_status": "unreviewed",
       "notes": ""
     },
@@ -10904,6 +11355,50 @@
       "notes": ""
     },
     {
+      "domain": "daily.slickdeals.net",
+      "url": "https://daily.slickdeals.net/food/best-red-bull-deals-discounts/",
+      "title": "Get Discounted Cases of Red Bull Through Amazon Subscribe and Save",
+      "search_snippet": "Jun 12, 2019 · Advertiser Disclosure: Slickdeals may earn a commission when you buy through links in this article. This doesn’t …",
+      "categories": [
+        "offers_and_samples",
+        "rewards",
+        "subscriptions"
+      ],
+      "signup_pages_checked": [
+        "https://daily.slickdeals.net/food/best-red-bull-deals-discounts/",
+        "https://daily.slickdeals.net/food/best-red-bull-deals-discounts/#section-1",
+        "https://daily.slickdeals.net/shopping/amazon-subscribe-and-save-price-changes/"
+      ],
+      "phone_form_detected": false,
+      "phone_forms": [],
+      "privacy_url": "https://slickdeals.net/content/list/privacy-policy/",
+      "privacy_policy_checked": true,
+      "marketing_disclosure_patterns": [
+        "(personal information|personal data|information|data).{0,100}sell",
+        "(telephone|phone|text|sms).{0,100}(marketing|promotional|solicitation)",
+        "marketing purposes",
+        "sell.{0,100}(personal information|personal data|information|data)",
+        "share.{0,120}(marketing partners|advertising partners|third.party marketers|lead generators|advertisers)"
+      ],
+      "explicit_telemarketing_terms": [],
+      "privacy_evidence_excerpts": [
+        "ofessional, employment, and education information about you. we may disclose these categories of personal information to our service providers for business purposes, but we do not sell this information or share it for targeted (also known as “cross-context behavioral”) advertising purposes. categories of sources. we collect personal information from the following categories of sources: consumers; merchants; affiliate ",
+        "ect record-keeping information (such as billing information about your company), professional, employment, and education information about you. we may disclose these categories of personal information to our service providers for business purposes, but we do not sell this information or share it for targeted (also known as “cross-context behavioral”) advertising purposes. categories of sources. we collect personal information from the following categories of sources: consumers; merc",
+        "elow to learn about our practices and choices that may be available to you. deidentified and aggregated information. to the extent permitted by applicable law, we also may use and share deidentified information and aggregated information with third parties, advertisers and/or business partners for our own business purposes and for third party marketing and other purposes. we maintain and use deidentified information only in deidentified form—we do not attempt to reidentify such inform",
+        "rmation on our properties for interest-based advertising purposes, and your choices in regard to these practices. marketing choices you may give consent for slickdeals to send you text messages, such as messages with a link to download our app, messages containing personalized marketing messages, as well as messages providing account updates. these text messages are automated. you can use and purchase our services without consenting to receive our automated text messages. we will not share information ",
+        "may share your personal information with participating merchants to process your purchases, in which case your information may be used and disclosed by the merchant (including for marketing purposes) subject to its privacy policy. we may share your personal information with your consent or as otherwise disclosed at the time of collection. we may share information with our agents, contractors, service providers (als"
+      ],
+      "qualified_phone_and_marketing_disclosure": false,
+      "search_queries": [
+        "event ticket giveaway phone number sponsors marketing"
+      ],
+      "http_status": 200,
+      "first_seen": "2026-11-23T21:39:49+00:00",
+      "last_seen": "2026-11-23T21:39:49+00:00",
+      "review_status": "unreviewed",
+      "notes": ""
+    },
+    {
       "domain": "dced.pa.gov",
       "url": "https://dced.pa.gov/local-government/local-income-tax-information/",
       "title": "Act 32 | Local Income Tax | PSD Codes and EIT Rates",
@@ -10999,9 +11494,9 @@
     },
     {
       "domain": "debt.com",
-      "url": "https://www.debt.com/",
-      "title": "Debt.com - Find solutions to get out of Debt and fix your Credit",
-      "search_snippet": "Get free, expert debt advice from Debt.com. Solutions for credit card debt, student loans, bankruptcy, and more.",
+      "url": "https://www.debt.com/what-is-debt/",
+      "title": "What Is Debt and Do You Have Too Much? | Debt.com",
+      "search_snippet": "Jul 2, 2019 · At Debt.com, we know debt and the solutions you need to get out of it. Learn how to tell if you have too much debt and …",
       "categories": [
         "rewards",
         "subscriptions",
@@ -11010,7 +11505,8 @@
       "signup_pages_checked": [
         "https://www.debt.com/",
         "https://www.debt.com/about/press-center/",
-        "https://www.debt.com/research/"
+        "https://www.debt.com/research/",
+        "https://www.debt.com/what-is-debt/"
       ],
       "phone_form_detected": false,
       "phone_forms": [],
@@ -11029,7 +11525,7 @@
       ],
       "http_status": 200,
       "first_seen": "2026-11-12T03:12:02+00:00",
-      "last_seen": "2026-11-21T16:56:56+00:00",
+      "last_seen": "2026-11-23T21:38:46+00:00",
       "review_status": "unreviewed",
       "notes": ""
     },
@@ -11146,9 +11642,9 @@
     },
     {
       "domain": "dictionary.com",
-      "url": "https://www.dictionary.com/browse/loyalty",
-      "title": "LOYALTY Definition & Meaning | Dictionary.com",
-      "search_snippet": "LOYALTY definition: the state or quality of being loyal; faithfulness to commitments or obligations. See examples of loyalty used in a …",
+      "url": "https://www.dictionary.com/browse/cash",
+      "title": "CASH Definition & Meaning | Dictionary.com",
+      "search_snippet": "CASH definition: money in the form of coins or banknotes, especially that issued by a government. See examples of cash used in a …",
       "categories": [
         "ad_supported_media",
         "rewards"
@@ -11164,6 +11660,7 @@
       "privacy_policy_checked": true,
       "http_status": 200,
       "search_queries": [
+        "cash prize sweepstakes phone number lead generation",
         "consumer survey panel sign up phone number marketing partners",
         "get paid surveys phone number privacy policy marketing partners",
         "get paid to take surveys panel",
@@ -11172,10 +11669,11 @@
         "paid survey registration mobile phone number third parties"
       ],
       "first_seen": "2026-11-11T20:10:20+00:00",
-      "last_seen": "2026-11-22T17:17:36+00:00",
+      "last_seen": "2026-11-23T21:34:02+00:00",
       "review_status": "unreviewed",
       "notes": "",
       "signup_pages_checked": [
+        "https://www.dictionary.com/browse/cash",
         "https://www.dictionary.com/browse/consumer",
         "https://www.dictionary.com/browse/get",
         "https://www.dictionary.com/browse/loyalty",
@@ -11221,7 +11719,7 @@
       "domain": "discounttire.com",
       "url": "https://www.discounttire.com",
       "title": "Discount Tire | Tires and Wheels for Sale | Online & In-Person",
-      "search_snippet": "Confident tire & wheel shopping Every online purchase is protected by our 100% Fitment Guarantee Shop Products OR Get …",
+      "search_snippet": "Discount Tire makes tire buying easy with expert advice, low prices, more choices, free services, and convenient locations. Our team …",
       "categories": [],
       "signup_pages_checked": [
         "https://www.discounttire.com"
@@ -11239,7 +11737,7 @@
       ],
       "http_status": 200,
       "first_seen": "2026-11-11T22:45:48+00:00",
-      "last_seen": "2026-11-22T17:18:06+00:00",
+      "last_seen": "2026-11-23T21:36:26+00:00",
       "review_status": "unreviewed",
       "notes": ""
     },
@@ -11293,6 +11791,64 @@
       "http_status": 200,
       "first_seen": "2026-11-12T03:11:40+00:00",
       "last_seen": "2026-11-12T03:11:40+00:00",
+      "review_status": "unreviewed",
+      "notes": ""
+    },
+    {
+      "domain": "doh.wa.gov",
+      "url": "https://doh.wa.gov/",
+      "title": "Washington State Department of Health",
+      "search_snippet": "Federal law is changing some Apple Health (Medicaid) rules. Learn how to protect and care for your loved ones. Our vision, mission, …",
+      "categories": [
+        "subscriptions"
+      ],
+      "signup_pages_checked": [
+        "https://doh.wa.gov/",
+        "https://doh.wa.gov/about-us/contact-us",
+        "https://doh.wa.gov/emergencies/be-prepared-be-safe/emergency-contacts-and-numbers"
+      ],
+      "phone_form_detected": false,
+      "phone_forms": [],
+      "privacy_url": "https://doh.wa.gov/about-us/privacy-office",
+      "privacy_policy_checked": true,
+      "marketing_disclosure_patterns": [],
+      "explicit_telemarketing_terms": [],
+      "privacy_evidence_excerpts": [],
+      "qualified_phone_and_marketing_disclosure": false,
+      "search_queries": [
+        "health insurance quote phone number agents marketing partners"
+      ],
+      "http_status": 200,
+      "first_seen": "2026-11-23T21:39:18+00:00",
+      "last_seen": "2026-11-23T21:39:18+00:00",
+      "review_status": "unreviewed",
+      "notes": ""
+    },
+    {
+      "domain": "doi.nv.gov",
+      "url": "https://doi.nv.gov/",
+      "title": "Nevada Division of Insurance",
+      "search_snippet": "Here is some information to help you navigate what to do next with your homeowners, renters, condo, or auto insurance if you have …",
+      "categories": [],
+      "signup_pages_checked": [
+        "https://doi.nv.gov/",
+        "https://doi.nv.gov/Contact-Us/",
+        "https://doi.nv.gov/News_Notices/Press_Releases/October_20,_2026-_The_Centers_for_Medicare___Medicaid_Services_Announces_Changes_to_Provider_Networks/"
+      ],
+      "phone_form_detected": false,
+      "phone_forms": [],
+      "privacy_url": "http://nv.gov/privacy-policy/",
+      "privacy_policy_checked": true,
+      "marketing_disclosure_patterns": [],
+      "explicit_telemarketing_terms": [],
+      "privacy_evidence_excerpts": [],
+      "qualified_phone_and_marketing_disclosure": false,
+      "search_queries": [
+        "insurance quote form phone number shared with agents partners"
+      ],
+      "http_status": 200,
+      "first_seen": "2026-11-23T21:37:37+00:00",
+      "last_seen": "2026-11-23T21:37:37+00:00",
       "review_status": "unreviewed",
       "notes": ""
     },
@@ -11565,7 +12121,7 @@
       "domain": "economictimes.indiatimes.com",
       "url": "https://economictimes.indiatimes.com/definition/product",
       "title": "What is Product? Definition of Product, Product Meaning - The Economic Times",
-      "search_snippet": "1 day ago · A product is something people can see or use, made to satisfy what consumers want or need. It can be a tangible item, a …",
+      "search_snippet": "19 hours ago · A product is something people can see or use, made to satisfy what consumers want or need. It can be a tangible …",
       "categories": [
         "ad_supported_media",
         "rewards",
@@ -11590,7 +12146,7 @@
       ],
       "http_status": 200,
       "first_seen": "2026-11-11T22:44:02+00:00",
-      "last_seen": "2026-11-22T17:15:55+00:00",
+      "last_seen": "2026-11-23T21:34:28+00:00",
       "review_status": "unreviewed",
       "notes": ""
     },
@@ -11661,7 +12217,7 @@
       ],
       "http_status": 200,
       "first_seen": "2026-11-11T22:48:09+00:00",
-      "last_seen": "2026-11-22T17:20:40+00:00",
+      "last_seen": "2026-11-23T21:38:26+00:00",
       "review_status": "unreviewed",
       "notes": ""
     },
@@ -11939,15 +12495,16 @@
     },
     {
       "domain": "edwardjones.com",
-      "url": "https://www.edwardjones.com/us-en/financial-advisor/sue-carney",
-      "title": "Sue Carney, Financial Advisor | Edward Jones",
-      "search_snippet": "As an Edward Jones financial advisor, I help my clients \"Live the Life They Imagine\" by offering goals-based advice and personalized …",
+      "url": "https://www.edwardjones.com/us-en/find-a-financial-advisor/locations/alaska/wasilla",
+      "title": "Financial Advisors in Wasilla, Alaska | Edward Jones",
+      "search_snippet": "Find Edward Jones financial advisors in Wasilla, Alaska, or discover a financial advisor near you.",
       "categories": [
         "subscriptions"
       ],
       "signup_pages_checked": [
         "https://www.edwardjones.com/us-en/financial-advisor/sue-carney",
-        "https://www.edwardjones.com/us-en/financial-advisor/sue-carney#fa-contact-form"
+        "https://www.edwardjones.com/us-en/financial-advisor/sue-carney#fa-contact-form",
+        "https://www.edwardjones.com/us-en/find-a-financial-advisor/locations/alaska/wasilla"
       ],
       "phone_form_detected": true,
       "phone_forms": [
@@ -12014,7 +12571,7 @@
       ],
       "http_status": 200,
       "first_seen": "2026-11-15T16:34:40+00:00",
-      "last_seen": "2026-11-15T16:34:40+00:00",
+      "last_seen": "2026-11-23T21:39:06+00:00",
       "review_status": "unreviewed",
       "notes": ""
     },
@@ -12184,7 +12741,7 @@
         "sweepstakes entry form phone number sponsors marketing partners privacy policy"
       ],
       "first_seen": "2026-11-11T20:10:25+00:00",
-      "last_seen": "2026-11-22T17:15:20+00:00",
+      "last_seen": "2026-11-23T21:33:57+00:00",
       "review_status": "unreviewed",
       "notes": "",
       "signup_pages_checked": [
@@ -12262,7 +12819,7 @@
       "domain": "epa.gov",
       "url": "https://www.epa.gov/lead/learn-about-lead",
       "title": "Learn About Lead | US EPA",
-      "search_snippet": "Nov 12, 2026 · This page provides basic information on lead including what it is, where it is found, how one can be exposed, and the …",
+      "search_snippet": "Nov 12, 2026 · Lead is a naturally occurring blue-gray metal found in small amounts in the earth’s crust. Most lead that people are …",
       "categories": [
         "subscriptions",
         "surveys"
@@ -12285,7 +12842,7 @@
       ],
       "http_status": 200,
       "first_seen": "2026-11-11T22:46:28+00:00",
-      "last_seen": "2026-11-22T17:19:02+00:00",
+      "last_seen": "2026-11-23T21:36:58+00:00",
       "review_status": "unreviewed",
       "notes": ""
     },
@@ -12293,7 +12850,7 @@
       "domain": "equifax.com",
       "url": "https://www.equifax.com/",
       "title": "Equifax | Credit Bureau | Check Your Credit",
-      "search_snippet": "Navigate your credit journey with the myEquifax app Visit the Equifax Consumer Services Center Access helpful services and useful …",
+      "search_snippet": "Get credit reports and credit scores for businesses and consumers from Equifax today! We also have identity protection tools with …",
       "categories": [],
       "signup_pages_checked": [
         "https://www.equifax.com/",
@@ -12313,7 +12870,7 @@
       ],
       "http_status": 200,
       "first_seen": "2026-11-11T22:50:17+00:00",
-      "last_seen": "2026-11-22T17:21:19+00:00",
+      "last_seen": "2026-11-23T21:38:58+00:00",
       "review_status": "unreviewed",
       "notes": ""
     },
@@ -12340,6 +12897,47 @@
       "http_status": 200,
       "first_seen": "2026-11-11T22:50:50+00:00",
       "last_seen": "2026-11-13T17:23:36+00:00",
+      "review_status": "unreviewed",
+      "notes": ""
+    },
+    {
+      "domain": "eurekasurveys.com",
+      "url": "https://eurekasurveys.com/",
+      "title": "Eureka Surveys: Make Money Taking Surveys & Cash Out to PayPal",
+      "search_snippet": "Earn money with paid surveys, games, and daily free cash on Eureka Surveys. Get $1 for signing up and cash out to PayPal, bank …",
+      "categories": [
+        "rewards",
+        "surveys"
+      ],
+      "signup_pages_checked": [
+        "https://eurekasurveys.com/",
+        "https://eurekasurveys.com/blog",
+        "https://eurekasurveys.com/help"
+      ],
+      "phone_form_detected": false,
+      "phone_forms": [],
+      "privacy_url": "https://eurekasurveys.com/privacy-policy",
+      "privacy_policy_checked": true,
+      "marketing_disclosure_patterns": [
+        "(personal information|personal data|information|data).{0,100}sell",
+        "(telephone|phone|text|sms).{0,100}(marketing|promotional|solicitation)",
+        "marketing purposes",
+        "sell.{0,100}(personal information|personal data|information|data)"
+      ],
+      "explicit_telemarketing_terms": [],
+      "privacy_evidence_excerpts": [
+        "igation, and legal compliance. we do not use facial images, liveness recordings, or biometric verification data for advertising, survey matching, or unrelated marketing. we do not sell, lease, trade, or otherwise profit from biometric identifiers or biometric information. we disclose verification information only to providers supporting verification, fraud prevention, hosting, storage, security, and related operations; as legally required; in a permitted business transfer; or with your ",
+        "licate-account detection, security, payout administration, dispute investigation, and legal compliance. we do not use facial images, liveness recordings, or biometric verification data for advertising, survey matching, or unrelated marketing. we do not sell, lease, trade, or otherwise profit from biometric identifiers or biometric information. we disclose verification information only to providers supporting verification, fraud prevention, hosting, storage, security, and r",
+        " text messages and (iii) for push notifications or in-app messages, adjusting the permissions in your mobile device. please note that your opt-out is limited to the email address, phone number, or device used and will not affect subsequent subscriptions or, for emails, non-promotional communications, such as those about your account, surveys, transactions, servicing, or our ongoing business relations. you understand that we may send you a text message confirming any opt-out by you. sensitive personal",
+        "with our affiliates for internal business purposes – we may disclose information about you, including personal information, with our affiliates for internal business purposes. for marketing purposes – we may disclose information to advertising or marketing partners where you direct us to do so, consent to the disclosure, or applicable law otherwise permits it. your choices and applicable state rights are described "
+      ],
+      "qualified_phone_and_marketing_disclosure": false,
+      "search_queries": [
+        "survey participant registration telephone number lead generation"
+      ],
+      "http_status": 200,
+      "first_seen": "2026-11-23T21:35:22+00:00",
+      "last_seen": "2026-11-23T21:35:22+00:00",
       "review_status": "unreviewed",
       "notes": ""
     },
@@ -12606,7 +13204,7 @@
       ],
       "http_status": 200,
       "first_seen": "2026-11-11T22:50:14+00:00",
-      "last_seen": "2026-11-22T17:21:17+00:00",
+      "last_seen": "2026-11-23T21:38:56+00:00",
       "review_status": "unreviewed",
       "notes": ""
     },
@@ -12899,9 +13497,21 @@
               "label": "Email or mobile number"
             }
           ]
+        },
+        {
+          "page_url": "https://www.facebook.com/login/?next=https%3A%2F%2Fwww.facebook.com%2Fmarketplace%2Fsanfrancisco%2Fsearch%2F%3Fcategory_id%3D529595287638583%26query%3DEntertainment%26referral_ui_component%3Dcategory_menu_item",
+          "action": "",
+          "method": "POST",
+          "phone_fields": [
+            {
+              "name": "email",
+              "type": "text",
+              "label": "Email or mobile number"
+            }
+          ]
         }
       ],
-      "privacy_url": "https://www.facebook.com/recover/initiate/?privacy_mutation_token=eyJ0eXBlIjo1LCJjcmVhdGlvbl90aW1lIjoxNzk1MzY3NzkwfQ%3D%3D&ars=facebook_login&next=https%3A%2F%2Fwww.facebook.com%2Fmarketplace%2Fsanfrancisco%2Fsearch%2F%3Fcategory_id%3D529595287638583%26query%3DEntertainment%26referral_ui_component%3Dcategory_menu_item",
+      "privacy_url": "https://www.facebook.com/recover/initiate/?privacy_mutation_token=eyJ0eXBlIjo1LCJjcmVhdGlvbl90aW1lIjoxNzk1NDY5NzA5fQ%3D%3D&ars=facebook_login&next=https%3A%2F%2Fwww.facebook.com%2Fmarketplace%2Fsanfrancisco%2Fsearch%2F%3Fcategory_id%3D529595287638583%26query%3DEntertainment%26referral_ui_component%3Dcategory_menu_item",
       "privacy_policy_checked": true,
       "marketing_disclosure_patterns": [],
       "explicit_telemarketing_terms": [],
@@ -12913,7 +13523,7 @@
       ],
       "http_status": 200,
       "first_seen": "2026-11-11T22:44:34+00:00",
-      "last_seen": "2026-11-22T17:16:31+00:00",
+      "last_seen": "2026-11-23T21:35:10+00:00",
       "review_status": "unreviewed",
       "notes": ""
     },
@@ -13154,7 +13764,7 @@
         "survey participant registration telephone number lead generation"
       ],
       "first_seen": "2026-11-11T20:10:10+00:00",
-      "last_seen": "2026-11-22T17:16:36+00:00",
+      "last_seen": "2026-11-23T21:35:15+00:00",
       "review_status": "unreviewed",
       "notes": "",
       "signup_pages_checked": [
@@ -13612,7 +14222,7 @@
       ],
       "http_status": 200,
       "first_seen": "2026-11-15T16:29:23+00:00",
-      "last_seen": "2026-11-21T16:52:40+00:00",
+      "last_seen": "2026-11-23T21:34:24+00:00",
       "review_status": "unreviewed",
       "notes": ""
     },
@@ -13637,7 +14247,7 @@
         "free samples sweepstakes signup"
       ],
       "first_seen": "2026-11-11T20:10:32+00:00",
-      "last_seen": "2026-11-22T17:15:34+00:00",
+      "last_seen": "2026-11-23T21:34:25+00:00",
       "review_status": "unreviewed",
       "notes": "",
       "signup_pages_checked": [
@@ -13723,7 +14333,7 @@
       "domain": "friv.com",
       "url": "https://www.friv.com/",
       "title": "FrivÂ® | FRIV.COM : The Best Free Games [Jogos | Juegos]",
-      "search_snippet": "A safe place to play free online games on your computer, phone or tablet! No downloads. No in-app purchases. No nagging. Just … Read more",
+      "search_snippet": "A safe place to play free online games on your computer, phone or tablet! No downloads. No in-app purchases. No nagging. Just …",
       "categories": [],
       "phone_language": [],
       "privacy_language": [
@@ -13740,7 +14350,7 @@
         "free samples sweepstakes signup"
       ],
       "first_seen": "2026-11-11T20:10:31+00:00",
-      "last_seen": "2026-11-21T16:52:37+00:00",
+      "last_seen": "2026-11-23T21:34:17+00:00",
       "review_status": "unreviewed",
       "notes": "",
       "signup_pages_checked": [
@@ -13821,7 +14431,7 @@
       "domain": "geico.com",
       "url": "https://www.geico.com/",
       "title": "An Insurance Company For Your Car And More | GEICO",
-      "search_snippet": "From car insurance to home insurance and more, GEICO offers reliable coverage that fits your needs. Plus, you can bundle … Read more",
+      "search_snippet": "From car insurance to home insurance and more, GEICO offers reliable coverage that fits your needs. Plus, you can bundle …",
       "categories": [],
       "signup_pages_checked": [
         "https://www.geico.com/",
@@ -13850,7 +14460,7 @@
       ],
       "http_status": 200,
       "first_seen": "2026-11-11T22:47:00+00:00",
-      "last_seen": "2026-11-21T16:55:27+00:00",
+      "last_seen": "2026-11-23T21:37:52+00:00",
       "review_status": "unreviewed",
       "notes": ""
     },
@@ -13965,7 +14575,7 @@
       ],
       "http_status": 200,
       "first_seen": "2026-11-12T03:09:31+00:00",
-      "last_seen": "2026-11-22T17:17:02+00:00",
+      "last_seen": "2026-11-23T21:35:44+00:00",
       "review_status": "unreviewed",
       "notes": ""
     },
@@ -13973,7 +14583,7 @@
       "domain": "get.gov",
       "url": "https://get.gov/",
       "title": "Home  |  get.gov",
-      "search_snippet": "get.gov An official website of the Cybersecurity and Infrastructure Security Agency",
+      "search_snippet": ".Gov is the top-level domain for governments in the U.S. Request and manage a .gov domain.",
       "categories": [],
       "signup_pages_checked": [
         "https://get.gov/",
@@ -13997,7 +14607,7 @@
       ],
       "http_status": 200,
       "first_seen": "2026-11-12T03:09:30+00:00",
-      "last_seen": "2026-11-20T17:56:21+00:00",
+      "last_seen": "2026-11-23T21:35:48+00:00",
       "review_status": "unreviewed",
       "notes": ""
     },
@@ -14037,7 +14647,7 @@
       "domain": "getbus.org",
       "url": "https://www.getbus.org/",
       "title": "Home - Golden Empire Transit District",
-      "search_snippet": "Golden Empire Transit (GET) celebrating National Transit Career Day Thursday November 12, 2026 Golden Empire Transit Offers … Read more",
+      "search_snippet": "Golden Empire Transit (GET) celebrating National Transit Career Day Thursday November 12, 2026 Golden Empire Transit Offers …",
       "categories": [
         "ad_supported_media",
         "surveys"
@@ -14067,7 +14677,7 @@
       ],
       "http_status": 200,
       "first_seen": "2026-11-20T17:56:18+00:00",
-      "last_seen": "2026-11-20T17:56:18+00:00",
+      "last_seen": "2026-11-23T21:35:47+00:00",
       "review_status": "unreviewed",
       "notes": ""
     },
@@ -14104,7 +14714,7 @@
       "domain": "getserveware.com",
       "url": "https://www.getserveware.com/",
       "title": "Home - G.E.T",
-      "search_snippet": "G.E.T. Enterprises understands the critical role dinnerware, drinkware, and displayware play in achieving daily success. That’s why … Read more",
+      "search_snippet": "For those who seek only the best in fashion-forward design, operational durability and attentive customer service Creating …",
       "categories": [
         "subscriptions"
       ],
@@ -14129,7 +14739,7 @@
       ],
       "http_status": 200,
       "first_seen": "2026-11-11T22:45:18+00:00",
-      "last_seen": "2026-11-21T16:53:51+00:00",
+      "last_seen": "2026-11-23T21:35:43+00:00",
       "review_status": "unreviewed",
       "notes": ""
     },
@@ -14545,6 +15155,36 @@
       "notes": ""
     },
     {
+      "domain": "globalcu.org",
+      "url": "https://www.globalcu.org/",
+      "title": "Your world of financial possibilities | Global Credit Union",
+      "search_snippet": "Find the answers you need to achieve your next financial goal. Browse a wide selection of financial resources. Why Is It Important to …",
+      "categories": [
+        "rewards"
+      ],
+      "signup_pages_checked": [
+        "https://www.globalcu.org/",
+        "https://www.globalcu.org/credit-cards/",
+        "https://www.globalcu.org/support/"
+      ],
+      "phone_form_detected": false,
+      "phone_forms": [],
+      "privacy_url": "https://www.globalcu.org/learn/privacy-security/?cat=Privacy+%26+Security",
+      "privacy_policy_checked": true,
+      "marketing_disclosure_patterns": [],
+      "explicit_telemarketing_terms": [],
+      "privacy_evidence_excerpts": [],
+      "qualified_phone_and_marketing_disclosure": false,
+      "search_queries": [
+        "financial services lead form phone number third party marketing"
+      ],
+      "http_status": 200,
+      "first_seen": "2026-11-23T21:39:03+00:00",
+      "last_seen": "2026-11-23T21:39:03+00:00",
+      "review_status": "unreviewed",
+      "notes": ""
+    },
+    {
       "domain": "goaustinvamosaustin.org",
       "url": "https://goaustinvamosaustin.org/climate-resilience",
       "title": "Climate Resilience - GAVA",
@@ -14867,7 +15507,48 @@
       ],
       "http_status": 200,
       "first_seen": "2026-11-11T22:44:21+00:00",
-      "last_seen": "2026-11-22T17:16:17+00:00",
+      "last_seen": "2026-11-23T21:34:58+00:00",
+      "review_status": "unreviewed",
+      "notes": ""
+    },
+    {
+      "domain": "hawaiinewsnow.com",
+      "url": "https://www.hawaiinewsnow.com:443/",
+      "title": "Hawaii News Now - Breaking News, Latest News, Weather & Traffic",
+      "search_snippet": "1 day ago · Hawaii News Now (KGMB/KHNL) is Hawaii's source for breaking news, severe weather forecasts and traffic updates.",
+      "categories": [
+        "ad_supported_media",
+        "sweepstakes"
+      ],
+      "signup_pages_checked": [
+        "https://www.hawaiinewsnow.com:443/",
+        "https://www.hawaiinewsnow.com:443/contests/",
+        "https://www.hawaiinewsnow.com:443/page/join-our-team/"
+      ],
+      "phone_form_detected": false,
+      "phone_forms": [],
+      "privacy_url": "https://www.hawaiinewsnow.com:443/privacy-policy/",
+      "privacy_policy_checked": true,
+      "marketing_disclosure_patterns": [
+        "(personal information|personal data|information|data).{0,100}sell",
+        "marketing purposes",
+        "sell.{0,100}(personal information|personal data|information|data)",
+        "share.{0,120}(marketing partners|advertising partners|third.party marketers|lead generators|advertisers)"
+      ],
+      "explicit_telemarketing_terms": [],
+      "privacy_evidence_excerpts": [
+        "personal information we automatically collect with personal information you provide to us or connect personal information about you from various sources. we do not collect, use or sell personal information for the purpose of training large language models. how we may disclose your information to provide our services, we may disclose your personal information to certain third parties, including: gray affiliates for business, operational, promotional or marketing purposes; our co-sponsors if you participate in",
+        "cts and other services or provide services or technologies to you; connect non-personal information we automatically collect with personal information you provide to us or connect personal information about you from various sources. we do not collect, use or sell personal information for the purpose of training large language models. how we may disclose your information to provide our services, we may disclose your personal information to certain third parties, including: gray a",
+        " precise, real-time or network location may be limited. advertising and personalized content advertising is important to our provision of free and low-cost services to you. we may share your personal information with our advertisers, advertising networks, or other third parties for direct marketing and promotional purposes. additionally, gray and its stations, our advertisers, certain outside network advertising services, and other third parties ma",
+        " your information to provide our services, we may disclose your personal information to certain third parties, including: gray affiliates for business, operational, promotional or marketing purposes; our co-sponsors if you participate in a co-branded, co-sponsored, or jointly presented promotion, contest, or other service; our marketing partners, including network advertising services, and/or other third parties as"
+      ],
+      "qualified_phone_and_marketing_disclosure": false,
+      "search_queries": [
+        "local news contest phone number promotional partners"
+      ],
+      "http_status": 200,
+      "first_seen": "2026-11-23T21:40:20+00:00",
+      "last_seen": "2026-11-23T21:40:20+00:00",
       "review_status": "unreviewed",
       "notes": ""
     },
@@ -15281,6 +15962,32 @@
       "notes": ""
     },
     {
+      "domain": "hotmart.com",
+      "url": "https://hotmart.com/pt-br/blog/o-que-e-marketing-digital",
+      "title": "Marketing digital: o que é, estratégias e como começar",
+      "search_snippet": "Sep 1, 2026 · Se você cria conteúdo, quer trabalhar com marketing digital ou pensa em vender um produto digital, este guia mostra …",
+      "categories": [],
+      "signup_pages_checked": [
+        "https://hotmart.com/pt-br/blog/o-que-e-marketing-digital"
+      ],
+      "phone_form_detected": false,
+      "phone_forms": [],
+      "privacy_url": "",
+      "privacy_policy_checked": false,
+      "marketing_disclosure_patterns": [],
+      "explicit_telemarketing_terms": [],
+      "privacy_evidence_excerpts": [],
+      "qualified_phone_and_marketing_disclosure": false,
+      "search_queries": [
+        "marketing partners may contact you by telephone privacy policy"
+      ],
+      "http_status": 200,
+      "first_seen": "2026-11-23T21:41:18+00:00",
+      "last_seen": "2026-11-23T21:41:18+00:00",
+      "review_status": "unreviewed",
+      "notes": ""
+    },
+    {
       "domain": "hp.com",
       "url": "https://www.hp.com/us-en/tech-takes/printers/troubleshooting/how-to-fix-common-hp-printer-problems.html",
       "title": "How to Fix Common HP Printer Problems  | HP® Official Site",
@@ -15457,10 +16164,12 @@
       "search_snippet": "All your favorite music, podcasts, and radio stations available for free. Listen to thousands of live radio stations or create your own …",
       "categories": [
         "ad_supported_media",
+        "surveys",
         "sweepstakes"
       ],
       "signup_pages_checked": [
         "https://www.iheart.com/",
+        "https://www.iheart.com/content/2026-11-23-jesse-mccartney-joins-jonas-brothers-for-live-podcast-at-d23/",
         "https://www.iheart.com/content/general-contesting-guidelines/"
       ],
       "phone_form_detected": false,
@@ -15484,7 +16193,7 @@
       ],
       "http_status": 200,
       "first_seen": "2026-11-11T22:51:17+00:00",
-      "last_seen": "2026-11-22T17:22:37+00:00",
+      "last_seen": "2026-11-23T21:39:55+00:00",
       "review_status": "unreviewed",
       "notes": ""
     },
@@ -15518,7 +16227,7 @@
       "domain": "instant-gaming.com",
       "url": "https://www.instant-gaming.com/en/",
       "title": "Buy your video games cheaper for PC and consoles - Instant Gaming",
-      "search_snippet": "Instant Gaming works by offering discounted games that can be purchased and delivered digitally. After selecting and purchasing a …",
+      "search_snippet": "Instant Gaming is an online platform that sells digital video games, offering discounts on a wide range of titles across various gaming …",
       "categories": [
         "rewards"
       ],
@@ -15545,7 +16254,7 @@
       ],
       "http_status": 200,
       "first_seen": "2026-11-11T22:44:05+00:00",
-      "last_seen": "2026-11-22T17:16:00+00:00",
+      "last_seen": "2026-11-23T21:34:34+00:00",
       "review_status": "unreviewed",
       "notes": ""
     },
@@ -15581,7 +16290,7 @@
       ],
       "http_status": 200,
       "first_seen": "2026-11-11T22:44:04+00:00",
-      "last_seen": "2026-11-22T17:15:58+00:00",
+      "last_seen": "2026-11-23T21:34:37+00:00",
       "review_status": "unreviewed",
       "notes": ""
     },
@@ -15589,7 +16298,7 @@
       "domain": "instant.so",
       "url": "https://instant.so/",
       "title": "#1 AI Shopify Store Builder & Page Builder | Instant",
-      "search_snippet": "Instant's AI agents design the layout, write the copy, generate SEO titles, descriptions and alt text, and keep every page responsive, …",
+      "search_snippet": "The AI Shopify store builder. Build, test and launch your store, landing pages and product pages without code. Start free on the …",
       "categories": [
         "rewards",
         "subscriptions"
@@ -15610,7 +16319,7 @@
       ],
       "http_status": 200,
       "first_seen": "2026-11-22T17:16:04+00:00",
-      "last_seen": "2026-11-22T17:16:04+00:00",
+      "last_seen": "2026-11-23T21:34:42+00:00",
       "review_status": "unreviewed",
       "notes": ""
     },
@@ -15672,15 +16381,16 @@
     },
     {
       "domain": "insurify.com",
-      "url": "https://insurify.com/",
-      "title": "Compare Cheap Car Insurance Quotes from 120+ Top Insurers",
-      "search_snippet": "Oct 7, 2026 · Compare car insurance quotes from over 120 companies, including GEICO, Allstate, Progressive, and Liberty Mutual, … Read more",
+      "url": "https://insurify.com/car-insurance/nevada/las-vegas/",
+      "title": "Compare Cheap Las Vegas Car Insurance Quotes From $71/mo. | Insurify",
+      "search_snippet": "1 day ago · Country Financial offers the cheapest car insurance in Las Vegas, with liability rates of $71 per month. Heavy congestion …",
       "categories": [
         "lead_generation"
       ],
       "signup_pages_checked": [
         "https://insurify.com/",
         "https://insurify.com/car-insurance/kansas/topeka/",
+        "https://insurify.com/car-insurance/nevada/las-vegas/",
         "https://insurify.com/car-insurance/ohio/columbus/",
         "https://insurify.com/company/contact/",
         "https://insurify.com/homeowners-insurance/florida/west-palm-beach/",
@@ -15709,7 +16419,35 @@
       ],
       "http_status": 200,
       "first_seen": "2026-11-12T03:10:50+00:00",
-      "last_seen": "2026-11-20T17:58:33+00:00",
+      "last_seen": "2026-11-23T21:37:30+00:00",
+      "review_status": "unreviewed",
+      "notes": ""
+    },
+    {
+      "domain": "interbrand.com",
+      "url": "https://interbrand.com/best-global-brands/global/",
+      "title": "Best Global Brands 2026 | Top 100 Brands Ranked | Interbrand",
+      "search_snippet": "Explore the value, strength, leadership, and growth of the world’s 100 most valuable brands.",
+      "categories": [],
+      "signup_pages_checked": [
+        "https://interbrand.com/best-global-brands/global/",
+        "https://interbrand.com/best-global-brands/global/hewlett-packard-enterprise/",
+        "https://interbrand.com/contact/"
+      ],
+      "phone_form_detected": false,
+      "phone_forms": [],
+      "privacy_url": "https://interbrand.com/privacy-notice/",
+      "privacy_policy_checked": true,
+      "marketing_disclosure_patterns": [],
+      "explicit_telemarketing_terms": [],
+      "privacy_evidence_excerpts": [],
+      "qualified_phone_and_marketing_disclosure": false,
+      "search_queries": [
+        "brand ambassador application phone number marketing partners"
+      ],
+      "http_status": 200,
+      "first_seen": "2026-11-23T21:40:53+00:00",
+      "last_seen": "2026-11-23T21:40:53+00:00",
       "review_status": "unreviewed",
       "notes": ""
     },
@@ -15826,7 +16564,7 @@
       ],
       "http_status": 200,
       "first_seen": "2026-11-11T22:47:39+00:00",
-      "last_seen": "2026-11-22T17:20:00+00:00",
+      "last_seen": "2026-11-23T21:38:12+00:00",
       "review_status": "unreviewed",
       "notes": ""
     },
@@ -16144,6 +16882,43 @@
       "notes": ""
     },
     {
+      "domain": "kitv.com",
+      "url": "https://www.kitv.com/",
+      "title": "KITV 4 Island News | Honolulu, HI News & Weather",
+      "search_snippet": "1 day ago · Honolulu breaking news, weather and live video. Covering local politics, crime, health, education and sports for Honolulu …",
+      "categories": [
+        "ad_supported_media",
+        "subscriptions"
+      ],
+      "signup_pages_checked": [
+        "https://www.kitv.com/",
+        "https://www.kitv.com/contact/apps/",
+        "https://www.kitv.com/users/signup/?referer_url=https%3A%2F%2Fwww.kitv.com%2F"
+      ],
+      "phone_form_detected": false,
+      "phone_forms": [],
+      "privacy_url": "https://www.kitv.com/site/privacy.html",
+      "privacy_policy_checked": true,
+      "marketing_disclosure_patterns": [
+        "(personal information|personal data|information|data).{0,100}sell",
+        "sell.{0,100}(personal information|personal data|information|data)"
+      ],
+      "explicit_telemarketing_terms": [],
+      "privacy_evidence_excerpts": [
+        "tributing our products, or engaging in joint marketing activities. to facilitate changes of control . we continually look for ways to improve our business, including purchasing or selling all or part of a business or company. we share information in connection with, or during negotiations of, any proposed or actual merger, purchase, sale or any other type of acquisition, business combination of all or any portion of our business or assets, change of control, or ",
+        "fers (including special offers of our affiliates) and may use your information to inform you of other products or services available from us. with our business partners . we share information with our partners in connection with offering our service over the business partner’s platform, selling or distributing our products, or engaging in joint marketing activities. to facilitate changes of control . we continually look for ways to improve our business, including purchasing or selling all or part of a busin"
+      ],
+      "qualified_phone_and_marketing_disclosure": false,
+      "search_queries": [
+        "local news contest phone number promotional partners"
+      ],
+      "http_status": 200,
+      "first_seen": "2026-11-23T21:40:22+00:00",
+      "last_seen": "2026-11-23T21:40:22+00:00",
+      "review_status": "unreviewed",
+      "notes": ""
+    },
+    {
       "domain": "koupon.ai",
       "url": "https://www.koupon.ai/",
       "title": "Amazon Promo Codes & Daily Deals: Save 20-80% Now",
@@ -16206,6 +16981,36 @@
       "http_status": 200,
       "first_seen": "2026-11-19T18:30:16+00:00",
       "last_seen": "2026-11-19T18:30:16+00:00",
+      "review_status": "unreviewed",
+      "notes": ""
+    },
+    {
+      "domain": "learn.microsoft.com",
+      "url": "https://learn.microsoft.com/en-us/answers/questions/6077919/how-to-earn-points-on-xbox",
+      "title": "how to earn points on xbox - Microsoft Q&A",
+      "search_snippet": "3 days ago · so I always try going to the points section on Xbox and it always says something like &quot;not available&quot; even …",
+      "categories": [
+        "rewards",
+        "sweepstakes"
+      ],
+      "signup_pages_checked": [
+        "https://learn.microsoft.com/en-us/answers/questions/6077919/how-to-earn-points-on-xbox",
+        "https://learn.microsoft.com/en-us/answers/tags/1054/bing-category-bing-rewards"
+      ],
+      "phone_form_detected": false,
+      "phone_forms": [],
+      "privacy_url": "https://aka.ms/yourcaliforniaprivacychoices",
+      "privacy_policy_checked": false,
+      "marketing_disclosure_patterns": [],
+      "explicit_telemarketing_terms": [],
+      "privacy_evidence_excerpts": [],
+      "qualified_phone_and_marketing_disclosure": false,
+      "search_queries": [
+        "rewards program registration phone number third party marketing"
+      ],
+      "http_status": 200,
+      "first_seen": "2026-11-23T21:36:07+00:00",
+      "last_seen": "2026-11-23T21:36:07+00:00",
       "review_status": "unreviewed",
       "notes": ""
     },
@@ -16301,7 +17106,7 @@
       ],
       "http_status": 200,
       "first_seen": "2026-11-18T18:19:41+00:00",
-      "last_seen": "2026-11-21T16:55:43+00:00",
+      "last_seen": "2026-11-23T21:37:49+00:00",
       "review_status": "unreviewed",
       "notes": ""
     },
@@ -17086,7 +17891,7 @@
       ],
       "http_status": 200,
       "first_seen": "2026-11-20T17:56:47+00:00",
-      "last_seen": "2026-11-20T17:56:47+00:00",
+      "last_seen": "2026-11-23T21:36:11+00:00",
       "review_status": "unreviewed",
       "notes": ""
     },
@@ -17190,7 +17995,7 @@
       "domain": "marketingtutor.net",
       "url": "https://www.marketingtutor.net/product-meaning-definition/",
       "title": "What is a Product, Definition of a Product | Marketing Tutor",
-      "search_snippet": "Jun 17, 2026 · A product is anything a business offers to satisfy a need or want. It can be physical, like a phone; intangible, like a …",
+      "search_snippet": "Jun 17, 2026 · Philip Kotler defined a product as: “Anything that can be offered to a market for attention, acquisition, use or …",
       "categories": [
         "ad_supported_media"
       ],
@@ -17216,7 +18021,7 @@
       ],
       "http_status": 200,
       "first_seen": "2026-11-12T03:08:34+00:00",
-      "last_seen": "2026-11-12T03:08:34+00:00",
+      "last_seen": "2026-11-23T21:34:31+00:00",
       "review_status": "unreviewed",
       "notes": ""
     },
@@ -17233,6 +18038,7 @@
         "https://markets.businessinsider.com/news/stocks/qualcomm-earnings-qcom-stock-chip-deal-hyperscaler-ai-datacenter-2026-4",
         "https://markets.businessinsider.com/stocks/bj-stock",
         "https://markets.businessinsider.com/stocks/gmgmf-stock",
+        "https://markets.businessinsider.com/stocks/hpe-stock",
         "https://markets.businessinsider.com/stocks/vik-stock",
         "https://markets.businessinsider.com/stocks/vylr-stock",
         "https://markets.businessinsider.com/stocks/yiduf-stock"
@@ -17262,7 +18068,7 @@
       ],
       "http_status": 200,
       "first_seen": "2026-11-11T22:44:37+00:00",
-      "last_seen": "2026-11-22T17:16:36+00:00",
+      "last_seen": "2026-11-23T21:35:15+00:00",
       "review_status": "unreviewed",
       "notes": ""
     },
@@ -17767,7 +18573,7 @@
       ],
       "http_status": 200,
       "first_seen": "2026-11-11T22:50:29+00:00",
-      "last_seen": "2026-11-22T17:21:27+00:00",
+      "last_seen": "2026-11-23T21:39:08+00:00",
       "review_status": "unreviewed",
       "notes": ""
     },
@@ -17799,7 +18605,7 @@
       ],
       "http_status": 200,
       "first_seen": "2026-11-11T22:50:32+00:00",
-      "last_seen": "2026-11-22T17:21:34+00:00",
+      "last_seen": "2026-11-23T21:39:19+00:00",
       "review_status": "unreviewed",
       "notes": ""
     },
@@ -17864,7 +18670,7 @@
       ],
       "http_status": 200,
       "first_seen": "2026-11-11T22:50:48+00:00",
-      "last_seen": "2026-11-22T17:21:40+00:00",
+      "last_seen": "2026-11-23T21:39:26+00:00",
       "review_status": "unreviewed",
       "notes": ""
     },
@@ -18105,7 +18911,7 @@
       "domain": "microsoft.com",
       "url": "https://www.microsoft.com/en-us/microsoft-365/online-surveys-polls-quizzes",
       "title": "Surveys, Polls, and Quizzes | Microsoft Forms",
-      "search_snippet": "Get feedback effortlessly with simplified surveys, polls, and quizzes.",
+      "search_snippet": "Collect better data to make better decisions. Get feedback effortlessly with simplified surveys, polls, and quizzes.",
       "categories": [
         "rewards",
         "surveys"
@@ -18122,7 +18928,7 @@
         "survey participant registration telephone number lead generation"
       ],
       "first_seen": "2026-11-11T20:10:12+00:00",
-      "last_seen": "2026-11-22T17:16:51+00:00",
+      "last_seen": "2026-11-23T21:35:20+00:00",
       "review_status": "unreviewed",
       "notes": "",
       "signup_pages_checked": [
@@ -18631,7 +19437,7 @@
       "domain": "msn.com",
       "url": "https://www.msn.com/en-us/play",
       "title": "MSN",
-      "search_snippet": "Play arcade, puzzle, strategy, sports and other fun games for free. Enjoy!",
+      "search_snippet": "Play free online games in MSN, including Solitaire, Crosswords, Word Games and more. Play arcade, puzzle, strategy, sports and …",
       "categories": [],
       "phone_language": [],
       "privacy_language": [],
@@ -18645,7 +19451,7 @@
         "online focus group participant phone number marketing"
       ],
       "first_seen": "2026-11-11T20:10:35+00:00",
-      "last_seen": "2026-11-22T17:15:53+00:00",
+      "last_seen": "2026-11-23T21:34:18+00:00",
       "review_status": "unreviewed",
       "notes": "",
       "signup_pages_checked": [
@@ -18657,6 +19463,43 @@
       "explicit_telemarketing_terms": [],
       "privacy_evidence_excerpts": [],
       "qualified_phone_and_marketing_disclosure": false
+    },
+    {
+      "domain": "multco.us",
+      "url": "https://multco.us/departments/county-surveyors-office",
+      "title": "County Surveyor's Office | Multnomah County",
+      "search_snippet": "We provide access to public survey records; review surveys submitted by land surveyors; and help the public, county and local …",
+      "categories": [
+        "surveys"
+      ],
+      "signup_pages_checked": [
+        "https://multco.us/departments/county-surveyors-office",
+        "https://multco.us/departments/county-surveyors-office#main-content"
+      ],
+      "phone_form_detected": false,
+      "phone_forms": [],
+      "privacy_url": "https://multco.us/info/privacy-policy",
+      "privacy_policy_checked": true,
+      "marketing_disclosure_patterns": [
+        "(personal information|personal data|information|data).{0,100}sell",
+        "marketing purposes",
+        "sell.{0,100}(personal information|personal data|information|data)"
+      ],
+      "explicit_telemarketing_terms": [],
+      "privacy_evidence_excerpts": [
+        "icy will occur to incorporate statutory updates and address new technological challenges. iv. how we share information and contractual controls 4.1 sharing limitations we will not sell, license or disclose your personal information to any third party without your consent, unless we are legally permitted or required by law to do so, or if it is necessary to complete a transaction or fulfill your service request. restriction on mobile information: n",
+        "in section (i) we noted an annual review of the public-facing privacy policy will occur to incorporate statutory updates and address new technological challenges. iv. how we share information and contractual controls 4.1 sharing limitations we will not sell, license or disclose your personal information to any third party without your consent, unless we are legally permitted or required by law to do so, or if it is necessary to complete a transaction or fulfill your servic",
+        "and use that data for purposes unrelated to the services (such as ad targeting), or to sell that data. we will not collect information or create individual profiles for commercial marketing purposes. when we share aggregate or de-identified information, we ensure that the data is stripped of pii. however, you acknowledge that in some instances, third-parties may be able to combine aggregate information with other d"
+      ],
+      "qualified_phone_and_marketing_disclosure": false,
+      "search_queries": [
+        "survey participant registration telephone number lead generation"
+      ],
+      "http_status": 200,
+      "first_seen": "2026-11-23T21:35:21+00:00",
+      "last_seen": "2026-11-23T21:35:21+00:00",
+      "review_status": "unreviewed",
+      "notes": ""
     },
     {
       "domain": "munnfinancialgroup.com",
@@ -18781,7 +19624,7 @@
       "domain": "music.apple.com",
       "url": "https://music.apple.com/us/radio",
       "title": "âRadio Stations - Apple Music",
-      "search_snippet": "NEW MUSIC DAILY RADIO Don Toliver The artist on “Party with the Boys” and his LP NITROUS.",
+      "search_snippet": "NEW MUSIC DAILY RADIO Burna Boy On his GTA song “Bigger” and show at Apple Music Hall.",
       "categories": [
         "subscriptions",
         "surveys"
@@ -18790,7 +19633,8 @@
         "https://music.apple.com/us/radio",
         "https://music.apple.com/us/room/6743553488",
         "https://music.apple.com/us/station/by-any-means-the-album-special/ra.6831331102",
-        "https://music.apple.com/us/station/his-majesty-the-king/ra.6795074446"
+        "https://music.apple.com/us/station/his-majesty-the-king/ra.6795074446",
+        "https://music.apple.com/us/station/npr-news-and-culture/ra.840950253"
       ],
       "phone_form_detected": false,
       "phone_forms": [],
@@ -18805,7 +19649,7 @@
       ],
       "http_status": 200,
       "first_seen": "2026-11-13T17:24:23+00:00",
-      "last_seen": "2026-11-19T18:31:44+00:00",
+      "last_seen": "2026-11-23T21:40:16+00:00",
       "review_status": "unreviewed",
       "notes": ""
     },
@@ -19015,7 +19859,7 @@
       ],
       "http_status": 200,
       "first_seen": "2026-11-12T03:08:43+00:00",
-      "last_seen": "2026-11-21T16:52:48+00:00",
+      "last_seen": "2026-11-23T21:34:38+00:00",
       "review_status": "unreviewed",
       "notes": ""
     },
@@ -19112,7 +19956,7 @@
       ],
       "http_status": 200,
       "first_seen": "2026-11-11T22:51:24+00:00",
-      "last_seen": "2026-11-22T17:22:46+00:00",
+      "last_seen": "2026-11-23T21:40:03+00:00",
       "review_status": "unreviewed",
       "notes": ""
     },
@@ -19272,7 +20116,7 @@
       "domain": "nerdwallet.com",
       "url": "https://www.nerdwallet.com/finance/learn/debt",
       "title": "Debt Types and Terms to Know - NerdWallet",
-      "search_snippet": "Oct 21, 2026 · By definition, debt is money owed by one party to another, often with interest. Borrowing money has benefits and … Read more",
+      "search_snippet": "Oct 21, 2026 · By definition, debt is money owed by one party to another, often with interest. Borrowing money has benefits and …",
       "categories": [
         "rewards"
       ],
@@ -19302,7 +20146,7 @@
       ],
       "http_status": 200,
       "first_seen": "2026-11-12T03:11:59+00:00",
-      "last_seen": "2026-11-21T16:56:54+00:00",
+      "last_seen": "2026-11-23T21:38:49+00:00",
       "review_status": "unreviewed",
       "notes": ""
     },
@@ -19479,7 +20323,7 @@
       "domain": "newsletter.co.uk",
       "url": "https://www.newsletter.co.uk/",
       "title": "Latest News | Belfast News Letter",
-      "search_snippet": "18 hours ago · Get all of the latest news from Belfast News Letter. Providing a fresh perspective for online news.",
+      "search_snippet": "21 hours ago · Get all of the latest news from Belfast News Letter. Providing a fresh perspective for online news.",
       "categories": [
         "ad_supported_media",
         "rewards",
@@ -19511,7 +20355,7 @@
       ],
       "http_status": 200,
       "first_seen": "2026-11-11T22:46:00+00:00",
-      "last_seen": "2026-11-19T18:27:16+00:00",
+      "last_seen": "2026-11-23T21:36:41+00:00",
       "review_status": "unreviewed",
       "notes": ""
     },
@@ -19545,7 +20389,7 @@
       ],
       "http_status": 200,
       "first_seen": "2026-11-11T22:46:01+00:00",
-      "last_seen": "2026-11-19T18:27:22+00:00",
+      "last_seen": "2026-11-23T21:36:38+00:00",
       "review_status": "unreviewed",
       "notes": ""
     },
@@ -19641,7 +20485,7 @@
       ],
       "http_status": 200,
       "first_seen": "2026-11-12T03:12:20+00:00",
-      "last_seen": "2026-11-22T17:21:30+00:00",
+      "last_seen": "2026-11-23T21:39:17+00:00",
       "review_status": "unreviewed",
       "notes": ""
     },
@@ -19744,7 +20588,7 @@
       "domain": "nordstromrack.com",
       "url": "https://www.nordstromrack.com/clearance",
       "title": "Deals, Sale & Clearance Items | Nordstrom Rack",
-      "search_snippet": "Shop deals, sale and clearance at Nordstrom Rack, from women's dresses and men's suiting to kids' shoes and designer … Read more",
+      "search_snippet": "Shop a great selection of Deals, Sale & Clearance Items at Nordstrom Rack. Save up to 70% on top brands every day.",
       "categories": [
         "ad_supported_media",
         "rewards",
@@ -19768,7 +20612,7 @@
       ],
       "http_status": 200,
       "first_seen": "2026-11-15T16:31:38+00:00",
-      "last_seen": "2026-11-19T18:27:14+00:00",
+      "last_seen": "2026-11-23T21:36:31+00:00",
       "review_status": "unreviewed",
       "notes": ""
     },
@@ -19804,9 +20648,9 @@
     },
     {
       "domain": "npr.org",
-      "url": "https://www.npr.org/sections/education",
-      "title": "Education : NPR",
-      "search_snippet": "Follow NPR Education for reporting on learning, parenting, teaching innovations, school equity, changes at the U.S. Education …",
+      "url": "https://www.npr.org/sections/health",
+      "title": "Health : NPR",
+      "search_snippet": "21 hours ago · Wellness influencers say mushroom supplements can help with your gut health, focus and immune system. Here is …",
       "categories": [
         "ad_supported_media",
         "subscriptions"
@@ -19838,7 +20682,7 @@
       ],
       "http_status": 200,
       "first_seen": "2026-11-16T19:46:50+00:00",
-      "last_seen": "2026-11-22T17:20:44+00:00",
+      "last_seen": "2026-11-23T21:39:12+00:00",
       "review_status": "unreviewed",
       "notes": ""
     },
@@ -19881,6 +20725,50 @@
       "notes": ""
     },
     {
+      "domain": "nuvisionfederal.com",
+      "url": "https://nuvisionfederal.com/pfd-sweepstakes-thank-you",
+      "title": "2026 NUVISION PFD SWEEPSTAKES - Thank You",
+      "search_snippet": "The Sweepstakes begins at 7:00 AM Pacific Time on Thursday, January 15, 2026, and ends at 11:59 PM Pacific Time on …",
+      "categories": [
+        "rewards",
+        "sweepstakes"
+      ],
+      "signup_pages_checked": [
+        "https://nuvisionfederal.com/contact-us",
+        "https://nuvisionfederal.com/pfd-sweepstakes-thank-you",
+        "https://nuvisionfederal.com/pfd-sweepstakes-thank-you#main"
+      ],
+      "phone_form_detected": true,
+      "phone_forms": [
+        {
+          "page_url": "https://nuvisionfederal.com/contact-us",
+          "action": "/contact-us?sf_cntrl_id=ctl00%24Content1%24C280",
+          "method": "POST",
+          "phone_fields": [
+            {
+              "name": "TextFieldController_1",
+              "type": "text",
+              "label": "Contact Phone Number"
+            }
+          ]
+        }
+      ],
+      "privacy_url": "https://nuvisionfederal.com/privacy-policy",
+      "privacy_policy_checked": true,
+      "marketing_disclosure_patterns": [],
+      "explicit_telemarketing_terms": [],
+      "privacy_evidence_excerpts": [],
+      "qualified_phone_and_marketing_disclosure": false,
+      "search_queries": [
+        "sweepstakes entry form phone number sponsors marketing partners privacy policy"
+      ],
+      "http_status": 200,
+      "first_seen": "2026-11-23T21:33:47+00:00",
+      "last_seen": "2026-11-23T21:33:47+00:00",
+      "review_status": "unreviewed",
+      "notes": ""
+    },
+    {
       "domain": "nycforfree.co",
       "url": "https://www.nycforfree.co/",
       "title": "Free Things to Do in NYC — Events & Freebies | NYC for FREE",
@@ -19912,7 +20800,7 @@
       "domain": "office.instant.co",
       "url": "https://office.instant.co/login",
       "title": "Instant Financial",
-      "search_snippet": "Don't have an Instant account? Learn More.",
+      "search_snippet": "Sign In Don't have an Instant account? Learn More",
       "categories": [],
       "signup_pages_checked": [
         "https://office.instant.co/login"
@@ -19930,7 +20818,7 @@
       ],
       "http_status": 200,
       "first_seen": "2026-11-11T22:44:02+00:00",
-      "last_seen": "2026-11-22T17:15:57+00:00",
+      "last_seen": "2026-11-23T21:34:32+00:00",
       "review_status": "unreviewed",
       "notes": ""
     },
@@ -19995,7 +20883,7 @@
       ],
       "http_status": 200,
       "first_seen": "2026-11-11T22:45:58+00:00",
-      "last_seen": "2026-11-22T17:18:20+00:00",
+      "last_seen": "2026-11-23T21:36:33+00:00",
       "review_status": "unreviewed",
       "notes": ""
     },
@@ -20046,7 +20934,7 @@
         "free samples sweepstakes signup"
       ],
       "first_seen": "2026-11-11T20:10:34+00:00",
-      "last_seen": "2026-11-22T17:15:39+00:00",
+      "last_seen": "2026-11-23T21:34:22+00:00",
       "review_status": "unreviewed",
       "notes": "",
       "signup_pages_checked": [
@@ -20064,7 +20952,7 @@
       "domain": "onlineis.com",
       "url": "https://www.onlineis.com/",
       "title": "ONLINE IS | HomeONLINE IS",
-      "search_snippet": "ONLINE provides several industry-specific decision-making tools, delivered via the internet, which are aimed at helping our clients …",
+      "search_snippet": "ONLINE is committed to providing timely answers to your questions. Please note that because of certain compliance requirements …",
       "categories": [
         "subscriptions"
       ],
@@ -20093,7 +20981,7 @@
       ],
       "http_status": 200,
       "first_seen": "2026-11-13T17:19:07+00:00",
-      "last_seen": "2026-11-16T19:44:43+00:00",
+      "last_seen": "2026-11-23T21:35:33+00:00",
       "review_status": "unreviewed",
       "notes": ""
     },
@@ -20165,7 +21053,7 @@
       ],
       "http_status": 200,
       "first_seen": "2026-11-11T22:51:30+00:00",
-      "last_seen": "2026-11-22T17:22:54+00:00",
+      "last_seen": "2026-11-23T21:40:13+00:00",
       "review_status": "unreviewed",
       "notes": ""
     },
@@ -20359,6 +21247,40 @@
       "notes": ""
     },
     {
+      "domain": "paid.ai",
+      "url": "https://paid.ai/",
+      "title": "Monetization for the AI Economy | Paid",
+      "search_snippet": "Almost any pricing configuration, deployed at the pace of your business. Assign rates, tiers, bundles, minimums, overages, prepaid …",
+      "categories": [],
+      "signup_pages_checked": [
+        "https://paid.ai/"
+      ],
+      "phone_form_detected": false,
+      "phone_forms": [],
+      "privacy_url": "https://paid.ai/legal/privacy",
+      "privacy_policy_checked": true,
+      "marketing_disclosure_patterns": [
+        "lead generation",
+        "marketing purposes",
+        "sell.{0,100}(personal information|personal data|information|data)"
+      ],
+      "explicit_telemarketing_terms": [],
+      "privacy_evidence_excerpts": [
+        "r other third parties in connection with the consideration, negotiation, or completion of a corporate transaction in which we are acquired by or merged with another company, or we sell, liquidate, or transfer all or a portion of our assets. consent. we may also disclose personal information from or about you or your devices with your permission. your choices and rights marketing communications. you can unsubscribe from our promotional emails via the link provided in the emails. even if you opt out of recei",
+        "able, profile image. we may also receive business contact details and related professional information about you from publicly available sources and third-party providers, such as lead generation, scheduling, crm, visitor identification and data enrichment providers, including where they help us identify companies or contacts that may be interested in our services. communications. if you contact us directly, we ",
+        "ive an electronic copy of personal information that you have provided to us, in certain circumstances; object at any time to our processing of your personal information for direct marketing purposes; request human review of decisions taken exclusively on the basis of automated processing where those decisions produce legal or similarly significant effects on you, and lodge a complaint with a supervisory authority, "
+      ],
+      "qualified_phone_and_marketing_disclosure": false,
+      "search_queries": [
+        "paid survey registration mobile phone number third parties"
+      ],
+      "http_status": 200,
+      "first_seen": "2026-11-23T21:35:04+00:00",
+      "last_seen": "2026-11-23T21:35:04+00:00",
+      "review_status": "unreviewed",
+      "notes": ""
+    },
+    {
       "domain": "paid.com",
       "url": "https://paid.com/",
       "title": "eCommerce Website Builder, Online Payments and Shipping Solutions - Paid",
@@ -20380,7 +21302,7 @@
       ],
       "http_status": 200,
       "first_seen": "2026-11-11T22:44:20+00:00",
-      "last_seen": "2026-11-22T17:16:18+00:00",
+      "last_seen": "2026-11-23T21:35:01+00:00",
       "review_status": "unreviewed",
       "notes": ""
     },
@@ -20492,7 +21414,7 @@
       "domain": "pandora.com",
       "url": "https://www.pandora.com",
       "title": "Music and Podcasts, Free and On-Demand | Pandora",
-      "search_snippet": "Play the songs, albums, playlists and podcasts you love on the all-new Pandora. Sign up for a subscription plan to stream ad-free … Read more",
+      "search_snippet": "Play the songs, albums, playlists and podcasts you love on the all-new Pandora. Sign up for a subscription plan to stream ad-free …",
       "categories": [],
       "signup_pages_checked": [
         "https://www.pandora.com"
@@ -20510,7 +21432,7 @@
       ],
       "http_status": 200,
       "first_seen": "2026-11-12T03:13:04+00:00",
-      "last_seen": "2026-11-21T16:58:23+00:00",
+      "last_seen": "2026-11-23T21:40:14+00:00",
       "review_status": "unreviewed",
       "notes": ""
     },
@@ -20658,7 +21580,7 @@
       ],
       "http_status": 200,
       "first_seen": "2026-11-16T19:49:23+00:00",
-      "last_seen": "2026-11-22T17:24:37+00:00",
+      "last_seen": "2026-11-23T21:41:04+00:00",
       "review_status": "unreviewed",
       "notes": ""
     },
@@ -20831,7 +21753,7 @@
       "domain": "planejamento.marketing",
       "url": "https://planejamento.marketing/marketing/o-que-e-marketing/",
       "title": "O Que é Marketing? Conceito, Funções E Exemplos",
-      "search_snippet": "May 15, 2024 · O aspecto central do marketing é a criação de valor. Isso envolve identificar e entender as necessidades e desejos … Read more",
+      "search_snippet": "May 15, 2024 · O aspecto central do marketing é a criação de valor. Isso envolve identificar e entender as necessidades e desejos …",
       "categories": [
         "subscriptions"
       ],
@@ -20851,7 +21773,7 @@
       ],
       "http_status": 200,
       "first_seen": "2026-11-21T16:59:08+00:00",
-      "last_seen": "2026-11-21T16:59:08+00:00",
+      "last_seen": "2026-11-23T21:41:18+00:00",
       "review_status": "unreviewed",
       "notes": ""
     },
@@ -20948,13 +21870,43 @@
       "notes": ""
     },
     {
+      "domain": "plumbershawaii.com",
+      "url": "https://plumbershawaii.com/",
+      "title": "Plumbers & Fitters UA Local 675",
+      "search_snippet": "Nov 5, 2026 · In support of our members, Local 675 will pay for the Entry Fee, and provide a Union t-shirt, for the following …",
+      "categories": [
+        "subscriptions"
+      ],
+      "signup_pages_checked": [
+        "https://plumbershawaii.com/",
+        "https://plumbershawaii.com/contact_us.php"
+      ],
+      "phone_form_detected": false,
+      "phone_forms": [],
+      "privacy_url": "https://plumbershawaii.com/privacy_policy.php",
+      "privacy_policy_checked": true,
+      "marketing_disclosure_patterns": [],
+      "explicit_telemarketing_terms": [],
+      "privacy_evidence_excerpts": [],
+      "qualified_phone_and_marketing_disclosure": false,
+      "search_queries": [
+        "local news contest phone number promotional partners"
+      ],
+      "http_status": 200,
+      "first_seen": "2026-11-23T21:40:26+00:00",
+      "last_seen": "2026-11-23T21:40:26+00:00",
+      "review_status": "unreviewed",
+      "notes": ""
+    },
+    {
       "domain": "pogo.com",
-      "url": "https://www.pogo.com/",
+      "url": "https://www.pogo.com/free-online-games",
       "title": "Play Free Online Games | Pogo",
-      "search_snippet": "Play the best 60+ free online games on Pogo! Enjoy fun browser games online, from classics to games like Crazy Games. Join us!",
+      "search_snippet": "Want to play free games online without downloading? Pogo has 50+ fun games for adults, ready to play now in your browser, no …",
       "categories": [],
       "signup_pages_checked": [
-        "https://www.pogo.com/"
+        "https://www.pogo.com/",
+        "https://www.pogo.com/free-online-games"
       ],
       "phone_form_detected": false,
       "phone_forms": [],
@@ -20969,7 +21921,7 @@
       ],
       "http_status": 200,
       "first_seen": "2026-11-16T19:43:55+00:00",
-      "last_seen": "2026-11-16T19:43:55+00:00",
+      "last_seen": "2026-11-23T21:34:26+00:00",
       "review_status": "unreviewed",
       "notes": ""
     },
@@ -21037,6 +21989,32 @@
       "http_status": 200,
       "first_seen": "2026-11-17T18:42:25+00:00",
       "last_seen": "2026-11-17T18:42:25+00:00",
+      "review_status": "unreviewed",
+      "notes": ""
+    },
+    {
+      "domain": "poppersguide.com",
+      "url": "https://poppersguide.com/reviews/",
+      "title": "Poppers Reviews",
+      "search_snippet": "Nov 1, 2026 · Reviews of popular poppers brands and vendors. Learn what and where to buy.",
+      "categories": [],
+      "signup_pages_checked": [
+        "https://poppersguide.com/reviews/"
+      ],
+      "phone_form_detected": false,
+      "phone_forms": [],
+      "privacy_url": "",
+      "privacy_policy_checked": false,
+      "marketing_disclosure_patterns": [],
+      "explicit_telemarketing_terms": [],
+      "privacy_evidence_excerpts": [],
+      "qualified_phone_and_marketing_disclosure": false,
+      "search_queries": [
+        "event ticket giveaway phone number sponsors marketing"
+      ],
+      "http_status": 200,
+      "first_seen": "2026-11-23T21:39:50+00:00",
+      "last_seen": "2026-11-23T21:39:50+00:00",
       "review_status": "unreviewed",
       "notes": ""
     },
@@ -21460,7 +22438,7 @@
       ],
       "http_status": 200,
       "first_seen": "2026-11-15T16:35:50+00:00",
-      "last_seen": "2026-11-15T16:35:50+00:00",
+      "last_seen": "2026-11-23T21:40:17+00:00",
       "review_status": "unreviewed",
       "notes": ""
     },
@@ -21499,7 +22477,7 @@
       ],
       "http_status": 200,
       "first_seen": "2026-11-11T22:51:19+00:00",
-      "last_seen": "2026-11-22T17:22:40+00:00",
+      "last_seen": "2026-11-23T21:40:05+00:00",
       "review_status": "unreviewed",
       "notes": ""
     },
@@ -21572,7 +22550,7 @@
       "domain": "ramotion.com",
       "url": "https://www.ramotion.com/blog/what-is-brand/",
       "title": "What is a Brand? Definition and Examples | Ramotion",
-      "search_snippet": "Nov 10, 2026 · A brand is the collective perception people form of a company, person, product, or service through its identity, values, … Read more",
+      "search_snippet": "Nov 10, 2026 · A brand is the collective perception people form of a company, person, product, or service through its identity, values, …",
       "categories": [
         "rewards",
         "subscriptions"
@@ -21595,7 +22573,7 @@
       ],
       "http_status": 200,
       "first_seen": "2026-11-12T17:48:21+00:00",
-      "last_seen": "2026-11-21T16:58:35+00:00",
+      "last_seen": "2026-11-23T21:40:33+00:00",
       "review_status": "unreviewed",
       "notes": ""
     },
@@ -21674,7 +22652,7 @@
       ],
       "http_status": 200,
       "first_seen": "2026-11-11T22:51:11+00:00",
-      "last_seen": "2026-11-22T17:22:10+00:00",
+      "last_seen": "2026-11-23T21:39:33+00:00",
       "review_status": "unreviewed",
       "notes": ""
     },
@@ -21682,7 +22660,7 @@
       "domain": "rdstation.com",
       "url": "https://www.rdstation.com/blog/marketing/marketing/",
       "title": "O que é Marketing: conceito, estratégias, carreira e cases",
-      "search_snippet": "Marketing é a atividade que promove produtos e serviços para gerar interesse e satisfazer as necessidades dos consumidores. Sua … Read more",
+      "search_snippet": "Marketing é a atividade que promove produtos e serviços para gerar interesse e satisfazer as necessidades dos consumidores. Sua …",
       "categories": [],
       "signup_pages_checked": [
         "https://www.rdstation.com/blog/marketing/marketing/"
@@ -21700,7 +22678,7 @@
       ],
       "http_status": 200,
       "first_seen": "2026-11-15T16:37:37+00:00",
-      "last_seen": "2026-11-21T16:59:00+00:00",
+      "last_seen": "2026-11-23T21:41:14+00:00",
       "review_status": "unreviewed",
       "notes": ""
     },
@@ -21982,6 +22960,47 @@
       "notes": ""
     },
     {
+      "domain": "sales.slickdeals.net",
+      "url": "https://sales.slickdeals.net/",
+      "title": "Slickdeals Advertising",
+      "search_snippet": "Engage savvy shoppers at every point in their buying journey. Slickdeals is the original social shopping partner where millions of …",
+      "categories": [
+        "ad_supported_media",
+        "rewards"
+      ],
+      "signup_pages_checked": [
+        "https://sales.slickdeals.net/"
+      ],
+      "phone_form_detected": false,
+      "phone_forms": [],
+      "privacy_url": "https://slickdeals.net/content/list/privacy-policy/",
+      "privacy_policy_checked": true,
+      "marketing_disclosure_patterns": [
+        "(personal information|personal data|information|data).{0,100}sell",
+        "(telephone|phone|text|sms).{0,100}(marketing|promotional|solicitation)",
+        "marketing purposes",
+        "sell.{0,100}(personal information|personal data|information|data)",
+        "share.{0,120}(marketing partners|advertising partners|third.party marketers|lead generators|advertisers)"
+      ],
+      "explicit_telemarketing_terms": [],
+      "privacy_evidence_excerpts": [
+        "ofessional, employment, and education information about you. we may disclose these categories of personal information to our service providers for business purposes, but we do not sell this information or share it for targeted (also known as “cross-context behavioral”) advertising purposes. categories of sources. we collect personal information from the following categories of sources: consumers; merchants; affiliate ",
+        "ect record-keeping information (such as billing information about your company), professional, employment, and education information about you. we may disclose these categories of personal information to our service providers for business purposes, but we do not sell this information or share it for targeted (also known as “cross-context behavioral”) advertising purposes. categories of sources. we collect personal information from the following categories of sources: consumers; merc",
+        "elow to learn about our practices and choices that may be available to you. deidentified and aggregated information. to the extent permitted by applicable law, we also may use and share deidentified information and aggregated information with third parties, advertisers and/or business partners for our own business purposes and for third party marketing and other purposes. we maintain and use deidentified information only in deidentified form—we do not attempt to reidentify such inform",
+        "rmation on our properties for interest-based advertising purposes, and your choices in regard to these practices. marketing choices you may give consent for slickdeals to send you text messages, such as messages with a link to download our app, messages containing personalized marketing messages, as well as messages providing account updates. these text messages are automated. you can use and purchase our services without consenting to receive our automated text messages. we will not share information ",
+        "may share your personal information with participating merchants to process your purchases, in which case your information may be used and disclosed by the merchant (including for marketing purposes) subject to its privacy policy. we may share your personal information with your consent or as otherwise disclosed at the time of collection. we may share information with our agents, contractors, service providers (als"
+      ],
+      "qualified_phone_and_marketing_disclosure": false,
+      "search_queries": [
+        "event ticket giveaway phone number sponsors marketing"
+      ],
+      "http_status": 200,
+      "first_seen": "2026-11-23T21:39:51+00:00",
+      "last_seen": "2026-11-23T21:39:51+00:00",
+      "review_status": "unreviewed",
+      "notes": ""
+    },
+    {
       "domain": "salesforce.com",
       "url": "https://www.salesforce.com/marketing/what-is-marketing/?bc=HL",
       "title": "What Is Marketing? A Brief Overview | Salesforce",
@@ -22008,7 +23027,35 @@
       ],
       "http_status": 200,
       "first_seen": "2026-11-12T03:14:05+00:00",
-      "last_seen": "2026-11-22T17:24:55+00:00",
+      "last_seen": "2026-11-23T21:41:23+00:00",
+      "review_status": "unreviewed",
+      "notes": ""
+    },
+    {
+      "domain": "sce.com",
+      "url": "https://www.sce.com/",
+      "title": "Welcome to SCE",
+      "search_snippet": "From the grid to your everyday, reliable energy that helps you save.",
+      "categories": [],
+      "signup_pages_checked": [
+        "https://www.sce.com/",
+        "https://www.sce.com/outages-safety/outage-center",
+        "https://www.sce.com/outages-safety/outage-center/check-outage-status"
+      ],
+      "phone_form_detected": false,
+      "phone_forms": [],
+      "privacy_url": "https://www.microsoft.com/en-us/privacy/privacystatement",
+      "privacy_policy_checked": true,
+      "marketing_disclosure_patterns": [],
+      "explicit_telemarketing_terms": [],
+      "privacy_evidence_excerpts": [],
+      "qualified_phone_and_marketing_disclosure": false,
+      "search_queries": [
+        "moving quote form phone number shared providers"
+      ],
+      "http_status": 200,
+      "first_seen": "2026-11-23T21:38:23+00:00",
+      "last_seen": "2026-11-23T21:38:23+00:00",
       "review_status": "unreviewed",
       "notes": ""
     },
@@ -22361,6 +23408,37 @@
       "notes": ""
     },
     {
+      "domain": "shopsmallhawaii.com",
+      "url": "https://www.shopsmallhawaii.com/",
+      "title": "Shop Small Hawaii",
+      "search_snippet": "5 days ago · Shop Small Hawaii provides resources and tools to small businesses in Hawaii through educational workshops and …",
+      "categories": [
+        "rewards",
+        "subscriptions"
+      ],
+      "signup_pages_checked": [
+        "https://www.shopsmallhawaii.com/",
+        "https://www.shopsmallhawaii.com/contact",
+        "https://www.shopsmallhawaii.com/news-promotions"
+      ],
+      "phone_form_detected": false,
+      "phone_forms": [],
+      "privacy_url": "",
+      "privacy_policy_checked": false,
+      "marketing_disclosure_patterns": [],
+      "explicit_telemarketing_terms": [],
+      "privacy_evidence_excerpts": [],
+      "qualified_phone_and_marketing_disclosure": false,
+      "search_queries": [
+        "local news contest phone number promotional partners"
+      ],
+      "http_status": 200,
+      "first_seen": "2026-11-23T21:40:28+00:00",
+      "last_seen": "2026-11-23T21:40:28+00:00",
+      "review_status": "unreviewed",
+      "notes": ""
+    },
+    {
       "domain": "signaturesolar.com",
       "url": "https://signaturesolar.com/",
       "title": "SignatureSolar.com:  Solar Panels, DIY Off-Grid Solar, Server Rack Battery for Solar, Solar Inverters",
@@ -22394,7 +23472,7 @@
       ],
       "http_status": 200,
       "first_seen": "2026-11-11T22:47:43+00:00",
-      "last_seen": "2026-11-22T17:20:06+00:00",
+      "last_seen": "2026-11-23T21:38:17+00:00",
       "review_status": "unreviewed",
       "notes": ""
     },
@@ -22402,7 +23480,7 @@
       "domain": "significados.com.br",
       "url": "https://www.significados.com.br/marketing/",
       "title": "Marketing: o que é, o que estuda, áreas e tipos - Significados",
-      "search_snippet": "Marketing é a ciência e a arte de explorar, criar e entregar valor para satisfazer as necessidades de um mercado-alvo com lucro. … Read more",
+      "search_snippet": "Marketing é a ciência e a arte de explorar, criar e entregar valor para satisfazer as necessidades de um mercado-alvo com lucro. …",
       "categories": [],
       "signup_pages_checked": [
         "https://www.significados.com.br/marketing/"
@@ -22420,7 +23498,7 @@
       ],
       "http_status": 200,
       "first_seen": "2026-11-15T16:37:35+00:00",
-      "last_seen": "2026-11-21T16:58:59+00:00",
+      "last_seen": "2026-11-23T21:41:10+00:00",
       "review_status": "unreviewed",
       "notes": ""
     },
@@ -22638,7 +23716,7 @@
       ],
       "http_status": 200,
       "first_seen": "2026-11-12T17:42:57+00:00",
-      "last_seen": "2026-11-18T18:18:14+00:00",
+      "last_seen": "2026-11-23T21:36:37+00:00",
       "review_status": "unreviewed",
       "notes": ""
     },
@@ -22671,9 +23749,9 @@
     },
     {
       "domain": "solar.com",
-      "url": "https://www.solar.com/learn/solar-panels-for-home/",
-      "title": "Solar Panels for Home in 2026 | Solar.com",
-      "search_snippet": "If you're getting solar panels for your home, it's important to understand the equipment and process in order to make educated …",
+      "url": "https://www.solar.com/",
+      "title": "Your Solar Price in 90 Seconds | Solar.com",
+      "search_snippet": "Enter your address and see your solar price in 90 seconds. We run vetted installers' bids and select the lowest, backed by our Best …",
       "categories": [
         "surveys"
       ],
@@ -22706,7 +23784,7 @@
       ],
       "http_status": 200,
       "first_seen": "2026-11-11T22:47:40+00:00",
-      "last_seen": "2026-11-22T17:20:03+00:00",
+      "last_seen": "2026-11-23T21:38:14+00:00",
       "review_status": "unreviewed",
       "notes": ""
     },
@@ -22858,7 +23936,73 @@
       ],
       "http_status": 200,
       "first_seen": "2026-11-11T22:46:42+00:00",
-      "last_seen": "2026-11-22T17:19:17+00:00",
+      "last_seen": "2026-11-23T21:37:32+00:00",
+      "review_status": "unreviewed",
+      "notes": ""
+    },
+    {
+      "domain": "statewidesurveying.com",
+      "url": "https://statewidesurveying.com/",
+      "title": "Home - Statewide Land Surveying",
+      "search_snippet": "In the Water Capable of providing both land and bathymetric surveys, Statewide utilizes single-beam sonar, considered to most …",
+      "categories": [
+        "surveys"
+      ],
+      "signup_pages_checked": [
+        "https://statewidesurveying.com/",
+        "https://statewidesurveying.com/#content"
+      ],
+      "phone_form_detected": true,
+      "phone_forms": [
+        {
+          "page_url": "https://statewidesurveying.com/",
+          "action": "",
+          "method": "POST",
+          "phone_fields": [
+            {
+              "name": "form_fields[field_5e40298]",
+              "type": "tel",
+              "label": "Phone"
+            }
+          ]
+        },
+        {
+          "page_url": "https://statewidesurveying.com/#content",
+          "action": "",
+          "method": "POST",
+          "phone_fields": [
+            {
+              "name": "form_fields[field_5e40298]",
+              "type": "tel",
+              "label": "Phone"
+            }
+          ]
+        },
+        {
+          "page_url": "https://statewidesurveying.com/",
+          "action": "",
+          "method": "POST",
+          "phone_fields": [
+            {
+              "name": "form_fields[field_5e40298]",
+              "type": "tel",
+              "label": "Phone"
+            }
+          ]
+        }
+      ],
+      "privacy_url": "",
+      "privacy_policy_checked": false,
+      "marketing_disclosure_patterns": [],
+      "explicit_telemarketing_terms": [],
+      "privacy_evidence_excerpts": [],
+      "qualified_phone_and_marketing_disclosure": false,
+      "search_queries": [
+        "survey participant registration telephone number lead generation"
+      ],
+      "http_status": 200,
+      "first_seen": "2026-11-23T21:35:24+00:00",
+      "last_seen": "2026-11-23T21:35:24+00:00",
       "review_status": "unreviewed",
       "notes": ""
     },
@@ -23087,9 +24231,9 @@
     },
     {
       "domain": "support.microsoft.com",
-      "url": "https://support.microsoft.com/en-us/outlook/mail/how-to-create-a-newsletter-in-outlook",
-      "title": "How to create a newsletter in Outlook | Microsoft Support",
-      "search_snippet": "Each newsletter has a consistent identity and subscriber base. You can publish new editions from your newsletter over time to keep …",
+      "url": "https://support.microsoft.com/en-us/accounts-billing/rewards/how-to-redeem-microsoft-rewards-points",
+      "title": "How to redeem Microsoft Rewards points | Microsoft Support",
+      "search_snippet": "Learn how to redeem your Microsoft Rewards points for a huge variety of great products and sweepstakes.",
       "categories": [
         "rewards",
         "subscriptions",
@@ -23113,13 +24257,14 @@
         "rewards program sign up points official"
       ],
       "first_seen": "2026-11-11T20:10:06+00:00",
-      "last_seen": "2026-11-22T17:18:36+00:00",
+      "last_seen": "2026-11-23T21:35:52+00:00",
       "review_status": "unreviewed",
       "notes": "",
       "signup_pages_checked": [
         "https://support.microsoft.com/en-us/accounts-billing/rewards/about-microsoft-rewards-status-levels",
         "https://support.microsoft.com/en-us/accounts-billing/rewards/getting-the-most-out-of-microsoft-rewards",
         "https://support.microsoft.com/en-us/accounts-billing/rewards/how-to-earn-microsoft-rewards-points",
+        "https://support.microsoft.com/en-us/accounts-billing/rewards/how-to-redeem-microsoft-rewards-points",
         "https://support.microsoft.com/en-us/accounts-billing/rewards/learn-about-microsoft-rewards",
         "https://support.microsoft.com/en-us/outlook/mail/chat-or-call-email-recipients-or-other-contacts-in-outlook",
         "https://support.microsoft.com/en-us/outlook/mail/how-to-create-a-newsletter-in-outlook",
@@ -23128,42 +24273,6 @@
       "phone_form_detected": true,
       "phone_forms": [
         {
-          "page_url": "https://support.microsoft.com/en-us/accounts-billing/rewards/learn-about-microsoft-rewards",
-          "action": "javascript:void(0);",
-          "method": "GET",
-          "phone_fields": [
-            {
-              "name": "feedbackText",
-              "type": "textarea",
-              "label": "Any additional feedback? (Optional)"
-            }
-          ]
-        },
-        {
-          "page_url": "https://support.microsoft.com/en-us/accounts-billing/rewards/how-to-earn-microsoft-rewards-points",
-          "action": "javascript:void(0);",
-          "method": "GET",
-          "phone_fields": [
-            {
-              "name": "feedbackText",
-              "type": "textarea",
-              "label": "Any additional feedback? (Optional)"
-            }
-          ]
-        },
-        {
-          "page_url": "https://support.microsoft.com/en-us/accounts-billing/rewards/learn-about-microsoft-rewards",
-          "action": "javascript:void(0);",
-          "method": "GET",
-          "phone_fields": [
-            {
-              "name": "feedbackText",
-              "type": "textarea",
-              "label": "Any additional feedback? (Optional)"
-            }
-          ]
-        },
-        {
           "page_url": "https://support.microsoft.com/en-us/accounts-billing/rewards/how-to-earn-microsoft-rewards-points",
           "action": "javascript:void(0);",
           "method": "GET",
@@ -23357,6 +24466,42 @@
         },
         {
           "page_url": "https://support.microsoft.com/en-us/outlook/mail/chat-or-call-email-recipients-or-other-contacts-in-outlook",
+          "action": "javascript:void(0);",
+          "method": "GET",
+          "phone_fields": [
+            {
+              "name": "feedbackText",
+              "type": "textarea",
+              "label": "Any additional feedback? (Optional)"
+            }
+          ]
+        },
+        {
+          "page_url": "https://support.microsoft.com/en-us/accounts-billing/rewards/how-to-redeem-microsoft-rewards-points",
+          "action": "javascript:void(0);",
+          "method": "GET",
+          "phone_fields": [
+            {
+              "name": "feedbackText",
+              "type": "textarea",
+              "label": "Any additional feedback? (Optional)"
+            }
+          ]
+        },
+        {
+          "page_url": "https://support.microsoft.com/en-us/accounts-billing/rewards/learn-about-microsoft-rewards",
+          "action": "javascript:void(0);",
+          "method": "GET",
+          "phone_fields": [
+            {
+              "name": "feedbackText",
+              "type": "textarea",
+              "label": "Any additional feedback? (Optional)"
+            }
+          ]
+        },
+        {
+          "page_url": "https://support.microsoft.com/en-us/accounts-billing/rewards/about-microsoft-rewards-status-levels",
           "action": "javascript:void(0);",
           "method": "GET",
           "phone_fields": [
@@ -23372,6 +24517,35 @@
       "explicit_telemarketing_terms": [],
       "privacy_evidence_excerpts": [],
       "qualified_phone_and_marketing_disclosure": false
+    },
+    {
+      "domain": "support.xbox.com",
+      "url": "https://support.xbox.com/en-US/help/account-profile/manage-account/earn-points-microsoft-rewards",
+      "title": "XBOX Support",
+      "search_snippet": "Earn Microsoft Rewards points through Xbox by shopping, gaming, or searching and redeem them for gift cards, sweepstakes, or …",
+      "categories": [
+        "rewards",
+        "sweepstakes"
+      ],
+      "signup_pages_checked": [
+        "https://support.xbox.com/en-US/help/account-profile/manage-account/earn-points-microsoft-rewards"
+      ],
+      "phone_form_detected": false,
+      "phone_forms": [],
+      "privacy_url": "",
+      "privacy_policy_checked": false,
+      "marketing_disclosure_patterns": [],
+      "explicit_telemarketing_terms": [],
+      "privacy_evidence_excerpts": [],
+      "qualified_phone_and_marketing_disclosure": false,
+      "search_queries": [
+        "rewards program registration phone number third party marketing"
+      ],
+      "http_status": 200,
+      "first_seen": "2026-11-23T21:35:53+00:00",
+      "last_seen": "2026-11-23T21:35:53+00:00",
+      "review_status": "unreviewed",
+      "notes": ""
     },
     {
       "domain": "survey.com",
@@ -23426,7 +24600,7 @@
       "domain": "survey123.arcgis.com",
       "url": "https://survey123.arcgis.com/",
       "title": "Account Login - ArcGIS Survey123",
-      "search_snippet": "Sign in to your ArcGIS Survey123 account. ArcGIS Survey123 is a complete, form-centric solution for creating smart surveys & … Read more",
+      "search_snippet": "Sign in to your ArcGIS Survey123 account. ArcGIS Survey123 is a complete, form-centric solution for creating smart surveys & …",
       "categories": [
         "surveys"
       ],
@@ -23440,7 +24614,7 @@
         "survey participant registration telephone number lead generation"
       ],
       "first_seen": "2026-11-11T20:10:13+00:00",
-      "last_seen": "2026-11-21T16:53:26+00:00",
+      "last_seen": "2026-11-23T21:35:23+00:00",
       "review_status": "unreviewed",
       "notes": "",
       "signup_pages_checked": [
@@ -23781,7 +24955,7 @@
       ],
       "http_status": 200,
       "first_seen": "2026-11-11T22:46:10+00:00",
-      "last_seen": "2026-11-22T17:18:55+00:00",
+      "last_seen": "2026-11-23T21:36:50+00:00",
       "review_status": "unreviewed",
       "notes": ""
     },
@@ -23789,7 +24963,7 @@
       "domain": "tax.hawaii.gov",
       "url": "https://tax.hawaii.gov/get/",
       "title": "General Excise Tax (GET) Information | Department of Taxation",
-      "search_snippet": "Aug 27, 2026 · GET is NOT a sales tax. A sales tax is a tax on the customer, which businesses must collect. GET is a tax on the … Read more",
+      "search_snippet": "Aug 27, 2026 · The General Excise Tax (GET) is Hawaii’s tax on business activity. It is imposed on the gross income or gross …",
       "categories": [],
       "signup_pages_checked": [
         "https://tax.hawaii.gov/contact/",
@@ -23808,7 +24982,7 @@
       ],
       "http_status": 200,
       "first_seen": "2026-11-12T17:41:51+00:00",
-      "last_seen": "2026-11-21T16:53:48+00:00",
+      "last_seen": "2026-11-23T21:35:39+00:00",
       "review_status": "unreviewed",
       "notes": ""
     },
@@ -24074,7 +25248,7 @@
       ],
       "http_status": 200,
       "first_seen": "2026-11-11T22:45:46+00:00",
-      "last_seen": "2026-11-22T17:18:00+00:00",
+      "last_seen": "2026-11-23T21:36:22+00:00",
       "review_status": "unreviewed",
       "notes": ""
     },
@@ -24211,7 +25385,7 @@
       "domain": "thesaurus.com",
       "url": "https://www.thesaurus.com/articles/payed-or-paid",
       "title": "“Payed” Or “Paid”: What’s The Difference? | Thesaurus.com",
-      "search_snippet": "Aug 11, 2022 · If you paid attention during your English classes, you know that the past tense and past participle of the verb pay is …",
+      "search_snippet": "Aug 11, 2022 · In almost all cases, the past tense and past participle of pay is paid. When used in this way, pay is considered an …",
       "categories": [],
       "signup_pages_checked": [
         "https://www.thesaurus.com/articles/payed-or-paid",
@@ -24232,7 +25406,7 @@
       ],
       "http_status": 200,
       "first_seen": "2026-11-11T22:44:22+00:00",
-      "last_seen": "2026-11-22T17:16:18+00:00",
+      "last_seen": "2026-11-23T21:34:57+00:00",
       "review_status": "unreviewed",
       "notes": ""
     },
@@ -24273,7 +25447,7 @@
       "domain": "timeshare.com",
       "url": "https://www.timeshare.com/us/en/timeshare-101/understanding-timeshare",
       "title": "What is Timeshare and How Does it Work? – Timeshare.com",
-      "search_snippet": "Timeshare Exchange Companies What is a Timeshare Exchange Company? Timeshare exchange companies play a pivotal role in …",
+      "search_snippet": "What is Timeshare? A timeshare is a unique form of vacation ownership that allows individuals to purchase the right to use a …",
       "categories": [
         "rewards"
       ],
@@ -24301,7 +25475,7 @@
       ],
       "http_status": 200,
       "first_seen": "2026-11-11T22:51:07+00:00",
-      "last_seen": "2026-11-22T17:22:04+00:00",
+      "last_seen": "2026-11-23T21:39:30+00:00",
       "review_status": "unreviewed",
       "notes": ""
     },
@@ -24395,7 +25569,7 @@
       ],
       "http_status": 200,
       "first_seen": "2026-11-11T22:44:28+00:00",
-      "last_seen": "2026-11-22T17:16:32+00:00",
+      "last_seen": "2026-11-23T21:35:06+00:00",
       "review_status": "unreviewed",
       "notes": ""
     },
@@ -24586,7 +25760,7 @@
         "loyalty program sign up telephone number promotional partners"
       ],
       "first_seen": "2026-11-11T20:10:42+00:00",
-      "last_seen": "2026-11-22T17:15:38+00:00",
+      "last_seen": "2026-11-23T21:34:20+00:00",
       "review_status": "unreviewed",
       "notes": "",
       "signup_pages_checked": [
@@ -24926,7 +26100,7 @@
       "domain": "us-debt-clock.com",
       "url": "https://www.us-debt-clock.com/current-us-debt",
       "title": "Current US Debt — Live National Debt Total (2026)",
-      "search_snippet": "2 days ago · Debt vs deficit: the national debt is the cumulative total owed; the deficit is the annual shortfall when spending exceeds …",
+      "search_snippet": "3 days ago · Current US debt right now from official Treasury data. Track the live national debt total, daily increase, per-citizen share, …",
       "categories": [
         "subscriptions"
       ],
@@ -24946,7 +26120,7 @@
       ],
       "http_status": 200,
       "first_seen": "2026-11-12T03:11:57+00:00",
-      "last_seen": "2026-11-22T17:21:09+00:00",
+      "last_seen": "2026-11-23T21:38:41+00:00",
       "review_status": "unreviewed",
       "notes": ""
     },
@@ -24972,7 +26146,7 @@
       ],
       "http_status": 200,
       "first_seen": "2026-11-11T22:50:33+00:00",
-      "last_seen": "2026-11-22T17:21:35+00:00",
+      "last_seen": "2026-11-23T21:39:21+00:00",
       "review_status": "unreviewed",
       "notes": ""
     },
@@ -25054,7 +26228,7 @@
       ],
       "http_status": 200,
       "first_seen": "2026-11-12T03:11:57+00:00",
-      "last_seen": "2026-11-22T17:21:10+00:00",
+      "last_seen": "2026-11-23T21:38:44+00:00",
       "review_status": "unreviewed",
       "notes": ""
     },
@@ -25553,9 +26727,9 @@
     },
     {
       "domain": "vocabulary.com",
-      "url": "https://www.vocabulary.com/dictionary/product",
-      "title": "Product - Definition, Meaning & Synonyms | Vocabulary.com",
-      "search_snippet": "The word product is often a synonym for \"merchandise\" — the stuff for sale on the racks and shelves at a store. But a product can …",
+      "url": "https://www.vocabulary.com/dictionary/paid",
+      "title": "Paid - Definition, Meaning & Synonyms | Vocabulary.com",
+      "search_snippet": "Something that's paid is done in exchange for money, or happens while you're receiving pay. For example, your job might offer paid …",
       "categories": [
         "ad_supported_media",
         "rewards"
@@ -25578,7 +26752,7 @@
         "request information form phone number sold shared advertisers"
       ],
       "first_seen": "2026-11-11T20:10:23+00:00",
-      "last_seen": "2026-11-22T17:15:57+00:00",
+      "last_seen": "2026-11-23T21:35:03+00:00",
       "review_status": "unreviewed",
       "notes": "",
       "signup_pages_checked": [
@@ -25636,8 +26810,10 @@
       "domain": "walmart.com",
       "url": "https://www.walmart.com/",
       "title": "Walmart | Save Money. Live better.",
-      "search_snippet": "Shop Walmart.com today for Every Day Low Prices. Join Walmart+ for unlimited free delivery from your store & free shipping with no …",
-      "categories": [],
+      "search_snippet": "Find top picks in fashion, home & beauty. Shop Walmart.com today for Every Day Low Prices. Join Walmart+ for unlimited free …",
+      "categories": [
+        "surveys"
+      ],
       "signup_pages_checked": [
         "https://www.walmart.com/",
         "https://www.walmart.com/blocked?url=L2NwL3RveXMvNDE3MT9hdGhBc3NldD1leUpoZEdoamNHbGtJam9pTmpBMU5qY3hNVEl0TldJek9TMDBZVGhoTFRrNFl6a3RNR0V3Tm1ZNU9HSTJaV014SWl3aVlXVmpkU0k2ZXlKeklqb3hMakFzSW5OMElqb2lNQ0o5TENKaFpYZHlJam9pUTFSU0luMD0mYXRoZW5hPXRydWU=&uuid=deba9878-e50b-11f1-bcba-b93e29e782dc&vid=&g=b",
@@ -25647,8 +26823,10 @@
         "https://www.walmart.com/blocked?url=L3Nob3AvZGVhbHMvYW5ub3VuY2U/YXRoQXNzZXQ9ZXlKaGRHaGpjR2xrSWpvaU56Wm1NelEwTm1NdE9EaG1ZaTAwTVRSakxXRmhORGt0TTJGbE5tTmxZVE16TURFd0lpd2lZV1ZqZFNJNmV5SnpJam94TGpBc0luTjBJam9pTUNKOUxDSmhaWGR5SWpvaVExUlNJbjA9JmF0aGVuYT10cnVl&uuid=cc7cc8c3-e698-11f1-9950-98c534b582eb&vid=&g=b",
         "https://www.walmart.com/blocked?url=L3Nob3AvZGVhbHMvZ2lmdGluZz9hdGhBc3NldD1leUpoZEdoamNHbGtJam9pTkdGak9Ua3dNVFl0WVRkbE9TMDBOamN6TFdFMU5tTXRNelUyTVRBNVpUSTFaV0psSWl3aVlYUm9aMkZwSWpvaU1TSXNJbUZsWTNVaU9uc2ljeUk2TVM0d0xDSnpkQ0k2SWpBaWZTd2lZV1YzY2lJNklrMVFYME5VVWlKOSZhdGhlbmE9dHJ1ZQ==&uuid=dfabf333-e043-11f1-aee4-f0430e4b3f94&vid=&g=b",
         "https://www.walmart.com/blocked?url=L3Nob3AvZGVhbHMvZGVhbHMtYnktcHJpY2U/YXRoQXNzZXQ9ZXlKaGRHaGpjR2xrSWpvaU5qYzROMkZsWXpndFl6RTRPUzAwTjJRMkxXRXhNbVV0TkRneU5HTTJZV00zTnpKaklpd2lZV1ZqZFNJNmV5SnpJam94TGpBc0luTjBJam9pTUNKOUxDSmhaWGR5SWpvaVJrTmZRVlJEVWlKOSZhdGhlbmE9dHJ1ZQ==&uuid=824346c5-df86-11f1-ac85-e7cf2480a832&vid=&g=b",
+        "https://www.walmart.com/blocked?url=L3Nob3AvZGVhbHMvZGVhbHMtYnktcHJpY2U/YXRoQXNzZXQ9ZXlKaGRHaGpjR2xrSWpvaU5tTm1PR1V6TURNdE5XRXhPQzAwWkRaa0xUa3lZalV0TmprNFl6ZGlNR1JoTmpObElpd2lZV1ZqZFNJNmV5SnpJam94TGpBc0luTjBJam9pTUNKOUxDSmhaWGR5SWpvaVJrTmZRVlJEVWlKOSZhdGhlbmE9dHJ1ZQ==&uuid=fe836ab1-e785-11f1-99a1-331d74f0d3ac&vid=&g=b",
         "https://www.walmart.com/blocked?url=L3Nob3AvZGVhbHMvdG95cy9kZWFscy11bmRlci0yNS1kb2xsYXJzP2F0aEFzc2V0PWV5SmhkR2hqY0dsa0lqb2lOemc0WmpCak1ESXRObU00TVMwME16aGxMVGswTjJZdFkyRXhZV1F5WWprNFpEYzBJaXdpWVdWamRTSTZleUp6SWpveExqQXNJbk4wSWpvaU1DSjlMQ0poWlhkeUlqb2lRMVJTSW4wPSZhdGhlbmE9dHJ1ZQ==&uuid=13b77061-e112-11f1-8e52-ac9733d39483&vid=&g=b",
         "https://www.walmart.com/blocked?url=L3Nob3AvZGVhbHMvdXBncmFkZS1hbmQtZW50ZXJ0YWluP2F0aEFzc2V0PWV5SmhkR2hqY0dsa0lqb2lOMkprTlRZNVpEVXRZVGhqTVMwME5tRXdMV0psWmpZdFltTXlPVFkzTm1NM01HTXdJaXdpWVdWamRTSTZleUp6SWpveExqQXNJbk4wSWpvaU1DSjlMQ0poWlhkeUlqb2lRMVJTSW4wPSZhdGhlbmE9dHJ1ZQ==&uuid=8ce99e55-dec0-11f1-a88c-acb7376d7da8&vid=&g=b",
+        "https://www.walmart.com/blocked?url=L3Nob3AvZGVhbHMvdXBncmFkZS1hbmQtZW50ZXJ0YWluP2F0aEFzc2V0PWV5SmhkR2hqY0dsa0lqb2lZbU5oTURrMlpUVXROakZpWVMwME16STVMVGcxWmpVdE9XRTNZamswWm1FM09UaGhJaXdpWVdWamRTSTZleUp6SWpveExqQXNJbk4wSWpvaU1DSjlMQ0poWlhkeUlqb2lSa05mUVZSRFVpSjkmYXRoZW5hPXRydWU=&uuid=fecb2611-e785-11f1-b8d8-50244b3b8d68&vid=&g=b",
         "https://www.walmart.com/blocked?url=L3Nob3AvaG9saWRheS1jYXRhbG9nL2hhbnVra2FoLWRlY29yP2F0aEFzc2V0PWV5SmhkR2hqY0dsa0lqb2lOekZqWVdWalptSXRNVFZoWWkwME5EQmpMV0l6T1RjdFptWmlaRE0zWXpVek5tWTVJaXdpWVdWamRTSTZleUp6SWpveExqQXNJbk4wSWpvaU1DSjlMQ0poWlhkeUlqb2lSa05mUVZSRFVpSjkmYXRoZW5hPXRydWU=&uuid=49727194-e1f6-11f1-b0d9-0b797046de15&vid=&g=b",
         "https://www.walmart.com/blocked?url=L3Nob3AvaG9saWRheS1jYXRhbG9nL2hhbnVra2FoLWRlY29yP2F0aEFzc2V0PWV5SmhkR2hqY0dsa0lqb2lOekZqWVdWalptSXRNVFZoWWkwME5EQmpMV0l6T1RjdFptWmlaRE0zWXpVek5tWTVJaXdpWVdWamRTSTZleUp6SWpveExqQXNJbk4wSWpvaU1DSjlMQ0poWlhkeUlqb2lSa05mUVZSRFVpSjkmYXRoZW5hPXRydWU=&uuid=4ad9ce8a-e5cc-11f1-9ab7-5119bb73dd63&vid=&g=b",
         "https://www.walmart.com/blocked?url=L3Nob3AvaG9saWRheS1jYXRhbG9nL2hhbnVra2FoLWRlY29yP2F0aEFzc2V0PWV5SmhkR2hqY0dsa0lqb2lOekZqWVdWalptSXRNVFZoWWkwME5EQmpMV0l6T1RjdFptWmlaRE0zWXpVek5tWTVJaXdpWVdWamRTSTZleUp6SWpveExqQXNJbk4wSWpvaU1DSjlMQ0poWlhkeUlqb2lSa05mUVZSRFVpSjkmYXRoZW5hPXRydWU=&uuid=7afc7e73-e37c-11f1-a4ef-e9a65973b440&vid=&g=b",
@@ -25681,7 +26859,7 @@
       ],
       "http_status": 200,
       "first_seen": "2026-11-11T22:46:11+00:00",
-      "last_seen": "2026-11-22T17:18:57+00:00",
+      "last_seen": "2026-11-23T21:36:52+00:00",
       "review_status": "unreviewed",
       "notes": ""
     },
@@ -25811,7 +26989,7 @@
       ],
       "http_status": 200,
       "first_seen": "2026-11-11T22:45:44+00:00",
-      "last_seen": "2026-11-22T17:18:05+00:00",
+      "last_seen": "2026-11-23T21:36:19+00:00",
       "review_status": "unreviewed",
       "notes": ""
     },
@@ -25819,7 +26997,7 @@
       "domain": "webmd.com",
       "url": "https://www.webmd.com/",
       "title": "WebMD - Better information. Better health.",
-      "search_snippet": "Learn how healthy foods and everyday habits can help manage cholesterol. Get the latest on player injuries, including severity, …",
+      "search_snippet": "Providing credible health information, supportive community, and educational services by blending award-winning expertise in …",
       "categories": [
         "ad_supported_media",
         "offers_and_samples",
@@ -25844,7 +27022,7 @@
       ],
       "http_status": 200,
       "first_seen": "2026-11-11T22:50:30+00:00",
-      "last_seen": "2026-11-22T17:21:29+00:00",
+      "last_seen": "2026-11-23T21:39:14+00:00",
       "review_status": "unreviewed",
       "notes": ""
     },
@@ -25987,7 +27165,7 @@
       "domain": "who.int",
       "url": "https://www.who.int/news-room/fact-sheets/detail/lead-poisoning-and-health",
       "title": "Lead poisoning",
-      "search_snippet": "Jun 10, 2026 · Lead is a naturally occurring toxic metal found in the Earth’s crust. Its widespread use has caused extensive … Read more",
+      "search_snippet": "Jun 10, 2026 · WHO fact sheet on lead poisoning including sections on sources and routes of exposure, health effects in childen, …",
       "categories": [
         "surveys"
       ],
@@ -26015,7 +27193,7 @@
       ],
       "http_status": 200,
       "first_seen": "2026-11-12T17:43:34+00:00",
-      "last_seen": "2026-11-21T16:55:12+00:00",
+      "last_seen": "2026-11-23T21:37:03+00:00",
       "review_status": "unreviewed",
       "notes": ""
     },
@@ -26186,7 +27364,7 @@
       ],
       "http_status": 200,
       "first_seen": "2026-11-11T22:45:55+00:00",
-      "last_seen": "2026-11-22T17:18:19+00:00",
+      "last_seen": "2026-11-23T21:36:34+00:00",
       "review_status": "unreviewed",
       "notes": ""
     },
@@ -26216,7 +27394,7 @@
       ],
       "http_status": 200,
       "first_seen": "2026-11-11T22:46:03+00:00",
-      "last_seen": "2026-11-22T17:18:21+00:00",
+      "last_seen": "2026-11-23T21:36:36+00:00",
       "review_status": "unreviewed",
       "notes": ""
     },
@@ -26423,7 +27601,7 @@
       ],
       "http_status": 200,
       "first_seen": "2026-11-14T15:56:41+00:00",
-      "last_seen": "2026-11-22T17:19:24+00:00",
+      "last_seen": "2026-11-23T21:37:59+00:00",
       "review_status": "unreviewed",
       "notes": ""
     },
@@ -26500,9 +27678,9 @@
     },
     {
       "domain": "x.com",
-      "url": "https://x.com/PetitPlanetGame/status/2123727364911984846",
-      "title": "Petit Planet on X: \"This giveaway has now ended. Thank you to all Planet Tenders for taking part, and congratulations to our lucky winners!\nIf your name is on the winners list, please submit your prize-claim information via the Google Form by 2026/12/06 23:59 (UTC+8). All information provided will… / X",
-      "search_snippet": "17 hours ago · This giveaway has now ended. Thank you to all Planet Tenders for taking part, and congratulations to our lucky … Read more",
+      "url": "https://x.com/sunshinebinance/status/2124874687155142771",
+      "title": "Sunshine on X: \"Can you spot all red flags in a giveaway email? 👀 \n\nCome play along in the chat at our Everyday Crypto Security AMA\n\nWe’re giving away Binance swag, too! 🎁\n\n📅 Tuesday, Nov 24 · 1 PM UTC\n📍 https://t.co/lpRMqtTicF\" / X",
+      "search_snippet": "21 hours ago · Can you spot all red flags in a giveaway email? 👀 Come play along in the chat at our Everyday Crypto Security AMA …",
       "categories": [
         "sweepstakes"
       ],
@@ -26510,7 +27688,9 @@
         "https://x.com/PetitPlanetGame/status/2123727364911984846",
         "https://x.com/i/jf/onboarding/web?mode=signup&redirect_after_login=%2FPetitPlanetGame%2Fstatus%2F2123727364911984846",
         "https://x.com/i/jf/onboarding/web?mode=signup&redirect_after_login=%2Fmeetgranola%2Fstatus%2F2046624372111376671",
-        "https://x.com/meetgranola/status/2046624372111376671"
+        "https://x.com/i/jf/onboarding/web?mode=signup&redirect_after_login=%2Fsunshinebinance%2Fstatus%2F2124874687155142771",
+        "https://x.com/meetgranola/status/2046624372111376671",
+        "https://x.com/sunshinebinance/status/2124874687155142771"
       ],
       "phone_form_detected": false,
       "phone_forms": [],
@@ -26532,7 +27712,7 @@
       ],
       "http_status": 200,
       "first_seen": "2026-11-12T03:13:13+00:00",
-      "last_seen": "2026-11-20T17:54:42+00:00",
+      "last_seen": "2026-11-23T21:33:54+00:00",
       "review_status": "unreviewed",
       "notes": ""
     },
@@ -26652,6 +27832,44 @@
       "notes": ""
     },
     {
+      "domain": "yoshinoyaamerica.com",
+      "url": "https://yoshinoyaamerica.com/coupons",
+      "title": "Coupon - Yoshinoya",
+      "search_snippet": "Let’s be friends! © 2026 Yoshinoya - All Rights Reserved.",
+      "categories": [
+        "offers_and_samples",
+        "rewards"
+      ],
+      "signup_pages_checked": [
+        "https://yoshinoyaamerica.com/coupons",
+        "https://yoshinoyaamerica.com/rewards"
+      ],
+      "phone_form_detected": false,
+      "phone_forms": [],
+      "privacy_url": "https://yoshinoyaamerica.com/privacy-policy",
+      "privacy_policy_checked": true,
+      "marketing_disclosure_patterns": [
+        "(personal information|personal data|information|data).{0,100}sell",
+        "(telephone|phone|text|sms).{0,100}(marketing|promotional|solicitation)",
+        "sell.{0,100}(personal information|personal data|information|data)"
+      ],
+      "explicit_telemarketing_terms": [],
+      "privacy_evidence_excerpts": [
+        "e parents, corporate affiliates) government agencies promotional or other fulfilment vendors marketing support vendors transaction support vendors (e.g., payment processors) do we sell any of your personal information? yoshinoya america does not and will not sell your personal information, including the data of any minors. we do not sell or otherwise trade the personal information that we collect from our site visitors at any point or under any circumstance. third-party vendors yoshinoya america may use ",
+        "ate affiliates) government agencies promotional or other fulfilment vendors marketing support vendors transaction support vendors (e.g., payment processors) do we sell any of your personal information? yoshinoya america does not and will not sell your personal information, including the data of any minors. we do not sell or otherwise trade the personal information that we collect from our site visitors at any point or under any circumstance. third-party vendors ",
+        "es program 7 to provide important safety information and notice of product recalls 8 to respond to consumer inquiries, including requests for information, customer support online, phone calls, and in-store inquiries 9 to provide targeted marketing 10 to improve user experience on our website 11 to understand the demographics of our website visitors 12 to detect security incidents 13 to debug, identify, and repair errors that impair existing intended functionality"
+      ],
+      "qualified_phone_and_marketing_disclosure": false,
+      "search_queries": [
+        "coupon club registration phone number advertisers privacy policy"
+      ],
+      "http_status": 200,
+      "first_seen": "2026-11-23T21:36:25+00:00",
+      "last_seen": "2026-11-23T21:36:25+00:00",
+      "review_status": "unreviewed",
+      "notes": ""
+    },
+    {
       "domain": "yourhometownmover.com",
       "url": "https://yourhometownmover.com/services/local-moving-services/huntington-station-ny/",
       "title": "Huntington Station, NY Movers | Your Hometown Mover",
@@ -26736,7 +27954,7 @@
         "get paid to take surveys panel"
       ],
       "first_seen": "2026-11-11T20:10:19+00:00",
-      "last_seen": "2026-11-22T17:17:02+00:00",
+      "last_seen": "2026-11-23T21:35:50+00:00",
       "review_status": "unreviewed",
       "notes": "",
       "signup_pages_checked": [
@@ -26846,7 +28064,7 @@
       ],
       "http_status": 200,
       "first_seen": "2026-11-11T22:47:21+00:00",
-      "last_seen": "2026-11-22T17:19:31+00:00",
+      "last_seen": "2026-11-23T21:38:03+00:00",
       "review_status": "unreviewed",
       "notes": ""
     },
